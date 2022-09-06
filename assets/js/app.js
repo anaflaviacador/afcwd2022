@@ -1,0 +1,164 @@
+jQuery(document).ready(function ($) {
+    var janela = $(window),
+        body = $('body'),
+        htmlTag = $('html'),
+        scrollAtual = janela.scrollTop,
+        navInternaWrap = $('.nav-interna-wrap'),
+        navInterna = $('.nav-interna'),
+        navInternaHeight = navInterna.outerHeight();
+
+    //////////////////////////////////////// Menu interno fixo
+    if (navInternaWrap.length > 0) {
+        navInternaWrap.css('height', navInternaHeight);
+        janela.on('scroll', function (event) {
+            var scrollHTML = htmlTag.scrollTop();
+            if (scrollHTML >= navInternaWrap.offset().top) {
+                navInterna.addClass("fixo");
+            }
+            else {
+                navInterna.removeClass("fixo");
+            }
+        });
+    }
+    //////////////////////////////////////// JUMP PARA QUALQUER LUGAR
+    $(document).on('click', 'a.jump[href^="#"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
+    });
+    //////////////////////////////////////// GET MOCKUP HEIGHT
+    var mockup = $('.mockup-area'),
+        mockupiPad = $('.mockup-area-ipad');
+    if (mockup.length > 0) {
+        console.log('tem mockup');
+        mockup.each(function (index, el) {
+            var height = $(el).height();
+            $(el).attr("style", "--alturaMockup: " + height + "px");
+        });
+    }
+    if (mockupiPad.length > 0) {
+        console.log('tem mockup ipad');
+        mockupiPad.each(function (index, el) {
+            var height = $(el).height();
+            $(el).attr("style", "--alturaMockupiPad: " + height + "px");
+        });
+    }
+    //////////////////////////////////////// DEPOIMENTOS
+    var clientes = $('.clientes-lista');
+    if (clientes.length > 0) {
+        janela.on("load", function () {
+            clientes.masonry({
+                itemSelector: '.cliente'
+            });
+        });
+    }
+    //////////////////////////////////////// SLIDERS
+    var procriativo = $('#processo-criativo'),
+        printsTema = $('#prints-template');
+    if (procriativo.length > 0) {
+        new Splide('#processo-criativo', {
+            perMove: 2,
+            arrows: true, // 'slider' or false
+            pagination: true,
+            width: '100%',
+            fixedWidth: '50%',
+            rewind: true,
+            rewindSpeed: 1000,
+            trimSpace: false, // true removes empty space from end of list
+            breakpoints: {
+                479: {
+                    fixedWidth: '100%',
+                    perMove: 1,
+                }
+            }
+        }).mount();
+    }
+    if (printsTema.length > 0) {
+        new Splide('#prints-template', {
+            perMove: 2,
+            arrows: true, // 'slider' or false
+            pagination: true,
+            width: '100%',
+            fixedWidth: '50%',
+            rewind: true,
+            padding: 20,
+            rewindSpeed: 1000,
+            trimSpace: false, // true removes empty space from end of list
+            breakpoints: {
+                479: {
+                    fixedWidth: '100%',
+                    perMove: 1,
+                }
+            }
+        }).mount();
+    }
+    ////////////////////////////////// abinhas = accordion
+    var accordion = $('.aba');
+    if (accordion.length > 0) {
+        accordion.find('.aba-titulo').on('click', function (event) {
+            var $thisArticle = $(this).siblings('.aba-conteudo');
+            accordion.find('.aba-titulo').not($(this)).removeClass('ativo');
+            $(this).toggleClass('ativo');
+            accordion.find('.aba-conteudo').not($thisArticle).slideUp();
+            $thisArticle.slideToggle();
+        });
+    }
+    ////////////////////////////////// gruda lateral para indice
+    var indice = $('#indice');
+    if (indice.length > 0) {
+        var colIndice = $("#lateral-post"),
+            wrapArtigo = $("#artigo"),
+            asideFinal = $('.aside-final'),
+            postautoria = $('.post-autoria'),
+            posicoesRedesFixas = {},
+            attPosicoes = function () {
+                posicoesRedesFixas = {
+                    comeco:
+                        wrapArtigo.offset().top + postautoria.outerHeight(),
+                    fim:
+                        wrapArtigo.offset().top
+                        + wrapArtigo.outerHeight()
+                        - asideFinal.outerHeight()
+                        - indice.outerHeight()
+                        - postautoria.outerHeight() - 30
+                }
+                console.log(posicoesRedesFixas);
+            }
+        attPosicoes();
+        var timerAttPosicoes = setInterval(attPosicoes, 3000),
+            timeOutAttPosicoes = setTimeout(function () { }, 0);
+        janela.on('resize', function (event) {
+            clearTimeout(timeOutAttPosicoes);
+            timeOutAttPosicoes = setTimeout(attPosicoes, 200);
+        });
+        janela.on('scroll', function (event) {
+            var scrollNovo = janela.scrollTop();
+            if (scrollNovo >= posicoesRedesFixas.fim) {
+                indice.addClass('pos-fixado').removeClass('fixo');
+            }
+            else if (scrollNovo >= posicoesRedesFixas.comeco) {
+                indice.addClass('fixo').removeClass('pos-fixado');
+            }
+            else {
+                indice.removeClass('pos-fixado fixo');
+            }
+        })
+    }
+    ////////////////////////////////// MIN HEIGHT PAG SIMPLES ou login
+    var pagSimples = $('#pag-simples');
+    if (pagSimples.length > 0) {
+        var cabecalho = $('header.cabecalho'),
+            rodape = $('.rodape'),
+            heightTotal = cabecalho.outerHeight() + rodape.outerHeight();
+        console.log(heightTotal);
+        pagSimples.attr("style", "min-height: calc(100vh - " + heightTotal + "px);");
+    }
+
+    ////////////////////////////////// INFO AFILIADO
+    var labelAffiliado = $("div.woocommerce-additional-fields > label");
+
+    if (labelAffiliado.length > 0) {
+        labelAffiliado.replaceWith("<label for=\"woocommerce-affiliate\">Programa de afiliadas: <em>quem indicou esse produto?</em><br><small style=\"font-size: 12px; width: 100%; line-height: 1.5;\"><span style=\"color:var(--cor-negacao)\">Atenção:</span> Insira corretamente o <u>username</u> ou <u>ID</u> fornecido diretamente pela afiliada. Caso não saiba, deixe em branco e/ou confirme com a afiliada que indicou os produtos do studio para ti.</small></label>");
+    }
+});  

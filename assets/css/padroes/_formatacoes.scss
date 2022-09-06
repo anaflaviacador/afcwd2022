@@ -1,0 +1,109 @@
+/****************************************
+ ----------------------------------------
+ * DEFINICOES PADRAO DE INICIO DE LAYOUT *
+ ----------------------------------------
+ ****************************************/
+
+// inputs
+input, textarea, button {
+	-webkit-appearance: none;-moz-appearance: none;appearance: none;
+	border: 0;
+	outline: 0;
+	font-family: inherit;
+	background: transparent;
+	font-size: inherit;
+}
+
+
+// button
+button { cursor: pointer; }
+button[disabled] {
+opacity: .5;
+cursor: not-allowed
+}
+
+// sem clique
+.sem-clique {
+	pointer-events: none !important;
+}
+
+// hr
+hr {
+	height: 2px; margin-right: auto; margin-left: auto; display: block;
+	// background: $salmao-claro; 
+	border:0; width: 50%; max-width: 50%;
+}
+
+// caixas de texto e selects pra contato e afins
+input[type=text]:not(.adminbar-input), input[type=tel], input[type=email], input[type=name], input[type=password], input[type=number], input[type=search], textarea {
+	vertical-align:middle;
+	white-space:normal;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	line-height: 1.2;
+	// font-family: $fonte-padrao;
+	background: white;
+	// border: 1px solid $salmao-medio;
+	// color: $grafite;
+	border-radius: 4px;
+	// border: 1px solid $salmao-medio;
+
+	&::-moz-placeholder, &:-ms-input-placeholder, 
+	&::-webkit-input-placeholder, &::placeholder{
+		font-style: italic;
+		// color: $marrom;
+	}
+
+	&:focus { outline:0; }
+}
+
+textarea {
+	padding: 1em;
+	background: white;
+	border-radius: 4px;
+	// border: 1px solid $salmao-medio;
+	resize: vertical;
+	line-height: inherit; 
+	
+	&:focus { outline:0; }
+}
+
+
+[type="radio"] {-webkit-appearance: radio;-moz-appearance: radio;appearance: radio; width: unset;}
+[type="checkbox"] {-webkit-appearance: checkbox;-moz-appearance: checkbox;appearance: checkbox; width: unset;}
+
+
+select:not(.woocommerce-input-wrapper) {
+	width: auto; min-width: unset; height: auto;
+	appearance: none; -moz-appearance: none; -webkit-appearance: none;
+	margin:0;
+	display: block;
+	padding: .6em 30px .6em 15px;
+	line-height: 1;
+	// color: $grafite;
+	font-weight: 500;
+	outline: 0; font-size: 1em;
+	// background-color: white;
+	background-repeat: no-repeat; 
+	background-size: 13px auto;
+	background-position: 96% 5px;
+	// background-image: url('../images/select.svg');
+	border-radius: 4px !important;
+	// border: 1px solid $salmao-medio;
+    // font-family: $fonte-padrao;
+    position: relative;
+    cursor: pointer;
+
+    &:-moz-focusring {
+    	color: transparent;
+		text-shadow: 0 0 0 #000;
+    }
+
+    &::-ms-expand { display: none; }
+
+
+}
+
+// definicoes
+.clear { @include clearfix; }
+.hidden { display: none !important; }

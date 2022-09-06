@@ -1,0 +1,33 @@
+@charset "UTF-8";
+// ========================================//
+// IMPORTACOES
+// ========================================//
+/////// PADROES
+@import "padroes/mixins"; // mixins criados por mim que uso muito
+@import "padroes/predefinicoes";
+
+/////// LIB
+@import "padroes/normalize";
+@import "padroes/webflow";
+
+/////// para layout.css
+@import "padroes/fontawesome";
+@import "layout/fontface";
+
+
+// ========================================//
+// LAYOUT
+// ========================================//
+/////// webflow
+@import "padroes/_afcwebdesign.webflow";
+@import "padroes/webflow-flexb";
+
+/////// para layout
+@import "padroes/formatacoes";
+@import "padroes/fancybox";
+
+body, html {
+	&.noscroll, &.fancybox-active {overflow: hidden !important;}
+}
+
+@import "layout/componentes";
