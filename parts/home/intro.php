@@ -24,11 +24,11 @@ $heroImg = '6087';
                 </h2>
             
                 <div class="home-intro-bt-desk">
-                    <?php get_template_part('parts/home/intro-bt-cotacao'); ?>
+                    <?php get_template_part('parts/home/intro-bt'); ?>
                 </div>
             </div>
             <div class="home-intro-bt-mob">
-                <?php get_template_part('parts/home/intro-bt-cotacao'); ?>
+                <?php get_template_part('parts/home/intro-bt'); ?>
             </div>
         </div>
     </div>

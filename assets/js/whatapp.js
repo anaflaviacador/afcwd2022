@@ -52,14 +52,14 @@ jQuery(document).ready(function ($) {
 
         }
 
-        console.log(afcwd_horaInicio);
-        console.log(afcwd_horaFim);
-        console.log(afcwd_Numero);
-        console.log(afcwd_Fuso);
-        console.log(afcwd_PTDate);
-        console.log(afcwd_FraseON);
-        console.log(afcwd_FraseFDS);
-        console.log(afcwd_FraseOFF);
+        // console.log(afcwd_horaInicio);
+        // console.log(afcwd_horaFim);
+        // console.log(afcwd_Numero);
+        // console.log(afcwd_Fuso);
+        // console.log(afcwd_PTDate);
+        // console.log(afcwd_FraseON);
+        // console.log(afcwd_FraseFDS);
+        // console.log(afcwd_FraseOFF);
 
     }
 });

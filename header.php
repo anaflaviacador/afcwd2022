@@ -13,50 +13,29 @@ $urlTema = get_template_directory_uri();
 		<?php get_template_part('parts/header/metatags'); ?>
 	</head>
 <body class="<?php echo join(' ',get_body_class()); ?>">
-<!-- <div aria-hidden="true" id="fakeloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner"><div class="loader"></div></div></div></div> -->
+<div aria-hidden="true" id="fakeloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner"><div class="loader"></div></div></div></div>
 
 <?php get_template_part('parts/header/topbar'); ?>
 
 <header id="top" class="cabecalho">
     <div class="container">
-        <div data-w-id="d1d527fb-cfda-51f0-9615-6c321f5eebb1" class="header-fundo sem-clique"></div>
-        <div class="header-site">
-            <a href="<?php echo $homeurl; ?>" aria-current="page" class="marca-site w-inline-block w--current">
-				<img src="<?php echo $urlTema; ?>/assets/images/marca-afcwebdesign.svg" loading="lazy" alt="Marca AFC Web Design">
-			</a>
+        <?php if(is_front_page() || is_page_template('template-simples.php')): ?>
+            <div data-w-id="d1d527fb-cfda-51f0-9615-6c321f5eebb1" class="header-fundo sem-clique"></div>
+        <?php endif; ?>
+        <?php if(is_singular('etheme_portfolio')): ?>
+            <div class="header-fundo-projeto sem-clique"></div>
+        <?php endif; ?>
 
-
-			<?php echo afc_menu('primary',''); /* menu */ ?>
-
-
-			<?php if (class_exists('Woocommerce')): 
-                $conta = esc_url( wp_login_url( get_permalink() ) );
-                if(is_user_logged_in()) $conta = esc_url(wc_get_page_permalink('myaccount'));
-                
-                $pgCarrinho = esc_url(wc_get_page_permalink( 'cart' ));
-                $numItens = WC()->cart->get_cart_contents_count();
-			?>
-            <ul role="list" class="shop-nav">
-                <li class="shop-nav-li">
-                    <a href="<?php echo $conta; ?>" class="shop-nav-link w-inline-block"><img src="<?php echo $urlTema; ?>/assets/images/ico-login.svg" loading="lazy"
-                            alt="Login" aria-hidden="true" class="shop-nav-ico mr-10px">
-						<span>
-						<?php if(is_user_logged_in()): ?>
-							<?php _e( 'Minha<br>conta', 'afcwd2022' ); ?>
-						<?php else: ?>
-							<?php _e( 'Fazer<br>login', 'afcwd2022' ); ?>
-						<?php endif; ?>
-						</span>
-                    </a>
-                </li>
-                <li class="shop-nav-li">
-                    <a href="<?php echo $pgCarrinho; ?>" class="shop-nav-link w-inline-block"><img src="<?php echo $urlTema; ?>/assets/images/ico-cart.svg" loading="lazy"
-                            alt="<?php esc_html_e( 'Carrinho', 'afcwd2022' ); ?>" class="shop-nav-ico">
-                        <span class="shop-nav-ncart"><?php echo $numItens; ?></span>
-                    </a>
-                </li>
-            </ul>
-			<?php endif; ?>
-        </div>
+        <?php get_template_part('parts/header/principal'); ?>
     </div>
+
+    <?php 
+        if(!is_front_page()) {
+            if( 
+                is_page() 
+                || is_post_type_archive(array('etheme_portfolio','afc_depoimentos')) 
+                || (taxonomy_exists('tipoprojeto') && !is_post_type_archive() && !is_singular())
+            ) get_template_part('parts/header/pag-internas');
+        }
+    ?>
 </header>

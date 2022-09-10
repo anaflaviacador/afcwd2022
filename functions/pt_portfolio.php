@@ -33,46 +33,64 @@ function afc_cpt_portfolio(){
 		'menu_position' => null,
 		'show_in_rest' => true, //habilita gutenberg
 		'menu_icon' => 'dashicons-art',
-		'supports' => array('title','editor','author','thumbnail','excerpt','comments'),
+		'supports' => array('title','editor','author','thumbnail','excerpt'),
 		'rewrite' => array('slug' => 'projetos')
 	);
 	
 	register_post_type('etheme_portfolio',$args);
 	
 	$labels = array(
-		'name' => _x( 'Tags', 'taxonomy general name', 'afcwebdesign' ),
-		'singular_name' => _x( 'Tag', 'taxonomy singular name', 'afcwebdesign' ),
-		'search_items' =>  __( 'Procurar', 'afcwebdesign' ),
-		'all_items' => __( 'Todas as tags', 'afcwebdesign' ),
-		'parent_item' => __( 'Tag mãe', 'afcwebdesign' ),
-		'parent_item_colon' => __( 'Tag mãe:', 'afcwebdesign' ),
-		'edit_item' => __( 'Editar', 'afcwebdesign' ),
-		'update_item' => __( 'Atualizar', 'afcwebdesign' ),
-		'add_new_item' => __( 'Adicionar', 'afcwebdesign' ),
-		'new_item_name' => __( 'Novo nome', 'afcwebdesign' ),
+        'name' => _x( 'Tag de projeto', 'taxonomy general name', 'afcwebdesign' ),
+        'singular_name' => _x( 'Trabalhos com essa tag de projeto', 'taxonomy singular name', 'afcwebdesign' ),
+        'search_items' =>  __( 'Procurar', 'afcwebdesign' ),
+        'all_items' => __( 'Todos os projetos', 'afcwebdesign' ),
+        'parent_item' => __( 'Tag de projeto principal', 'afcwebdesign' ),
+        'parent_item_colon' => __( 'Tag de projeto principal:', 'afcwebdesign' ),
+        'edit_item' => __( 'Editar', 'afcwebdesign' ),
+        'update_item' => __( 'Atualizar', 'afcwebdesign' ),
+        'add_new_item' => __( 'Adicionar', 'afcwebdesign' ),
+        'new_item_name' => __( 'Nova tag de projeto', 'afcwebdesign' ),
+        'menu_name' => 'Tags de projeto'
 	);
 	
 	// Custom taxonomy for Project Tags
 	register_taxonomy('tag',array('etheme_portfolio'), array(
-		'hierarchical' => false,
-		'labels' => $labels,
-		'show_ui' => true,
-		'query_var' => true,
-		'show_in_rest' => true,
-		'rewrite' => array( 'slug' => 'tag' ),
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_in_rest' => true, // gutenberg
+        'query_var' => true,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_admin_column' => true,
+        'rewrite' => array( 'slug' => 'tipo-projeto' ),
 	));
+
+    // Custom taxonomy for Project Tags
+    register_taxonomy('tipoprojeto', array('etheme_portfolio'), array(
+        'hierarchical' => true,
+        'labels' => $labels,
+        'show_ui' => true,
+        'show_in_rest' => true, // gutenberg
+        'query_var' => true,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_admin_column' => true,
+        'rewrite' => array( 'slug' => 'tipo-projeto' ),
+    ));
 	
 	$labels2 = array(
-		'name' => _x( 'Categorias', 'taxonomy general name', 'afcwebdesign' ),
-		'singular_name' => _x( 'Categoria', 'taxonomy singular name', 'afcwebdesign' ),
-		'search_items' =>  __( 'Procurar', 'afcwebdesign' ),
-		'all_items' => __( 'Todas as categorias', 'afcwebdesign' ),
-		'parent_item' => __( 'Categoria mãe', 'afcwebdesign' ),
-		'parent_item_colon' => __( 'Categoria mãe:', 'afcwebdesign' ),
-		'edit_item' => __( 'Editar', 'afcwebdesign' ),
-		'update_item' => __( 'Atualizar', 'afcwebdesign' ),
-		'add_new_item' => __( 'Adicionar', 'afcwebdesign' ),
-		'new_item_name' => __( 'Novo nome', 'afcwebdesign' ),
+        'name' => _x( 'Categoria de projeto', 'taxonomy general name', 'afcwebdesign' ),
+        'singular_name' => _x( 'Trabalhos com essa categoria de projeto', 'taxonomy singular name', 'afcwebdesign' ),
+        'search_items' =>  __( 'Procurar', 'afcwebdesign' ),
+        'all_items' => __( 'Todos os projetos', 'afcwebdesign' ),
+        'parent_item' => __( 'Categoria de projeto principal', 'afcwebdesign' ),
+        'parent_item_colon' => __( 'Categoria de projeto principal:', 'afcwebdesign' ),
+        'edit_item' => __( 'Editar', 'afcwebdesign' ),
+        'update_item' => __( 'Atualizar', 'afcwebdesign' ),
+        'add_new_item' => __( 'Adicionar', 'afcwebdesign' ),
+        'new_item_name' => __( 'Nova categoria de projeto', 'afcwebdesign' ),
+        'menu_name' => 'Categorias'
 	);
 	
 	register_taxonomy('categories',array('etheme_portfolio'), array(
@@ -80,7 +98,8 @@ function afc_cpt_portfolio(){
 		'labels' => $labels2,
 		'show_ui' => true,
 		'query_var' => true,
-		'rewrite' => array( 'slug' => 'category' ),
+		'public' => true,
+		'rewrite' => array( 'slug' => 'categoria-projeto' ),
 	));
 
 }

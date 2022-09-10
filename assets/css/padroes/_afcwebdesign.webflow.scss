@@ -1941,6 +1941,10 @@ blockquote {
   bottom: 8%;
   overflow: hidden;
   background-color: #fdf9f6;
+  background-image: url('../images/spinner.svg');
+  background-position: 50% 50%;
+  background-size: 20%;
+  background-repeat: no-repeat;
   cursor: wait;
 }
 
@@ -2346,7 +2350,7 @@ blockquote {
 .cliente-container {
   position: relative;
   padding-right: 13px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   padding-left: 13px;
 }
 
@@ -4118,6 +4122,10 @@ blockquote {
   bottom: 3.5%;
   overflow: hidden;
   background-color: #fdf9f6;
+  background-image: url('../images/spinner.svg');
+  background-position: 50% 50%;
+  background-size: 30%;
+  background-repeat: no-repeat;
   cursor: wait;
 }
 
@@ -6165,40 +6173,4 @@ blockquote {
   .plano-botao.emailmkt {
     font-size: 0.7em;
   }
-}
-
-@font-face {
-  font-family: 'Blankers';
-  src: url('../fonts/BlankersSignature.woff2') format('woff2'), url('../fonts/BlankersSignature.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FA Brands';
-  src: url('../fonts/FontAwesome6Brands-Regular.woff2') format('woff2'), url('../fonts/FontAwesome6Brands-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FA 6';
-  src: url('../fonts/FontAwesome6Pro-Thin.woff2') format('woff2'), url('../fonts/FontAwesome6Pro-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FA 6';
-  src: url('../fonts/FontAwesome6Pro-Light.woff2') format('woff2'), url('../fonts/FontAwesome6Pro-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Recoleta';
-  src: url('../fonts/Recoleta-Medium.woff2') format('woff2'), url('../fonts/Recoleta-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
 }

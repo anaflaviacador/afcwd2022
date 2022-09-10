@@ -2,12 +2,19 @@
 global $post;
 $info = get_field('info_proj_resumo', $post->ID);
 $print = get_field('imagem_extra_print', $post->ID);
-$class = is_post_type_archive('etheme_portfolio') ? '' : ' hidden';
 $mockupImg = '6093';
 ?>
 
 <div class="proj-grid-item">
-    <div class="proj-grid-cat<?php echo $class; ?>">loja virtual</div>
+    
+    <?php $terms = wp_get_post_terms($post->ID, 'tag'); ?>
+    <?php if ($terms) : ?>
+        <div class="fonte-caixa-baixa proj-grid-cat">
+            <?php $out = array();
+            foreach ($terms as $term) { $out[] = $term->name; }
+            echo join( ' + ', $out ); ?>
+        </div>
+    <?php endif; ?>
 
     <div class="mockup">
         <div class="mockup-area">
@@ -21,12 +28,14 @@ $mockupImg = '6093';
         <div class="mockup-device sem-clique" style="background-image:url(<?php echo wp_get_attachment_image_url($mockupImg,'full');?>);"></div>
     </div>
 
-    <div class="proj-grid-infos<?php echo $class; ?>">
-        <h3 class="proj-grid-titulo"><?php the_title(); ?></h3>
+    <div class="proj-grid-infos">
+        <h3 class="proj-grid-titulo"><?php echo get_the_title($post->ID); ?></h3>
         <?php if($info): ?>
             <div class="hide-mobile"><em><?php echo esc_html($info); ?></em></div>
         <?php endif; ?>
+
+        <a href="<?php echo get_the_permalink($post->ID); ?>" class="botao-liso bege flexb-shrink"><?php esc_html_e( 'ver detalhes', 'afcwd2022' );?> <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
     </div>
 
-    <a href="<?php get_the_permalink(); ?>" class="link-full w-inline-block"></a>
+    <a href="<?php echo get_the_permalink($post->ID); ?>" class="link-full w-inline-block"></a>
 </div>

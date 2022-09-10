@@ -1,0 +1,1 @@
+<?php esc_html_e( 'Assinar', 'afcwd2022' ); ?> <i class="fa-light fa-arrow-right-long bt-seta"></i>

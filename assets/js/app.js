@@ -27,16 +27,31 @@ jQuery(document).ready(function ($) {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
     });
+
     //////////////////////////////////////// GET MOCKUP HEIGHT
     var mockup = $('.mockup-area'),
-        mockupiPad = $('.mockup-area-ipad');
-    if (mockup.length > 0) {
-        console.log('tem mockup');
-        mockup.each(function (index, el) {
-            var height = $(el).height();
-            $(el).attr("style", "--alturaMockup: " + height + "px");
-        });
+        mockupiPad = $('.mockup-area-ipad'),
+        almID = $('#ajax-load-more');      
+
+    if (almID.length > 0) {
+        console.log('tem mockup alm');
+        window.almComplete = function (alm) {
+            console.log('alm completou');
+            mockup.each(function (index, el) {
+                var height = $(el).height();
+                $(el).attr("style", "--alturaMockup: " + height + "px");
+            });
+        }; 
+    } else {
+        if (mockup.length > 0) {
+            console.log('tem mockup');
+            mockup.each(function (index, el) {
+                var height = $(el).height();
+                $(el).attr("style", "--alturaMockup: " + height + "px");
+            });            
+        }
     }
+
     if (mockupiPad.length > 0) {
         console.log('tem mockup ipad');
         mockupiPad.each(function (index, el) {
@@ -44,6 +59,9 @@ jQuery(document).ready(function ($) {
             $(el).attr("style", "--alturaMockupiPad: " + height + "px");
         });
     }
+
+
+
     //////////////////////////////////////// DEPOIMENTOS
     var clientes = $('.clientes-lista');
     if (clientes.length > 0) {
@@ -53,6 +71,7 @@ jQuery(document).ready(function ($) {
             });
         });
     }
+
     //////////////////////////////////////// SLIDERS
     var procriativo = $('#processo-criativo'),
         printsTema = $('#prints-template');
@@ -161,4 +180,27 @@ jQuery(document).ready(function ($) {
     if (labelAffiliado.length > 0) {
         labelAffiliado.replaceWith("<label for=\"woocommerce-affiliate\">Programa de afiliadas: <em>quem indicou esse produto?</em><br><small style=\"font-size: 12px; width: 100%; line-height: 1.5;\"><span style=\"color:var(--cor-negacao)\">Atenção:</span> Insira corretamente o <u>username</u> ou <u>ID</u> fornecido diretamente pela afiliada. Caso não saiba, deixe em branco e/ou confirme com a afiliada que indicou os produtos do studio para ti.</small></label>");
     }
+
+    ////////////////////////////////// NEWSLETTER
+    $("button.assinar-news").wrapInner("<span></span>");
+
+
+    ////////////////////////////////// ICONES DE AJUDA
+    janela.scroll(function () {
+        var whats = $('#afc_btwhats'),
+            freshworks = $('#freshworks-container iframe#launcher-frame');
+        if (whats.length > 0) {
+            whats.removeClass("up");
+            if (janela.scrollTop() + janela.height() > ($(document).height() - 50)) {
+                whats.addClass("up");
+            }
+        }
+        if (freshworks.length > 0) {
+            freshworks.removeClass("up");
+            if (janela.scrollTop() + janela.height() > ($(document).height() - 50)) {
+                freshworks.addClass("up");
+            }
+        }
+
+    });
 });  

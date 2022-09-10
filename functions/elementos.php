@@ -7,36 +7,18 @@ function afc_excerpt_length( $length ) { return 600; }
 
 
 // ========================================//
-// DESABILITA EMOJIS
+// BODY CLASS
+// adiciona mais informacoes ao body
 // ========================================// 
-function disable_emojis() {
- remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
- remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
- remove_action( 'wp_print_styles', 'print_emoji_styles' );
- remove_action( 'admin_print_styles', 'print_emoji_styles' ); 
- remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
- remove_filter( 'comment_text_rss', 'wp_staticize_emoji' ); 
- remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
- add_filter( 'tiny_mce_plugins', 'disable_emojis_tinymce' );
- add_filter( 'wp_resource_hints', 'disable_emojis_remove_dns_prefetch', 10, 2 );
-}
-add_action( 'init', 'disable_emojis' );
+if(!function_exists('afc_body_class')) {function afc_body_class($classes) {
+  global $post;
+  
+  if ( isset( $post ) ) $classes[] = $post->post_type . '-' . $post->post_name;
 
-function disable_emojis_tinymce( $plugins ) {
-  if ( is_array( $plugins ) ) {
-    return array_diff( $plugins, array( 'wpemoji' ) );
-  } else {
-    return array();
-  }
-}
+  return $classes;
+}}
 
-function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
-  if ( 'dns-prefetch' == $relation_type ) {
-    $emoji_svg_url = apply_filters( 'emoji_svg_url', 'https://s.w.org/images/core/emoji/2/svg/' );
-    $urls = array_diff( $urls, array( $emoji_svg_url ) );
-  }
-  return $urls;
-}
+
 
 // ========================================//
 // RELACIONADOS
@@ -92,37 +74,61 @@ function afc_relacionados($post_id, $related_count, $args = array()) {
 
 
 
+
 // ========================================//
-// MENU
+// DEPOIMENTOS
 // ========================================// 
-function afc_menu( $theme_location, $class ) {
-    if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $theme_location ] ) ) {
-        $menu = wp_get_nav_menu_object( $locations[ $theme_location ] );
-      
-        $menu_items = wp_get_nav_menu_items($menu->term_id);
-        $menu_list = '';
-        $count = 0;
+function afc_depoimentos($num = '', $term = '') {
+    $urlTema = get_template_directory_uri();
 
-        $menu_list .= '<ul role="list" class="header-nav">';
+	if(!empty($term)) {
+		$args = array(
+			'post_type' => 'afc_depoimentos', 
+			'order' => 'DESC', 
+			'orderby' => 'rand',
+			'posts_per_page' => $num, 
+			'tax_query' => array(
+				array( 'taxonomy' => 'cat_depo', 'terms' => $term ),
+			),
+		);
+	} else {
+		$args = array(
+			'post_type' => 'afc_depoimentos', 
+			'order' => 'DESC', 
+			'orderby' => 'rand',
+			'posts_per_page' => $num,
+		);
+	}
 
-        foreach( $menu_items as $menu_item ) {
-            $link = $menu_item->url;
-            $title = $menu_item->title;
+	$depo = new WP_Query($args);
 
-            if ( !$menu_item->menu_item_parent ) {
-                $parent_id = $menu_item->ID;
-                $pag_id = $menu_item->object_id;
+	if ( $depo->have_posts() ) : ?>
 
-                $current = ( $_SERVER['REQUEST_URI'] == parse_url( $menu_item->url, PHP_URL_PATH ) ) ? 'botao' : 'header-nav-item';
+    <?php //if(!is_post_type_archive('afc_depoimentos')):?>
+    <div class="cor-verde-claro-bg pb-2em">
+        <div class="container">
+            <div class="upper-titulo">
+                <h2 class="mb-0"><?php _e( 'Relatos de <span class="titulo-cursiva cor-verde">clientes</span>', 'afcwd2022' ); ?></h2>
+                <div><?php esc_html_e( 'O que as clientes do studio têm a dizer sobre os serviços', 'afcwd2022' ); ?></div>
+            </div>
+    <?php //endif; ?>
 
-                $menu_list .= '<li class="header-nav-li">' ."\n";
-                  $menu_list .= '<a href="'.$link.'" class="'.$current.'">'.$title.'</a>'."\n";
-                $menu_list .= '</li>' ."\n";    
-            }
+            <div class="clientes-lista">    
+                <?php while ( $depo->have_posts() ) : $depo->the_post(); ?>
 
-            $count++;
-        }
-        $menu_list .= '</ul>';
-    } 
-    return $menu_list;
+                    <?php get_template_part('alm_templates/depoimento'); ?>
+
+                <?php endwhile; ?>
+
+            </div>
+
+    <?php //if(!is_post_type_archive('afc_depoimentos')): ?>        
+            <div class="has-text-align-right">
+                <a href="/depoimentos" class="botao-liso verde"><?php esc_html_e( 'Mais depoimentos', 'afcwd2022' ); ?> <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
+            </div>
+        </div>
+    </div>
+    <?php //endif; ?>
+
+	<?php endif; wp_reset_query();
 }

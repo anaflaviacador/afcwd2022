@@ -1,0 +1,70 @@
+{
+    "key": "group_5f3dcebeb7064",
+    "title": "Subtítulo",
+    "fields": [
+        {
+            "key": "field_631a0e46a0092",
+            "label": "Título principal (com tags)",
+            "name": "titulo_principal",
+            "type": "textarea",
+            "instructions": "<code>[cursiva]<\/code> e <code>[br]<\/code>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5f3dcec7d8dc1",
+            "label": "Subtítulo",
+            "name": "subtitulo",
+            "type": "textarea",
+            "instructions": "<code>[hide-mobile]<\/code>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1662652199
+}

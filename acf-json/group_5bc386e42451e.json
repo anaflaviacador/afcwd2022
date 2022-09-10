@@ -277,6 +277,28 @@
             "append": "",
             "formatting": "none",
             "maxlength": ""
+        },
+        {
+            "key": "field_631b4cb145173",
+            "label": "Selecionar depoimento",
+            "name": "info_proj_relato",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "afc_depoimentos"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
         }
     ],
     "location": [
@@ -297,5 +319,5 @@
     "active": true,
     "description": "AFC WD",
     "show_in_rest": 0,
-    "modified": 1662495012
+    "modified": 1662733521
 }

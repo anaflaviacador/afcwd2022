@@ -17,13 +17,14 @@ function afc_load_styles() {
     wp_enqueue_script( 'fancyb0x', $urltheme . '/assets/js/fancybox.min.js', array('jquery-core'), '', true);
     wp_enqueue_script( 'splider', $urltheme . '/assets/js/splide.min.js?v='.$vs, array('jquery-core'), '', true);
     wp_enqueue_script( 'webflow', $urltheme . '/assets/js/webflow.js?v='.$vs, array('jquery-core'), '', true); 
+    wp_enqueue_script( 'mas0nry', $urltheme . '/assets/js/masonry.js?v='.$vs, array('jquery-core'), '', true); 
     // wp_enqueue_script( 'googlefonts', $urltheme . '/assets/js/gfont.js?v='.$vs, array('jquery-core'), '', true); 
     wp_enqueue_script( 'googlefonts', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', array('jquery-core'), '', false); 
 
 
     ////////// scripts
     wp_enqueue_script( 'texto-animado', $urltheme . '/assets/js/texto-animado.js?v='.$vs, array('jquery-core'), '', true);
-    // wp_enqueue_script( 'whatsapp', $urltheme . '/assets/js/whatapp.js?v='.$vs, array('jquery-core'), '', true);
+    wp_enqueue_script( 'whatsapp', $urltheme . '/assets/js/whatapp.js?v='.$vs, array('jquery-core'), '', true);
     // wp_enqueue_script( 'loader', $urltheme . '/assets/js/loader.js?v='.$vs, array('jquery-core'), '', true);
     wp_enqueue_script( 'scripts', $urltheme . '/assets/js/app.js?v='.$vs, array('jquery-core'), '', true);
 
@@ -36,10 +37,13 @@ function afc_load_styles() {
     // wp_dequeue_style( 'wp-block-library-theme' );
     // wp_dequeue_style( 'global-styles' );
     
-    ////////// REMOVE itens do SENDY
+    ////////// REMOVE itens
     wp_deregister_style( 'swpcss' );
     wp_deregister_script( 'swpjs' );
     remove_action('wp_enqueue_scripts', 'add_sendy_scripts'); // retirar scripts do sendy
+
+    // retira masonry do ALM pq ja tem por padrao no tema
+    wp_deregister_script('ajax-load-more-masonry');
 }
 
 
@@ -111,7 +115,6 @@ function afc_load_scripts_footer() {
 
   // widget freshdeskt - exceto pag WPForms conversacional
   if (! in_array('wpforms-conversational-form-custom-logo',$classes)) {
-    // echo '<script type="text/javascript">jQuery(document).ready(function(e){AOS.init({duration:600,easing:"ease-out",once:!0})});</script>';
     // freshdesk - helpdesk da loja
     echo '<script>window.fwSettings = { \'widget_id\':70000001417 }; !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() </script>';
     echo '<script type=\'text/javascript\' src=\'https://widget.freshworks.com/widgets/70000001417.js\' async defer></script>';
@@ -126,6 +129,7 @@ function afc_load_scripts_footer() {
     echo '@media screen and (max-width: 782px) { html{ margin-top: 0 !important; } body{ margin-top: 46px !important; } }';
     echo '@media screen and (max-width: 600px) { #wpadminbar {position: fixed} }';
     echo '.cli-modal.cli-blowup {z-index: 2147483002}';
+    echo '.menu-mobile {top: 80px;}';
     echo '</style>'; 
   }
 

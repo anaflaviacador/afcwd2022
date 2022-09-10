@@ -70,7 +70,7 @@ jQuery(document).ready(function ($) {
                         }
                         // console.log("VOLTA: animando parte "+iParteAtual);
                         var offsetCalculado = ((lengthsAcumulados - now) / lengthsPartes[iParteAtual] * 100);
-                        console.log(offsetCalculado);
+                        // console.log(offsetCalculado);
                         $partes.eq(iParteAtual).css('stroke-dashoffset', offsetCalculado);
                     },
                     complete: function () {

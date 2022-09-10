@@ -1,0 +1,337 @@
+{
+    "key": "group_619901317acf2",
+    "title": "AFCPainel - Whatsapp",
+    "fields": [
+        {
+            "key": "field_6217c172398f0",
+            "label": "Fuso horário",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "O fuso horário será determinado pelo sistema Wordpress. Para verificar qual fuso horário está configurado, vá em <a href=\"\/wp-admin\/options-general.php\">Geral, no menu Opções<\/a> e edite o campo \"Fuso horário\".",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_619901317c80c",
+            "label": "Número de destino",
+            "name": "whatsapp_numero",
+            "type": "text",
+            "instructions": "Apenas números",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "34",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": 5562996269941,
+            "prepend": "+",
+            "append": "",
+            "maxlength": 15
+        },
+        {
+            "key": "field_619901317c810",
+            "label": "Foto chat",
+            "name": "whatsapp_avatar",
+            "type": "image",
+            "instructions": "Automaticamente será recortado no formato quadrado, tamanho 150x150px",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "shop_thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_619901317c81b",
+            "label": "Definição de status: Horário de atendimento",
+            "name": "whatsapp_atendimento",
+            "type": "group",
+            "instructions": "Será através das informações a seguir que mostrará status online \/ offline. <strong>Nos finais de semana o status ficará offline automaticamente.<\/strong>.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_61990131a3b86",
+                    "label": "Horario comercial - início",
+                    "name": "horario_inicio",
+                    "type": "time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "H",
+                    "return_format": "H"
+                },
+                {
+                    "key": "field_61990131a3b8d",
+                    "label": "Horario comercial - fim",
+                    "name": "horario_fim",
+                    "type": "time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "H",
+                    "return_format": "H"
+                },
+                {
+                    "key": "field_61990131a3b91",
+                    "label": "Informação em texto",
+                    "name": "info",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "Atendimento das 14h às 17h, seg à sexta. Horário de Brasília.",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 62
+                }
+            ]
+        },
+        {
+            "key": "field_619901317c81f",
+            "label": "Frases online \/ offline",
+            "name": "whatsapp_frases",
+            "type": "group",
+            "instructions": "Será presente ao lado da foto de exibição de chat",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_61990131a7bd8",
+                    "label": "Online",
+                    "name": "on",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 35
+                },
+                {
+                    "key": "field_61990131a7be0",
+                    "label": "Offline",
+                    "name": "off",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 35
+                },
+                {
+                    "key": "field_62265cdaa8a0f",
+                    "label": "Finais de semana (offline)",
+                    "name": "weekend",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 35
+                }
+            ]
+        },
+        {
+            "key": "field_619901317c823",
+            "label": "Descrição online \/ offline",
+            "name": "whatsapp_descricoes",
+            "type": "group",
+            "instructions": "Será presente ao lado da foto de exibição de chat",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_61990131aafe3",
+                    "label": "Online",
+                    "name": "on",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": 95,
+                    "rows": 3,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_61990131aafeb",
+                    "label": "Offline",
+                    "name": "off",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": 95,
+                    "rows": 3,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_62265ccfa8a0e",
+                    "label": "Finais de semana (offline)",
+                    "name": "weekend",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": 95,
+                    "rows": 3,
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_619901317c804",
+            "label": "<hr>",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_619901317c800",
+            "label": "Visibilidade do botão",
+            "name": "whatsapp_bt",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Habilitado",
+            "ui_off_text": "Desativado"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "afc-whatsapp"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1662645443
+}

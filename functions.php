@@ -32,21 +32,16 @@ function afc_setup() {
     add_action( 'wp_enqueue_scripts', 'afc_load_styles', 999 );
     add_action( 'wp_head', 'afc_load_scripts_head', 999 );
     add_action( 'wp_footer', 'afc_load_scripts_footer', 999 );
+    add_filter( 'body_class', 'afc_body_class' );
     add_filter( 'excerpt_more', 'afc_excerpt_more' );
     add_filter( 'excerpt_length', 'afc_excerpt_length', 999 );
     add_filter( 'big_image_size_threshold', '__return_false' );
 
     // menus
     register_nav_menus( array( 
-      'primary' => __( 'Menu principal'),
-      'secondary' => __( 'Menu celular'),
-      'footer' => __( 'Menu Rodape'),
+      'primary' => __( 'Menu Topo'),
+      'secondary' => __( 'Menu Rodape'),
     ) );
-
-    // include_once(get_template_directory().'/func/shortcodes.php' );
-    // include_once(get_template_directory().'/func/thumbs.php' );
-    // include_once(get_template_directory().'/func/feed-rss.php' );
-    // include_once(get_template_directory().'/func/projetos-loop.php' );
 
     // loja
     add_theme_support( 'woocommerce' );
@@ -82,6 +77,8 @@ include_once(get_template_directory().'/functions/midias.php' );
 include_once(get_template_directory().'/functions/pt_depoimentos.php' );
 include_once(get_template_directory().'/functions/pt_blog.php' );
 include_once(get_template_directory().'/functions/pt_portfolio.php' );
+include_once(get_template_directory().'/functions/pt_faq.php' );
+include_once(get_template_directory().'/functions/shortcodes.php' );
 
 // ========================================//
 // LOJA

@@ -1,0 +1,53 @@
+.form-newsletter-footer {
+    margin: 20px 0 0 0 !important;
+    form.wpforms-form {
+        display: flex;
+        background: $texto;
+        border: 1px solid darken($grafite,10%);
+        border-radius: 5px;
+
+        label.wpforms-error {color: #ff7777 !important; font-weight: normal !important; font-style: italic; }
+    
+        .wpforms-field-container {
+            display: flex; flex-grow: 1; 
+
+            .wpforms-field-label { display: none; }
+
+            .wpforms-field-email { 
+                padding: 0; flex-grow: 1;
+
+                input { 
+                    background: none; border: none; outline: none; border: 0; text-align: center; line-height: 2; 
+                    border-top-right-radius: 0; border-bottom-right-radius: 0;
+                }
+            }
+        }
+
+        .wpforms-submit-container {
+            display: flex; padding: 0; position: relative;
+            width: 50px;
+
+            .wpforms-submit-spinner {
+                display: none !important;
+            }
+
+            button.assinar-news {
+                width: 50px; overflow: hidden;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 35px auto;
+
+                span { visibility: hidden; }
+
+                &:not([disabled]) {
+                    background-image: url(../images/btnews-initial.svg);
+                    &:hover {background-image: url(../images/btnews-hover.svg);}
+                }
+
+                &[disabled] {
+                    background-image: url(../images/btnews-send.svg);
+                }
+            }
+        }
+    }
+}

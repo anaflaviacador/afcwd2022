@@ -1,0 +1,169 @@
+// ========================================//
+// ARTIGO EM SI
+// ========================================//
+article {
+    position: relative;
+
+    & > *,
+    .wp-block-gallery,
+    .wp-block-column >* {
+        margin-bottom: 1.8rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 10px !important;
+    }
+
+
+    ////////////////////////////// PORTFOLIO 
+    body.single-etheme_portfolio & {
+
+        .wp-caption,
+        .wp-block-image,
+        .wp-block-media-text {
+            img {
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+
+            &.sem-sombra {
+                img {
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+
+
+    ////////////////////////////// PUBLICACOES DE FORMA GERAL
+    a {
+
+        &:not(.botao):link,
+        &:not(.botao):visited,
+        &:not(.botao):active,
+        &:not(.botao):hover,
+        &:not(.botao):focus {
+            outline: 0;
+            color: $roxo;
+            text-decoration: none;
+        }
+
+        &:not(.botao):hover,
+        &:not(.botao):focus {
+            color: $azul;
+            text-decoration: underline
+        }
+    }
+
+    .nomargin {
+        margin-top: 0
+    }
+
+    // blockquote {
+    //     background: var(--cor-cinza);
+    //     border: 1px solid #ddd;
+
+    //     &.rosa {
+    //         background: var(--cor-rosa-claro);
+    //         border-color: var(--cor-rosa-medio);
+    //     }
+
+    //     &.roxo {
+    //         background: var(--cor-roxo-claro);
+    //         border-color: var(--cor-roxo-medio);
+    //     }
+
+    //     &.verde {
+    //         background: var(--cor-verde-claro);
+    //         border-color: var(--cor-verde-medio);
+    //     }
+
+    //     &.bege {
+    //         background: var(--cor-bege-claro);
+    //         border-color: var(--cor-bege-medio);
+    //     }
+
+    //     &.azul {
+    //         background: var(--cor-azul-claro);
+    //         border-color: var(--cor-azul-medio);
+    //     }
+    // }
+
+    .videofolio {
+        width: 100%;
+        position: relative;
+    }
+
+    .wp-caption,
+    .wp-block-image,
+    .wp-block-media-text {
+        position: relative;
+
+        figcaption,
+        p.wp-caption {
+            position: absolute;
+            margin: 0;
+            padding: .6em 1em;
+            background: $grafite;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: .75em;
+            max-width: calc(100% - 40px);
+            border-radius: 4px;
+            transition: opacity 0.2s ease-in-out;
+        }
+    }
+
+    hr {
+        margin-left: auto;
+        margin-right:auto;
+        border: 0 !important;
+        position: relative;
+        width: 30%;
+        height: 2px;
+        margin-top: 3.6em;
+        margin-bottom: 3.6em;
+        background: $roxo-medio;
+    }
+
+
+    ul:not(.share-links):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid),
+    ol:not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
+        padding-left: 0;
+        margin-left: 2em;
+        display: block;
+
+        li {
+            position: relative;
+            // margin-top: 10px;
+            list-style-position: inside;
+
+            &::marker {
+                font-weight: bold;
+            }
+
+            &:first-child {
+                margin-top: 0
+            }
+        }
+    }
+
+    ul:not(.share-links):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
+        li::marker {
+            content: '\2192\0020\0020';
+            font-size: 1.3em;
+        }
+    }
+
+    ol:not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
+        list-style-type: decimal;
+    }
+
+    .wp-caption.com-sombra,
+    .wp-block-image.com-sombra,
+    .wp-block-media-text.com-sombra {
+        img {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

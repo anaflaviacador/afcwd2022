@@ -24,10 +24,76 @@
 
 /////// para layout
 @import "padroes/formatacoes";
+@import "padroes/splide";
 @import "padroes/fancybox";
+@import "padroes/whatsapp";
 
 body, html {
 	&.noscroll, &.fancybox-active {overflow: hidden !important;}
 }
 
 @import "layout/componentes";
+@import "layout/newsletter";
+@import "layout/artigo";
+
+// projetos
+body.page-servicos, body.home {
+	.proj-grid-item {
+		.proj-grid-cat, .proj-grid-infos { display: none;}
+	}
+}
+body.post-type-archive-etheme_portfolio, body.tax-tipoprojeto {
+	.proj-grid-item .link-full { display: none; }
+}
+
+
+// load more
+.alm-btn-wrap {
+	text-align: center;
+	@extend .container;
+	padding-bottom: 4em;
+
+	.alm-load-more-btn {
+		position: relative;
+
+		&.loading {
+			span {
+				position: relative; padding-right: 35px;
+
+				&:after {
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    content: '';
+                    position: absolute;
+                    top: 50%; transform: translateY(-50%);
+                    right: 0;
+                    background: url('../images/spinner2.svg') no-repeat center center / contain;
+                }
+			}
+		}
+
+		&.done {
+			display: none;
+		}
+	}
+}
+
+// freshdesk
+#freshworks-container {
+	#freshworks-frame-wrapper {
+		right: 10px !important; bottom: 95px !important; height: calc(100% - 101px) !important;
+	}
+	iframe#launcher-frame { 
+		right: 72px !important; height: 44px !important;
+		transition: bottom .2s ease-in-out;
+
+		&:not(.up) { bottom: 15px !important;}
+		&.up { bottom: 56px !important; }
+
+		@media (max-width: $tablet) { 
+			right: 53px !important;
+			&.up { bottom: 30px !important; }
+		}
+	}
+}
