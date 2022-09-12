@@ -1,7 +1,7 @@
 :root {
 	--fancy-bg: #444; // precisa ser em # por conta de opacidades
-	// --fancy-button: var(--afc-cor-dourado);
-    // --fancy-bar: var(--afc-cor-bege);
+	--fancy-button: #{$roxo-medio};
+    --fancy-bar: #{$roxo-medio};
 }
 
 body.compensate-for-scrollbar{

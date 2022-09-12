@@ -1118,7 +1118,7 @@ blockquote {
 }
 
 .botao.bege {
-  border-color: #d1a680;
+  border-color: #eed7c4;
   background-color: #fdf9f6;
   color: #d1a680;
 }
@@ -4229,6 +4229,10 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .prod-venda-mockup {
@@ -4240,9 +4244,6 @@ blockquote {
 .prod-venda-comprar {
   width: 50%;
   padding: 2em;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
 }
 
 .prod-venda-meios {

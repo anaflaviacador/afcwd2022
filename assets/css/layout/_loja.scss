@@ -1,0 +1,184 @@
+// ========================================//
+// CSS FORCE
+// forcar CSS em situacoes que o woocommerce tenta sobrepor
+// ========================================// 
+.shop-nav-ico { height: 34px !important; }
+.header-pag-fundo { max-width: 230px !important; }
+
+
+// ========================================//
+// preco
+// ========================================// 
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+    font-weight: bold;
+    line-height: 1; font-family: $fonte-titulos;
+}
+
+p.price {
+    ins { text-decoration: none !important; }
+}
+
+// ========================================//
+// botao
+// ========================================// 
+.woocommerce {
+    a.button, button.button, input.button {
+        display: inline-block !important;
+        padding: 0.5em 1.6em !important;
+        border-style: solid !important;
+        border-width: 1px !important;
+        border-radius: 100px !important;
+        line-height: 1.2 !important;
+        font-weight: 500 !important;
+        text-transform: uppercase !important;
+        cursor: pointer !important;
+        -webkit-transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease !important;
+        transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease !important;
+
+        &:hover, &:focus {
+            background-color: $roxo-claro !important;
+            color: $roxo  !important;
+            border-color: $roxo-medio  !important;
+        }
+
+        &.single_add_to_cart_button, &.add_to_cart_button {
+            border-color: $afirmacao  !important;
+            background-color: $afirmacao  !important;
+            color: $branco  !important;
+            font-weight: bold !important;
+
+            &:hover, &:focus {
+                border-color: $verde-medio  !important;
+                background-color: $verde-claro  !important;
+                color: $verde  !important;
+            }
+        }
+
+        &.add_to_cart_button, &:not(.single_add_to_cart_button) {
+            font-size: .75em;
+        }
+
+        &:not(.single_add_to_cart_button):not(.add_to_cart_button):not(.alt) {
+            border-color: $roxo  !important;
+            background-color: $roxo  !important;
+            color: $branco  !important;
+        }
+
+        &:not(.single_add_to_cart_button):not(.add_to_cart_button).alt {
+            border-color: $azul  !important;
+            background-color: $azul  !important;
+            color: $branco  !important;
+
+            &:hover, &:focus {
+                background-color: $azul-claro !important;
+                color: $azul  !important;
+                border-color: $azul-medio  !important;
+            }
+        }
+
+    }
+}
+
+// ========================================//
+// LOOP
+// ========================================// 
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    background: $branco;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    a { color: inherit; }
+}
+
+// ========================================//
+// PAGINA LP PRODUTO
+// ========================================//
+.prod-mail-brands svg { position: relative; }
+
+.wrap-adicionar-carrinho {
+    margin: 1em 0 10px;
+
+    p.first-payment-date { margin: 0;}
+
+    form {
+        display: flex; flex-wrap: wrap;
+        justify-content: space-between;
+
+        // item adicional
+        .bundled_product {
+            width: 49%; 
+            border: 0 !important; margin-bottom: 0 !important;
+
+            @media (max-width: $celular) { width: 100%; }
+
+
+            .bundled_product_title {font-size: 1em; color: $bege-medio; font-weight: 500; margin: 0;}
+            .bundled_product_title_link { display: none; }
+            .bundled_product_excerpt { 
+                font-size: .85em; font-style: italic; opacity: .7; margin-bottom: 5px;
+                p { margin: 0;}
+            }
+            .bundled_product_optional_checkbox { cursor: pointer;
+                font-weight: 500; font-size: .85em;
+
+                input.bundled_product_checkbox { margin: 0 2px 0 0; vertical-align: middle !important;}
+                span.price { 
+                    color: $verde-medio; font-size: 1em;
+                    del { color: white; font-size: .75em; font-weight: 500;}
+                    ins { font-weight: 500; }
+                }
+
+                // mensagem de estoque
+                & + .cart {
+                    .bundled_item_wrap:before, .bundled_item_cart_content:before {display: none;}
+                    .bundled_item_cart_details p.stock {
+                        font-size: .9em; font-style: italic;
+                        color: $roxo-medio;
+                    }
+                }
+
+                & + p.stock.out-of-stock {
+                    font-size: .9em; font-style: italic;
+                    color: $rosa-medio;
+                }
+            }
+        }
+
+        // add carrinho
+        & > .cart {
+            margin-top: 1em; text-align: center; width: 100%; position: relative;
+
+            .bundle_wrap {
+                padding: 0; border-radius: 10px;
+                background: none; position: relative;
+
+                .bundle_price {
+                    font-weight: normal; font-size: 7em; color: $bege-medio;
+                    font-family: $fonte-titulos; text-decoration: none;
+
+                    p.price { margin-bottom: 10px; line-height: 1;}
+
+                    span.woocommerce-Price-amount.amount { display: inline-block;}
+
+                    span.woocommerce-Price-currencySymbol { 
+                        font-size: 1rem; font-weight: 500;
+                        font-family: $fonte-padrao; color: $branco;
+                        vertical-align: top; 
+                        position: relative; top: 5px;
+                    }
+
+                    del { display: none; }
+                }
+
+                .bundle_button button.button {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+
+}

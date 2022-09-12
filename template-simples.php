@@ -14,7 +14,7 @@ $urlTema = get_template_directory_uri();
 		<?php get_template_part('parts/header/metatags'); ?>
 	</head>
 <body class="<?php echo join(' ',get_body_class()); ?>">
-<div aria-hidden="true" id="fakeloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner"><div class="loader"></div></div></div></div>
+<!-- <div aria-hidden="true" id="fakeloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner"><div class="loader"></div></div></div></div> -->
 
 <?php get_template_part('parts/header/topbar'); ?>
 

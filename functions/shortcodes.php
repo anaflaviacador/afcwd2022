@@ -161,3 +161,4 @@ function afc_shortcode_hide_mobile( $atts, $content = null ) {
     return $output;
 
 } add_shortcode('hide-mobile','afc_shortcode_hide_mobile');
+

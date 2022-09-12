@@ -50,6 +50,11 @@ function dequeue_woocommerce_cart_fragments() { wp_dequeue_script('wc-cart-fragm
 // remover ordem de mostra de produtos em dropdown
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 
+// remove quantidade de resultados
+remove_action( 'woocommerce_after_shop_loop', 'woocommerce_result_count', 20 );
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+
+
 // remove avaliacoes
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
@@ -72,10 +77,11 @@ function afc_remove_selo_promo() { return false; }
 // remove bt de comprar novamente
 remove_action( 'woocommerce_order_details_after_order_table', 'woocommerce_order_again_button' );
 
+
 // ========================================//
 // REDIRECIONAMENTO DIRETO AO CHECKOUT
 // ========================================// 
-add_filter('add_to_cart_redirect', 'afc_cart_redirect');
+// add_filter('add_to_cart_redirect', 'afc_cart_redirect');
 function afc_cart_redirect() {
     global $woocommerce;
     $redirect_checkout = $woocommerce->cart->get_checkout_url();
@@ -94,9 +100,10 @@ function child_manage_woocommerce_styles() {
     //first check that woo exists to prevent fatal errors
     if ( function_exists( 'is_woocommerce' ) ) {
         //dequeue scripts and styles
+        // wp_dequeue_style('woocommerce-layout');
+
         if ( !is_woocommerce() && !is_cart() && !is_checkout() && !is_account_page() && !is_product() && !is_product_category() && !is_shop() ) {
-            wp_dequeue_style('woocommerce-general');
-            wp_dequeue_style('woocommerce-layout');
+            wp_dequeue_style('woocommerce-general');    
             wp_dequeue_style('woocommerce-smallscreen');
             wp_dequeue_style('woocommerce_frontend_styles');
             wp_dequeue_style('woocommerce_fancybox_styles');

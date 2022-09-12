@@ -19177,6 +19177,17 @@ readers do not read off random characters that represent icons */
 :root,
 :host {
     --fa-style-family-classic: 'FA 6';
+    --fa-font-thin: normal 100 1em/1 'FA 6';
+}
+
+.fat,
+.fa-thin {
+    font-weight: 100;
+}
+
+:root,
+:host {
+    --fa-style-family-classic: 'FA 6';
     --fa-font-light: normal 300 1em/1 'FA 6';
 }
 

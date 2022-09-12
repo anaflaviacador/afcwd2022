@@ -7,6 +7,29 @@ jQuery(document).ready(function ($) {
         navInterna = $('.nav-interna'),
         navInternaHeight = navInterna.outerHeight();
 
+    ////////////////////////////////// fancybox
+    var abrirFancybox = $('.abre-modal');
+    abrirFancybox.on('click', function (event) {
+        var thisTarget = $(this).data('target');
+        event.preventDefault();
+        $.fancybox.open(
+            $(thisTarget),
+            {
+                beforeShow: function (instance, slide) {
+                    $('html').addClass('noscroll');
+                    // console.log('abriu');
+                },
+                afterClose: function (instance, slide) {
+                    $('html').removeClass('noscroll');
+                    // console.log('feshow');
+                }
+            }
+        );
+    });
+
+    var abrirIMG = $('.afczoom');
+    if (abrirIMG.length > 0) { abrirIMG.fancybox(); }        
+
     //////////////////////////////////////// Menu interno fixo
     if (navInternaWrap.length > 0) {
         navInternaWrap.css('height', navInternaHeight);
