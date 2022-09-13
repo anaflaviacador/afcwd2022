@@ -20,6 +20,14 @@ p.price {
 }
 
 // ========================================//
+// INPUTS
+// ========================================// 
+input#woocommerce-affiliate {
+    @extend .input-text;
+}
+
+
+// ========================================//
 // botao
 // ========================================// 
 .woocommerce {
@@ -59,13 +67,13 @@ p.price {
             font-size: .75em;
         }
 
-        &:not(.single_add_to_cart_button):not(.add_to_cart_button):not(.alt) {
+        &:not(.single_add_to_cart_button):not(.add_to_cart_button):not(.alt):not(:disabled[disabled]):not(.disabled) {
             border-color: $roxo  !important;
             background-color: $roxo  !important;
             color: $branco  !important;
         }
 
-        &:not(.single_add_to_cart_button):not(.add_to_cart_button).alt {
+        &:not(.single_add_to_cart_button):not(.add_to_cart_button):not(:disabled[disabled]):not(.disabled).alt {
             border-color: $azul  !important;
             background-color: $azul  !important;
             color: $branco  !important;
@@ -77,6 +85,38 @@ p.price {
             }
         }
 
+        &:disabled[disabled], &.disabled {
+            border-color: $cinza-medio  !important;
+            background-color: $cinza-claro  !important;
+            color: $cinza  !important;
+            cursor: not-allowed !important;
+        }
+
+    }
+}
+
+// ========================================//
+// SETINHA NAV DE JORNADA DE COMPRA
+// ========================================//
+.jornada-cart-item {
+    &:not(.last):after {
+        pointer-events: none;
+        width: 15px;
+        height: 21px;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        right: -12px;
+        margin-top: -10px;
+        content: '';
+        z-index: 1;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 15 21'%3E%3Cpath fill='%23D1C8E2' d='m14.5 10.5-12 10V.5l12 10Zm-1.6 0-9.4 7.87V2.64l9.4 7.86Z'/%3E%3Cpath fill='%23F7F5FA' d='m12.9 10.5-12 10V.5l12 10Z'/%3E%3C/svg%3E");
+    }
+
+    &:not(.last).ativo:after,
+    &.com-link:hover:after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 15 21'%3E%3Cpath fill='%23D1C8E2' d='m14.5 10.5-12 10V.5l12 10Zm-1.6 0-9.4 7.87V2.64l9.4 7.86Z'/%3E%3Cpath fill='%23d7d2e1' d='m12.9 10.5-12 10V.5l12 10Z'/%3E%3C/svg%3E");
     }
 }
 
@@ -181,4 +221,128 @@ p.price {
         }
     }
 
+}
+
+
+// ========================================//
+// CHECKOUT
+// ========================================//
+.afc-form-cupom {
+    display: flex; margin: 10px 0 1.8em;
+    input { margin: 0; text-transform: uppercase; border-color: $azul-medio !important;}
+    button { margin-left: 10px !important; border-radius: 5px !important;}
+}
+
+div.woocommerce {
+    a { color: $roxo;}
+    label { line-height: 1.1; }
+}
+
+#add_payment_method, .woocommerce-cart, .woocommerce-checkout {
+	#payment {
+		background: transparent;
+
+		ul.payment_methods {
+			padding: 0 !important;
+			border: 0;
+
+			li {
+				& > label {
+					cursor: pointer !important; 
+ 
+					img { max-height: 20px !important; vertical-align: unset; position: relative; bottom: -2px !important;}
+
+					small, span.amount {font-size: 12px; padding: 3px 6px; color: $afirmacao; font-weight: bold; padding: 1px 6px; text-transform: uppercase; background: $verde-claro;}
+				}
+
+                & > input[type="radio"] { margin: 0 !important;}
+
+				div.payment_box {
+					background: $verde-claro; border-radius: 0 !important;
+					border: 1px solid $verde-medio;
+
+					&:before { border-bottom-color: $verde-claro; }
+					&:after {
+						content: ""; display: block; z-index: -1;
+					    border: 1em solid $verde-medio;
+					    border-right-color: transparent;
+					    border-left-color: transparent;
+					    border-top-color: transparent;
+					    position: absolute; top: -.75em;
+					    left: 0; margin: -1.1em 0 0 2em;
+					}
+
+					fieldset {
+						// background: white !important; 
+						margin-top: 0 !important;
+						padding: 0 !important; 
+
+						.form-row-wide { margin-bottom: 0; }
+						.form-row-first, .form-row-last { width: 48%; margin-bottom: 0; }
+						.form-row {
+							padding-left: 3px !important;
+						    padding-right: 3px !important;
+						}
+
+						div[role="alert"] {
+							margin-top: 1em;
+
+							& + br { display: none; }
+						}
+
+						input.input-text, input.paghiper_tax_id {
+							background: white !important; box-shadow: none !important;
+							font-size: 1em !important; border-color: $verde-medio !important;
+							&:focus { border-color: $verde !important; }
+						}
+
+						select {
+							background-color: white !important;
+							background-repeat: no-repeat !important; 
+							background-size: 13px auto !important;
+							background-position: 96% 5px !important;
+							background-image: url('../img/select-checkout.svg') !important;
+							border: 1px solid $verde-medio !important;
+						}
+
+						&.wc-paghiper-form {
+							padding: 1em 0 0 0 !important; 
+							.form-row { padding: 0 !important; }
+						}
+					}
+
+					// mercado pago
+					div.mp-panel-checkout, div.mp-panel-custom-checkout {
+						padding: 0; background: none;
+						div.mp-redirect-frame-pix { 
+							background: none; 
+							p { font-family: $fonte-padrao !important; color: var(--cor-texto) !important; font-size: .9rem !important;}
+						}
+						input.mp-form-control-check { margin-top: 4px !important;}
+						label.mp-label-form-check, label.mp-label-form, .mp-subtitle-ticket-checkout { font-family: $fonte-padrao !important; color: var(--cor-texto) !important; }
+						.mp-obrigatory { font-family: $fonte-padrao !important; font-weight: bold !important;}
+						.mp-form-control { border-radius: 4px !important; font-family: $fonte-padrao !important; color: var(--cor-texto) !important; }
+					}
+					
+				}
+
+				&.payment_method_paghiper_billet label img { width: 43px !important; } 
+				&.payment_method_paghiper_pix label img { width: 20px !important; } 
+				&.payment_method_paypal label img { width: 83px !important; } 
+
+				&.payment_method_stripe_cc {
+					.wc-stripe-gateway-desc { position: relative; margin-bottom: 1.8em; }
+					#wc-stripe-card-element { border: 1px solid $verde-medio; }
+				}
+			}
+		}
+
+		div.place-order {
+			margin-top: 2em;
+			padding: 0 !important;
+
+			.woocommerce-privacy-policy-text { margin-bottom: 20px; font-style: italic; }
+			.woocommerce-terms-and-conditions { border-color: $cinza-medio; box-shadow: 0 0 15px transparentize(black,0.95) !important; }
+		}
+	}
 }

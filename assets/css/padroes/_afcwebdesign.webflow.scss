@@ -4643,6 +4643,118 @@ blockquote {
   font-weight: 500;
 }
 
+.jornada-cart {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 1px solid #d7d2e1;
+  border-bottom: 1px solid #d7d2e1;
+  border-left: 1px solid #d7d2e1;
+  border-radius: 5px;
+  background-color: #f7f5fa;
+}
+
+.jornada-cart-item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-right: 1px solid #d7d2e1;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.jornada-cart-item.com-link {
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.jornada-cart-item.com-link:hover {
+  background-color: #d7d2e1;
+}
+
+.jornada-cart-item.ativo {
+  background-color: #d7d2e1;
+  font-weight: 700;
+}
+
+.jornada-cart-item.last {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.jornada-cart-ico {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d7d2e1;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #d19389;
+  line-height: 1;
+}
+
+.jornada-cart-txt {
+  margin-top: 10px;
+}
+
+.jornada-cart-item-link {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1440px) {
   .proj-destaque-detalhe-1 {
     width: 150px;
@@ -5158,6 +5270,10 @@ blockquote {
   .plano-sessao-head {
     margin-left: -2px;
   }
+
+  .jornada-cart-item {
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5659,6 +5775,19 @@ blockquote {
   .plano-preco-maior {
     display: block;
     font-size: 3em;
+  }
+
+  .jornada-cart {
+    text-align: center;
+  }
+
+  .jornada-cart-item {
+    font-size: 0.9em;
+  }
+
+  .jornada-cart-ico {
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -6173,5 +6302,14 @@ blockquote {
 
   .plano-botao.emailmkt {
     font-size: 0.7em;
+  }
+
+  .jornada-cart-item {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .jornada-cart-txt {
+    display: none;
   }
 }

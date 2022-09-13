@@ -64,10 +64,12 @@ function afc_mensagem_acima_pagamentos() {
     $hoje = date("d",strtotime($time));
     $cat_check = false;
 
+    echo '<h3>Meio de pagamento</h3>';
+
     foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
         $product = $cart_item['data'];
         
-        if ( has_term( 'planos', 'product_cat', $product->id ) ) {
+        if ( has_term( 'planos', 'product_cat', $product->get_id() ) ) {
             $cat_check = true;            
 
             $recurring_total = 0;
@@ -79,11 +81,11 @@ function afc_mensagem_acima_pagamentos() {
                 $recurring_total += $item_recurring_total; 
             }
 
-            echo '<div class="cor-bege-claro-bg" style="margin-bottom: 3em; font-size: 0.8em;">'; 
-                echo '<p><strong class="cor-bege"><i class="fas fa-info-circle"></i> Lembre-se!</strong> <em>Assinar um plano não é o mesmo que parcelar uma compra.</em> Será cobrado do seu cartão <strong class="cor-bege">R$'.$recurring_total.' sempre no dia '.$hoje.'</strong>, incluindo hoje, e se manterá enquanto sua assinatura estiver ativa. Você pode pedir reembolso apenas nos próximos 7 dias e cancelar a renovação quando quiser, sem tempo mínimo!</p>';
+            
+            echo '<p class="mb-10px texto-menor"><strong class="cor-negacao">Atenção:</strong> <u>Assinar um plano não é o mesmo que parcelar uma compra.</u> Será cobrado do seu cartão <strong>R$'.$recurring_total.' sempre no dia '.$hoje.'</strong>, incluindo hoje, e se manterá enquanto sua assinatura estiver ativa (como um Netflix). Você pode pedir reembolso apenas nos próximos 7 dias e cancelar a renovação quando quiser, sem tempo mínimo!</p>';
 
-                echo '<p style="margin-top:10px">Aceitamos cartão de crédito estrangeiro! É só ter um cartão apto a realizar transação internacional (será em moeda BRL) de bandeira Visa ou Master.</p>';
-            echo '</div>';
+            echo '<p class="mb-0 texto-menor">Aceitamos cartão de crédito estrangeiro! É só ter um cartão apto a realizar transação internacional (será em moeda BRL) de bandeira Visa ou Master.</p>';
+            
 
             break;
 
@@ -92,14 +94,13 @@ function afc_mensagem_acima_pagamentos() {
             // $valorCart = WC()->cart->get_cart_subtotal();
             $valorCart = WC()->cart->subtotal; // valor sem $
 
-            echo '<div class="cor-verde-claro-bg" style="margin-bottom: 1em; font-size: 0.8em;"><p>';
-                echo '<span style="color:var(--cor-afirmacao);font-weight:bold"><i class="fas fa-info-circle"></i> Hey, sunshine!</span>&nbsp;'; 
+            echo '<p class="mb-10px texto-menor">';
                 if($valorCart < 90 ) echo 'Parcelamos compras acima de R$90 em até 6x sem juros e damos 10%OFF no Pix para compras acima de R$180!</p>';
                 elseif ($valorCart >= 90 && $valorCart < 180) echo 'Damos 10% de desconto no Pix para compras acima de R$180! Você pode parcelar sua compra no cartão de crédito em até 6x sem juros.</p>';
                 elseif ($valorCart >= 180) echo 'Pague no cartão em <strong>até 6x s/juros</strong> ou ganhe <strong>10%OFF no Pix</strong>!</p>';
 
-                echo '<p style="margin-top:10px">Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito internacional cadastrado para fazer a transação na moeda BRL.';
-            echo '</p></div>';
+                echo '<p class="mb-0 texto-menor">Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito internacional cadastrado para fazer a transação na moeda BRL.';
+            echo '</p>';
 
             break;
 
@@ -164,7 +165,7 @@ function afcwoo_inserir_politica() {
     foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
         $product = $cart_item['data'];
         
-        if ( has_term( array('temas','addons'), 'product_cat', $product->id ) ) {
+        if ( has_term( array('temas','addons'), 'product_cat', $product->get_id() ) ) {
             $cat_check = true;
 
                 woocommerce_form_field( 'aceite_extra', array(
@@ -198,7 +199,7 @@ function afcwoo_politica_nao_selecionada() {
     foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
         $product = $cart_item['data'];
         
-        if ( has_term( array('temas','addons'), 'product_cat', $product->id ) ) {
+        if ( has_term( array('temas','addons'), 'product_cat', $product->get_id() ) ) {
             $cat_check = true;
 
             if ( ! (int) isset( $_POST['aceite_extra'] ) ) wc_add_notice( __( 'Você precisa alegar que está ciente que sua licença é intransferível e que <strong>não pode reproduzir ou distribuir os produtos do studio</strong> para outras pessoas.' ), 'error' );

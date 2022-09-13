@@ -198,10 +198,10 @@ jQuery(document).ready(function ($) {
     }
 
     ////////////////////////////////// INFO AFILIADO
-    var labelAffiliado = $("div.woocommerce-additional-fields > label");
+    var labelAffiliado = $("div.woocommerce-additional-fields > label[for=\"woocommerce-affiliate\"]");
 
     if (labelAffiliado.length > 0) {
-        labelAffiliado.replaceWith("<label for=\"woocommerce-affiliate\">Programa de afiliadas: <em>quem indicou esse produto?</em><br><small style=\"font-size: 12px; width: 100%; line-height: 1.5;\"><span style=\"color:var(--cor-negacao)\">Atenção:</span> Insira corretamente o <u>username</u> ou <u>ID</u> fornecido diretamente pela afiliada. Caso não saiba, deixe em branco e/ou confirme com a afiliada que indicou os produtos do studio para ti.</small></label>");
+        labelAffiliado.replaceWith("<label for=\"woocommerce-affiliate\" style=\"font-weight:normal; line-height: 1.1\">Programa de afiliadas: <em>quem indicou esse produto?</em><br><small style=\"font-size: 12px; width: 100%; line-height: 1.5;\"><span style=\"color:var(--cor-negacao)\">Atenção:</span> Insira corretamente o <u>username</u> ou <u>ID</u> fornecido diretamente pela afiliada. Caso não saiba, deixe em branco e/ou confirme com a afiliada que indicou os produtos do studio para ti.</small></label>");
     }
 
     ////////////////////////////////// NEWSLETTER

@@ -42,18 +42,17 @@ $urlTema = get_template_directory_uri();
     <?php 
         if(!is_front_page()) {
             if( 
-                is_page() 
+                (is_page() && !is_checkout() && !is_cart() ) 
                 || is_post_type_archive(array('etheme_portfolio','afc_depoimentos')) 
                 || (taxonomy_exists('tipoprojeto') && !is_post_type_archive() && !is_singular())
             ) { get_template_part('parts/header/pag-internas'); }
-
-            if(class_exists('woocommerce')) {
-                global $post;
-                $ativa_LP = get_field('ativar_lp', $post->ID);
-                if ( is_account_page() || is_product_category() || is_shop() || (is_product() && $ativa_LP == false) ) {
-                    get_template_part('parts/header/pag-internas','loja');
-                }
+            
+            global $post;
+            $ativa_LP = get_field('ativar_lp', $post->ID);
+            if ( is_account_page() || is_product_category() || is_shop() || (is_product() && $ativa_LP == false) ) {
+                get_template_part('parts/header/pag-internas','loja');
             }
+        
         }
     ?>
 </header>
