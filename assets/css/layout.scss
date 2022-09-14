@@ -36,6 +36,9 @@ body, html {
 @import "layout/newsletter";
 @import "layout/artigo";
 @import "layout/loja";
+@import "layout/wpforms";
+@import "layout/blocos";
+@import "layout/afilliatewp";
 
 // projetos
 body.page-servicos, body.home {
@@ -98,3 +101,16 @@ body.post-type-archive-etheme_portfolio, body.tax-tipoprojeto {
 		}
 	}
 }
+
+// form login
+.form-login-site {
+	margin-bottom: 0 !important;
+
+	a { text-decoration: underline; }
+
+	.wpforms-field { padding: 0 !important}
+	.wpforms-recaptcha-container { transform: scale(0.87);
+		transform-origin: left top;}
+}
+
+#pag-simples { overflow: hidden !important; }

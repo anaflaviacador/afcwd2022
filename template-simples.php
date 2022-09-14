@@ -14,8 +14,7 @@ $urlTema = get_template_directory_uri();
 		<?php get_template_part('parts/header/metatags'); ?>
 	</head>
 <body class="<?php echo join(' ',get_body_class()); ?>">
-<!-- <div aria-hidden="true" id="fakeloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner"><div class="loader"></div></div></div></div> -->
-
+<?php get_template_part('parts/header/loader'); ?>
 <?php get_template_part('parts/header/topbar'); ?>
 
 <header id="top" class="cabecalho">
@@ -46,17 +45,7 @@ $urlTema = get_template_directory_uri();
 <?php endwhile; ?>
 <?php endif; ?>
 
-<div class="rodape">
-    <div class="rodape-selos">
-      <div class="container">
-        <div class="selos-container fonte-caixa-alta">
-          <div>CNPJ 24.014.911/0001-36 <span class="cor-bege">●</span> <?php esc_html_e( 'Seg à sexta, das 14h às 17h', 'afcwd2022' ); ?></div>
-          <a href="/"><?php esc_html_e( 'voltar ao site', 'afcwd2022' ); ?></a>
-        </div>
-      </div>
-    </div>
-</div>
-
+<?php get_template_part('parts/footer/cnpj-horarios'); ?>
 <?php get_template_part('parts/whatsapp'); ?>
 <?php get_template_part('parts/footer/menu-mobile'); ?>
 <?php wp_footer(); ?>

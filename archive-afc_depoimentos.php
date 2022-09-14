@@ -9,7 +9,7 @@
 		<?php _e( 'É cliente ou conhece a qualidade dos meus serviços?<br>Conte sua experiência e junte-se ao time acima!', 'afcwd2022' ); ?>
 		<i class="fa-light fa-heart cor-negacao"></i>
 	  </div>
-      <a href="#" class="botao verde">
+      <a href="/enviar-relato" class="botao verde">
 		<?php esc_html_e( 'Enviar depoimento', 'afcwd2022' ); ?>
 		<i class="fa-light fa-arrow-right-long bt-seta"></i>
 	  </a>

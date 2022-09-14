@@ -24,11 +24,11 @@
         <a href="/termos" class="menu-rodape-sublink"><?php esc_html_e( 'Termos de uso', 'afcwd2022' ); ?></a>
     </li>
     <li class="menu-rodape-li">
-        <a href="#" class="menu-rodape-link"><?php esc_html_e( 'Cliente', 'afcwd2022' ); ?></a>
-        <a href="#" class="menu-rodape-sublink"><?php esc_html_e( 'Entrar no painel', 'afcwd2022' ); ?></a>
-        <a href="#" class="menu-rodape-sublink"><?php esc_html_e( 'Criar uma conta', 'afcwd2022' ); ?></a>
-        <a href="#" class="menu-rodape-sublink"><?php esc_html_e( 'Programa de afiliados', 'afcwd2022' ); ?></a>
-        <a href="#" class="menu-rodape-sublink"><?php esc_html_e( 'Formulário de Briefing', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
-        <a href="#" class="menu-rodape-sublink"><?php esc_html_e( 'Acervo de plugins', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
+        <a href="/minha-conta" class="menu-rodape-link"><?php esc_html_e( 'Cliente', 'afcwd2022' ); ?></a>
+        <a href="/minha-conta" class="menu-rodape-sublink"><?php esc_html_e( 'Entrar no painel', 'afcwd2022' ); ?></a>
+        <a href="/criar-conta" class="menu-rodape-sublink"><?php esc_html_e( 'Criar uma conta', 'afcwd2022' ); ?></a>
+        <!-- <a href="#" class="menu-rodape-sublink"><?php //esc_html_e( 'Programa de afiliados', 'afcwd2022' ); ?></a> -->
+        <a href="/minha-conta/briefing" class="menu-rodape-sublink"><?php esc_html_e( 'Formulário de Briefing', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
+        <a href="/minha-conta/bonus" class="menu-rodape-sublink"><?php esc_html_e( 'Acervo de plugins', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
     </li>
 </ul>

@@ -54,9 +54,9 @@ function affwp_show_cpfcnpj_in_affiliate_dashboard( $affiliate_id, $affiliate_us
 	$cpfcnpj = affwp_get_affiliate_meta( $affiliate_id, 'cpfcnpj', true );
 
 	?>
-	<div class="affwp-wrap affwp-cpfcnpj-wrap">
+	<div class="affwp-wrap affwp-cpfcnpj-wrap flexb flexb-column flexb-start">
 		<label for="affwp-cpfcnpj"><?php _e( 'Documento CPF ou CNPJ', 'affiliate-wp' ); ?></label>
-		<input id="affwp-cpfcnpj" style="margin-top:0; max-width: 320px;" type="text" name="cpfcnpj" value="<?php echo esc_attr( $cpfcnpj ); ?>" />
+		<input id="affwp-cpfcnpj" class="input-text mt-10px" style="max-width: 320px;" type="text" name="cpfcnpj" value="<?php echo esc_attr( $cpfcnpj ); ?>" />
 	</div>
 
 	<?php

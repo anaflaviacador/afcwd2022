@@ -9,10 +9,10 @@ function affwp_add_additional_field_to_affiliate_registration_form_pix() {
 	}
 
 	?>
-	<p>
-		<label for="affwp-pix">Cadastrar chave PIX <img src="<?php echo get_template_directory_uri(); ?>/img/logo-pix.svg" alt="logo pix banco central" style="height: 26px; vertical-align: middle; position: relative; top: -3px; margin-left: 10px;"></label>
-		<input id="affwp-pix" type="text" name="affwp_pix" value="<?php if ( ! empty( $pix ) ) { echo $pix; } ?>" title="Chave PIX" />
-		<span>Certifique-se que a chave é valida (de preferência aleatória) e que está registrada na sua conta bancária escolhida para receber seu pagamento.</span>
+	<p class="flexb flexb-column flexb-start">
+		<label for="affwp-pix">Chave PIX <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-pix.svg" alt="logo pix banco central" style="height: 26px; vertical-align: middle; position: relative; top: -3px; margin-left: 10px;"></label>
+		<input id="affwp-pix" class="input-text" type="text" name="affwp_pix" value="<?php if ( ! empty( $pix ) ) { echo $pix; } ?>" title="Chave PIX" />
+		<span>Dê preferência para informar chave do estilo "aleatória".</span>
 	</p>
 	<?php
 }
@@ -54,10 +54,12 @@ function affwp_show_pix_in_affiliate_dashboard( $affiliate_id, $affiliate_user_i
 	$pix = affwp_get_affiliate_meta( $affiliate_id, 'pix', true );
 
 	?>
-	<p>&nbsp;</p>
-	<div class="affwp-wrap affwp-pix-wrap">
-		<label for="affwp-pix"><?php _e( 'Chave PIX criada no seu banco escolhido para recebimento de pagamentos', 'affiliate-wp' ); ?></label>
-		<input id="affwp-pix" style="margin-top:0" type="text" name="pix" value="<?php echo esc_attr( $pix ); ?>" />
+	<div class="affwp-wrap affwp-pix-wrap flexb flexb-column flexb-start">
+		<label for="affwp-pix">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-pix-gateway.svg" alt="logo pix banco central" style="height: 20px; vertical-align: middle; position: relative; top: -3px;">
+			<?php _e( 'Chave PIX', 'affiliate-wp' ); ?>
+		</label>
+		<input id="affwp-pix" class="input-text mt-10px" type="text" style="max-width: 320px;" name="pix" value="<?php echo esc_attr( $pix ); ?>" />
 	</div>
 
 	<?php

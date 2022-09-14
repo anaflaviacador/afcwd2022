@@ -119,14 +119,13 @@ remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' 
 // imagens de formas de pagamentos
 add_filter( 'woocommerce_available_payment_gateways', 'afc_logos_pgto' );
 function afc_logos_pgto( $gateways ) {
-    if ( isset( $gateways['paghiper_billet'] ) ) $gateways['paghiper_billet']->icon = get_stylesheet_directory_uri() . '/img/logo-boleto-gateway.svg';
-    if ( isset( $gateways['paghiper_pix'] ) ) $gateways['paghiper_pix']->icon = get_stylesheet_directory_uri() . '/img/logo-pix-gateway.svg';
+    if ( isset( $gateways['paghiper_pix'] ) ) $gateways['paghiper_pix']->icon = get_stylesheet_directory_uri() . '/assets/images/logo-pix-gateway.svg';
 
     return $gateways;
 }
 
 add_filter( 'woocommerce_paypal_icon', 'afc_logos_pgto_pp' ); 
-function afc_logos_pgto_pp() { return get_stylesheet_directory_uri() . '/img/logo-paypal-gateway.svg'; }
+function afc_logos_pgto_pp() { return get_stylesheet_directory_uri() . '/assets/images/logo-paypal-gateway.svg'; }
 
 if (class_exists('WC_Gateway_Stripe')) {
     add_filter( 'wc_stripe_payment_icons', 'afc_logos_pgto_stripe' );
@@ -145,7 +144,7 @@ add_filter( 'woocommerce_order_button_html', 'afc_botao_pagar' );
 function afc_botao_pagar( $button_html ) {
 
     $order_button_text = 'Finalizar pagamento';
-    $button_html = '<p class="has-text-align-center" style="width:100%; margin-top:2em"><button type="submit" class="botao afirmacao grande" name="woocommerce_checkout_place_order" style="float:none;display:inline-block" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button></p>';
+    $button_html = '<p style="width:100%; margin-top:2em; font-size:1.2em"><button type="submit" class="botao afirmacao grande fullwidth" name="woocommerce_checkout_place_order" style="float:none;display:inline-block" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button></p>';
 
     return $button_html;
 }

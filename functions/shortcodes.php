@@ -114,20 +114,29 @@ function afc_posts_blog($atts, $content = null) {
 
     $args = array('post_type' => 'afc_blog', 'post__in' => $ids);
     $relacionados = new WP_Query($args);
+    $count = $relacionados->post_count;
 
-    // if ( $relacionados->have_posts() ) { 
-    //     if($relacionados->post_count !== 1) echo '<div><h4 class="cursivo">leitura complementar</h4></div>';
-    //     echo '<div'.($relacionados->post_count === 1 ? ' style="margin-top: 2em;"' : '').' class="relacionados interno lista-artigos num-'.$relacionados->post_count.'">';
-    //     while ( $relacionados->have_posts() ) : $relacionados->the_post(); 
-    //         echo '<div class="item-post-grid">';
-    //             get_template_part('inc/blog-grid');
-    //         echo '</div>';
-    //     endwhile;
-    //     echo '</div>';
-    // } wp_reset_query();
+    $cols = $count == 3 ? '3' : '2';
 
-    $output = ob_get_clean();
-    return $output;
+
+    if ( $relacionados->have_posts() ) : ?>
+    <div style="margin-bottom:0">
+        <h4><span class="titulo-cursiva cor-roxo">
+            <?php echo $count > 1 ? esc_html__( 'Leituras complementares', 'afcwd2022') : esc_html__( 'Aproveite e leia', 'afcwd2022' ); ?>
+        <span></h4>
+    </div>
+    <div class="colunas-wrap num-<?php echo $cols; ?>" style="margin-bottom:0">
+        <?php while ( $relacionados->have_posts() ) : $relacionados->the_post(); ?>
+
+            <div class="coluna-item num-<?php echo $cols; ?>">
+                <?php afc_post_grid($relacionados->ID,'cor-azul'); ?>
+            </div>
+        
+        <?php endwhile; ?>
+    </div>
+    <?php endif; wp_reset_query();
+
+    $output = ob_get_clean(); return $output;
 
 } add_shortcode('vertb','afc_posts_blog');
 

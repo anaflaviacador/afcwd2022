@@ -89,3 +89,11 @@
     }
 }
 
+%sombra-leve { box-shadow: 0 0 15px transparentize(black,0.95); }
+%sombra-forte { box-shadow: 0 0 15px transparentize(black,0.75); }
+
+%letterspacing { letter-spacing: 0.09em; }
+%borda-redonda { border-radius: 100px; }
+
+%textshadow { text-shadow: 1px 1px 0 transparentize(black,0.9); }
+%textshadow-claro { text-shadow: 1px 1px 0 transparentize(white,0.5); }

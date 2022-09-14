@@ -1,0 +1,22 @@
+	#affwp-affiliate-dashboard-creatives {
+		display: flex; justify-content: space-between;
+        flex-wrap: wrap;
+
+		h4 { width: 100%; }
+
+		.affwp-creative {
+			width: calc(33% - 20px); border: 0;
+
+            @media (max-width: $smartphone) { width: calc(50% - 20px); }
+            @media (max-width: $celular) { width: 100%; }
+
+			p { margin-bottom: 1em; }
+
+			pre { margin-top: -10px; font-size: 11px; }
+			code { word-break: break-all }
+
+			p.affwp-creative-desc {
+				font-size: 12px; line-height: 1.4;
+			}
+		}
+	}

@@ -25,6 +25,9 @@ $intro = get_field('intro', $post->ID);
         <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-2.svg" loading="lazy" aria-hidden="true" alt="Grafismo" class="prod-venda-flor-3">
         <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-3.svg" loading="lazy" aria-hidden="true" alt="Grafismo" class="prod-venda-flor-2">
 
+        
+        <?php do_action( 'woocommerce_before_single_product' ); // notificacoes ?>
+
         <div class="prod-venda">
           <div class="prod-venda-comprar">
             <h2 class="has-text-align-center">Compre o tema <span class="titulo-cursiva cor-bege-medio"><?php echo $nome; ?></span></h2>

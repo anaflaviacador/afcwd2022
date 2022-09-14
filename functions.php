@@ -79,6 +79,7 @@ include_once(get_template_directory().'/functions/pt_blog.php' );
 include_once(get_template_directory().'/functions/pt_portfolio.php' );
 include_once(get_template_directory().'/functions/pt_faq.php' );
 include_once(get_template_directory().'/functions/shortcodes.php' );
+include_once(get_template_directory().'/functions/blocks.php' );
 
 // ========================================//
 // LOJA
@@ -97,4 +98,13 @@ if (class_exists('Woocommerce')) {
 if (class_exists( 'Affiliate_WP' )) {
   include_once(get_template_directory().'/functions/afiliados/fields-pix.php' );
   include_once(get_template_directory().'/functions/afiliados/fields-cpfcnpj.php' );
+}
+
+// ========================================//
+// REDEFINIR SENHA
+// ========================================// 
+add_filter( 'lostpassword_url', 'my_lost_password_page', 10, 2 );
+function my_lost_password_page( $lostpassword_url, $redirect ) {
+    // https://wpforms.com/how-to-customize-the-wordpress-password-reset-form/
+    return home_url( '/minha-conta/redefinir-senha/?redirect_to=' . $redirect );
 }

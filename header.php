@@ -13,13 +13,12 @@ $urlTema = get_template_directory_uri();
 		<?php get_template_part('parts/header/metatags'); ?>
 	</head>
 <body class="<?php echo join(' ',get_body_class()); ?>">
-<!-- <div aria-hidden="true" id="fakeloader-overlay" class="visible incoming"><div class="loader-wrapper-outer"><div class="loader-wrapper-inner"><div class="loader"></div></div></div></div> -->
-
+<?php get_template_part('parts/header/loader'); ?>
 <?php get_template_part('parts/header/topbar'); ?>
 
 <header id="top" class="cabecalho">
     <div class="container">
-        <?php if(is_front_page() || is_page_template('template-simples.php')): ?>
+        <?php if(is_front_page() || is_page_template('template-simples.php') || is_singular('afc_blog')): ?>
             <div data-w-id="d1d527fb-cfda-51f0-9615-6c321f5eebb1" class="header-fundo sem-clique"></div>
         <?php endif; ?>
 
@@ -43,13 +42,13 @@ $urlTema = get_template_directory_uri();
         if(!is_front_page()) {
             if( 
                 (is_page() && !is_checkout() && !is_cart() ) 
-                || is_post_type_archive(array('etheme_portfolio','afc_depoimentos')) 
-                || (taxonomy_exists('tipoprojeto') && !is_post_type_archive() && !is_singular())
+                || is_post_type_archive(array('etheme_portfolio','afc_depoimentos','afc_blog')) 
+                || is_tax(array('tipoprojeto','categoria_blog'))
             ) { get_template_part('parts/header/pag-internas'); }
             
             global $post;
             $ativa_LP = get_field('ativar_lp', $post->ID);
-            if ( is_account_page() || is_product_category() || is_shop() || (is_product() && $ativa_LP == false) ) {
+            if ( is_product_category() || is_shop() || (is_product() && $ativa_LP == false) ) {
                 get_template_part('parts/header/pag-internas','loja');
             }
         

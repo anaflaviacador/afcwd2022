@@ -1,0 +1,42 @@
+.item-servico {
+    width: 100%; position: relative;
+    background: white;
+    display: flex; margin-bottom: 2em;
+    &:not(.bloco) { cursor: pointer; }
+
+    &:before {content: ''; @include blocoabsoluto; @extend %sombra-leve; transition: box-shadow .2s ease-in-out;}
+    &:hover:before { @extend %sombra-forte; }
+
+    @media (min-width: $tablet + 1px) { width: calc(50% - 1em); }
+
+    figure {
+        width: 110px; padding: 10px; flex-shrink: 0;
+        display: flex; flex-direction: column; position: relative;
+        align-items: center; justify-content: center; margin-bottom: 0;
+
+        svg, img { width: auto; height: auto; max-width: 95px; max-height: 75px;}
+
+        figcaption {
+            background: $afirmacao; @extend %borda-redonda;
+            border: 2px solid white; padding: 2px 5px; font-size: 12px;
+            font-weight: bold; text-transform: uppercase;
+            text-align: center; color: white; position: absolute; @extend %textshadow;
+            bottom: 10px; left: 10px; width: calc(100% - 20px); @extend %letterspacing;
+        }
+
+        @media (min-width: $celular + 1px) { width: 150px; }
+    }
+
+    aside {
+        flex-grow: 1; padding: 15px; position: relative;
+        display: flex; flex-direction: column; justify-content: space-between;
+
+        .intro { font-size: 12px; text-transform: uppercase; opacity: .7;}
+        h3 { font-size: 1.2em; margin-bottom: 10px;}
+
+        p { font-size: .85em; line-height: 1.45; margin-bottom: 1em}
+
+    }
+
+    a.link { @include blocoabsoluto; }
+}

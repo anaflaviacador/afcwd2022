@@ -132,3 +132,36 @@ function afc_depoimentos($num = '', $term = '') {
 
 	<?php endif; wp_reset_query();
 }
+
+
+// ========================================//
+// POSTGRID
+// ========================================// 
+function afc_post_grid($post_id,$cor) { 
+  $nome = get_the_title($post_id);
+  $terms = get_the_terms($post_id,'categoria_blog');  
+  ?>  
+  <div class="post-grid">
+      <h3 class="post-grid-titulo"><?php echo $nome; ?></h3>
+      <figure class="post-grid-thumb">
+          <?php if (has_post_thumbnail($post_id)) : ?>
+              <?php echo the_post_thumbnail('afc_blog_thumb', array(
+                  'class' => 'post-grid-img',
+                  'loading' => 'lazy'
+              )); ?>
+          <?php endif; ?>
+      </figure>
+
+      <?php if ($terms && ! is_wp_error($terms)) : $i=0;?>
+      <ul role="list" class="post-grid-cats<?php echo $cor ? ' '.$cor : ''; ?>">
+          <?php foreach ($terms as $term) : $i++; ?>
+          <li class="flexb-center" style="white-space:nowrap">
+              <?php if ($i > 1): ?><div class="currentcolor pl-10px pr-10px">●</div><?php endif; ?>
+              <div class="cor-grafite"><?php echo $term->name;?></div>
+          </li>
+          <?php endforeach; ?>
+      </ul>
+      <?php endif; ?>
+      <a href="<?php echo get_the_permalink($post_id); ?>" class="link-full w-inline-block"></a>
+  </div>
+<?php }

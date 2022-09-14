@@ -26,6 +26,7 @@ function afc_load_styles() {
     wp_enqueue_script( 'texto-animado', $urltheme . '/assets/js/texto-animado.js?v='.$vs, array('jquery-core'), '', true);
     wp_enqueue_script( 'whatsapp', $urltheme . '/assets/js/whatapp.js?v='.$vs, array('jquery-core'), '', true);
     // wp_enqueue_script( 'loader', $urltheme . '/assets/js/loader.js?v='.$vs, array('jquery-core'), '', true);
+    if(is_singular('afc_blog')) wp_enqueue_script( 'indice', $urltheme . '/assets/js/indice.js?v='.$vs, array('jquery-core'), '', true);
     wp_enqueue_script( 'scripts', $urltheme . '/assets/js/app.js?v='.$vs, array('jquery-core'), '', true);
 
     ////////// comments
@@ -120,6 +121,7 @@ function afc_load_scripts_footer() {
     echo '<script type=\'text/javascript\' src=\'https://widget.freshworks.com/widgets/70000001417.js\' async defer></script>';
 
     echo '<script>function openFreshdesk() { FreshworksWidget(\'open\'); } window.fwSettings = { \'widget_id\': 70000001417 }; !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()</script>';
+
   }
 
 

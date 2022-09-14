@@ -122,8 +122,8 @@ em {
 blockquote {
   margin-bottom: 1.8em;
   padding: 10px 20px;
-  border-left: 5px solid #e4f6f5;
-  color: #6fa7a4;
+  border-left: 5px solid #d7d2e1;
+  border-radius: 5px;
   font-size: 1em;
 }
 
@@ -2491,6 +2491,10 @@ blockquote {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .marca-site-rodape {
@@ -3428,10 +3432,11 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   margin-bottom: 10px;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -3471,9 +3476,21 @@ blockquote {
 }
 
 .share-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 2px;
   margin-left: 2px;
   padding: 5px 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3482,6 +3499,7 @@ blockquote {
   -webkit-transition: all 150ms cubic-bezier(.175, .885, .32, 1.275);
   transition: all 150ms cubic-bezier(.175, .885, .32, 1.275);
   color: #fff;
+  line-height: 1;
   text-align: center;
 }
 
@@ -3669,13 +3687,9 @@ blockquote {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: url('../images/image-from-rawpixel-id-2030388-jpeg.webp');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.login-fundo {
+.login-fundo-overlay {
   position: absolute;
   left: 0%;
   top: 0%;
@@ -4610,16 +4624,6 @@ blockquote {
   width: 100%;
 }
 
-.plano-sessao-head.even {
-  border-top-color: #dddabd;
-  background-color: #f8f8f4;
-}
-
-.plano-sessao-head.last {
-  border-bottom: 1px solid #dddabd;
-  border-bottom-right-radius: 10px;
-}
-
 .plano-botao {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4753,6 +4757,189 @@ blockquote {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.login-fundo {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-image: url('../images/image-from-rawpixel-id-2030388-jpeg.webp');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.afc-cliente-menu {
+  position: relative;
+  width: 100%;
+  background-color: #f7f5fa;
+}
+
+.afc-cliente-menu-ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.afc-cliente-menu-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.afc-cliente-menu-link:hover {
+  font-weight: 600;
+}
+
+.afc-menu-cliente-txt {
+  color: #555;
+  white-space: nowrap;
+}
+
+.afc-menu-cliente-txt.ativo {
+  color: #a297b3;
+  font-weight: 600;
+}
+
+.afc-menu-cliente-ico {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  margin-right: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d7d2e1;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #a297b3;
+  line-height: 1;
+}
+
+.afc-menu-cliente-ico.ativo {
+  border-color: #a297b3;
+  background-color: #a297b3;
+  color: #fff;
+}
+
+.afc-cliente-menu-gradiente {
+  position: absolute;
+  left: auto;
+  top: 0px;
+  right: 0%;
+  bottom: 0px;
+  display: none;
+  width: 60px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(247, 245, 250, 0)), to(#f7f5fa));
+  background-image: linear-gradient(90deg, rgba(247, 245, 250, 0), #f7f5fa);
+}
+
+.afc-menu-afiliadas {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #f8f8f4;
+}
+
+.afc-menu-afiliadas-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #dddabd;
+}
+
+.afc-menu-afiliadas-link:hover {
+  font-weight: 600;
+}
+
+.afc-menu-afiliadas-ico {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #9e9b80;
+  line-height: 1;
+}
+
+.afc-menu-afiliadas-txt {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #555;
+  line-height: 1;
+}
+
+.afc-menu-afiliadas-txt.ativo {
+  color: #9e9b80;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 1440px) {
@@ -5274,6 +5461,19 @@ blockquote {
   .jornada-cart-item {
     font-size: 1em;
   }
+
+  .afc-cliente-menu-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .afc-menu-cliente-ico {
+    margin-right: 0px;
+    margin-bottom: 6px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -5788,6 +5988,31 @@ blockquote {
   .jornada-cart-ico {
     width: 32px;
     height: 32px;
+  }
+
+  .afc-cliente-menu-ul {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .afc-cliente-menu-link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .afc-menu-cliente-ico {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-bottom: 0px;
+  }
+
+  .afc-cliente-menu-li {
+    width: 25%;
   }
 }
 
@@ -6311,5 +6536,25 @@ blockquote {
 
   .jornada-cart-txt {
     display: none;
+  }
+
+  .afc-cliente-menu-ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .afc-cliente-menu-li {
+    width: auto;
+    padding-right: 15px;
+  }
+
+  .afc-cliente-menu-gradiente {
+    display: block;
   }
 }

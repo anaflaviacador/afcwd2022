@@ -280,3 +280,67 @@ ul.indice:hover>li:not(:hover) {
 
 // label
 label { font-weight: 500; margin-bottom: 0; display: unset;}
+
+// ========================================//
+// TOOLTIP
+// ========================================//
+[data-tooltip] {
+    position: relative;
+
+    &::before,
+    &::after {
+        opacity: 0;
+        visbility: hidden;
+        margin-top: -0.5em;
+        z-index: 10;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    &::before {
+        content: attr(data-tooltip);
+        display: block;
+        position: absolute;
+        top: -4px;
+        left: 50%;
+        width: 170px;
+        text-align: center;
+        border-radius: 4px;
+        background: rgba($grafite, 0.9);
+        color: white;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 1.2;
+        padding: 0.75em 0.95em;
+        font-family: $fonte-padrao !important;
+        transform: scale(0) translate(-50%, -100%);
+    }
+
+    &::after {
+        content: "";
+        border: 10px solid transparent;
+        border-top-color: rgba($grafite, 0.9);
+        position: absolute;
+        top: -2px;
+        left: 50%;
+        margin-left: -10px;
+        transform: scale(0);
+    }
+
+    &:hover {
+        cursor: help;
+
+        &::before,
+        &::after {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &::before {
+            transform: scale(1) translate(-50%, -100%);
+        }
+
+        &::after {
+            transform: scale(1);
+        }
+    }
+}

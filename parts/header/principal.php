@@ -16,12 +16,14 @@ $urlTema = get_template_directory_uri();
 
 
     <?php if (class_exists('Woocommerce')): 
-                $conta = esc_url( wp_login_url( get_permalink() ) );
-                if(is_user_logged_in()) $conta = esc_url(wc_get_page_permalink('myaccount'));
-                
-                $pgCarrinho = esc_url(wc_get_page_permalink( 'cart' ));
-                $numItens = WC()->cart->get_cart_contents_count();
-			?>
+        // $conta = esc_url( wp_login_url( get_permalink() ) );
+        // if(is_user_logged_in()) 
+        $conta = esc_url(wc_get_page_permalink('myaccount'));
+        
+        $pgCarrinho = esc_url(wc_get_page_permalink( 'cart' ));
+        $numItens = WC()->cart->get_cart_contents_count();
+    ?>
+
     <ul role="list" class="shop-nav">
         <li class="shop-nav-li">
             <a href="<?php echo $conta; ?>" class="shop-nav-link w-inline-block"><img
