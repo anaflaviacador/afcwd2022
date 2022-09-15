@@ -430,17 +430,17 @@
         </div>
         <div class="plano-sessao-in">
           <div class="plano-botao">
-            <a href="/?add-to-cart=5438" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="https://buy.stripe.com/00gg0OgeD0yyatifYZ" target="_blank" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
         <div class="plano-sessao-in destaque">
           <div class="plano-botao">
-            <a href="/?add-to-cart=5439" class="botao inverso grafite"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="https://buy.stripe.com/28o01Q8Mbchgati4gi" target="_blank" class="botao inverso grafite"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
         <div class="plano-sessao-in last end">
           <div class="plano-botao">
-            <a href="/?add-to-cart=5440" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="https://buy.stripe.com/4gweWKbYn4OOcBq7sv" target="_blank" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
       </div>

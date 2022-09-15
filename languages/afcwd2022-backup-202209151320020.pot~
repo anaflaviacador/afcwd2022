@@ -1,0 +1,1235 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AFC 2022\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-15 13:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.2\n"
+"X-Domain: afcwd2022"
+
+#: parts/servicos/planos-email.php:34
+msgid "100mil envios"
+msgstr ""
+
+#: parts/servicos/planos-email.php:18
+msgid "10mil envios"
+msgstr ""
+
+#: parts/servicos/planos-email.php:26
+msgid "50mil envios"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:429 parts/servicos/planos-email.php:125
+msgid ""
+"<em class=\"cor-verde\">Faca sua assinatura e cancele quando quiser</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:9
+msgid ""
+"<em class=\"dblock cor-verde\">ideal para</em> sites simples e de baixo "
+"tráfego"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:26
+msgid ""
+"<em class=\"dblock cor-verde\">ideal para</em>sites de alto tráfego ou lojas "
+"virtuais"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:18
+msgid ""
+"<em class=\"dblock cor-verde\">ideal para</em>sites e blogs profissionais"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:420
+msgid "<em>10mil envios / mês</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:416
+msgid "<em>2mil envios / mês</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:424
+msgid "<em>30mil envios / mês</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:342
+msgid "<em>até 1 por mês</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:326
+msgid "<em>até 2 por ano</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:346
+msgid "<em>até 2 por mês</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:374
+msgid "<em>até 2 páginas por mês</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:393
+msgid "<em>até 30 produtos por mês</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:330
+msgid "<em>até 4 por ano</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:378
+msgid "<em>até 4 páginas por mês</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:53
+#: parts/servicos/planos-manutencao.php:57
+msgid "<em>com otimização</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:101
+msgid "<em>diário</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:358
+msgid "<em>edições </em><strong><em>baixa</em></strong><em> complexidade</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:362
+msgid ""
+"<em>edições de </em><strong><em>média</em></strong><em> complexidade</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:110
+msgid "<em>plugins </em><strong><em>gratuitos</em></strong>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:114
+#: parts/servicos/planos-manutencao.php:118
+msgid "<em>plugins </em><strong><em>premium</em></strong><em>*</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:97
+msgid "<em>semanal</em>"
+msgstr ""
+
+#: parts/servicos/faq.php:11
+msgid ""
+"<p>Segue a lista das perguntas mais comuns que o studio recebe sobre os "
+"serviços e forma de trabalho.</p>"
+msgstr ""
+
+#: parts/area-login.php:40
+msgid "<span class=\"titulo-cursiva cor-bege\">painel</span><br>área cliente"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:235
+msgid ""
+"<strong class=\"fonte-caixa-alta dblock\">Ações Corretivas</strong><em "
+"class=\"texto-menor\">semanais ou sob solicitação</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:305
+msgid ""
+"<strong class=\"fonte-caixa-alta dblock\">Ações de Design e Conteúdo</strong>"
+"<em class=\"texto-menor\">realizadas sob solicitação</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:179
+msgid ""
+"<strong class=\"fonte-caixa-alta dblock\">Ações isoladas</strong><em "
+"class=\"texto-menor\">realizadas sob solicitação</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:398
+msgid "<strong class=\"fonte-caixa-alta dblock\">Bonus</strong>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:32
+msgid "<strong class=\"fonte-caixa-alta\">Ações preventivas</strong>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:263
+msgid ""
+"<strong>Adequações visuais de plugins</strong><em class=\"texto-menor "
+"dblock\">personalizações de plugins à identidade visual do site, como "
+"formulários e dentre outros recursos visuais</em>"
+msgstr ""
+
+#: parts/servicos/faq-txt.php:1
+msgid ""
+"<strong>Ainda com dúvidas sobre os serviços?<br>‍</strong>Manda um oi no "
+"whats e vamos falar sobre seu projeto!"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:90
+msgid ""
+"<strong>Backup completo</strong><em class=\"texto-menor dblock\">aplicável "
+"apenas se não possui o serviço incluso em sua hospedagem</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:383
+msgid ""
+"<strong>Cadastro produtos Woocomerce</strong><em class=\"texto-menor "
+"dblock\">sob conteúdo enviado previamente</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:207
+msgid ""
+"<strong>Configuração cache + CDN</strong><em class=\"texto-menor dblock\">"
+"aprimoramento de performance com WP Rocket e Cloudflare.</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:221
+msgid ""
+"<strong>Configuração certificado SSL</strong><em class=\"texto-menor "
+"dblock\">aplicação de protocolo de segurança e redirecionamento para links "
+"seguros</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:249
+msgid ""
+"<strong>Correções de bugs</strong><em class=\"texto-menor dblock\">"
+"supervisão de alertas PHP do Wordpress e do layout, corrigindo quando "
+"aplicável</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:193
+msgid ""
+"<strong>Criações de email</strong><em class=\"texto-menor dblock\">com "
+"apontamentos DKIM e DMARC e configuração SMTP</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:367
+msgid ""
+"<strong>Diagramação de páginas internas</strong><em class=\"texto-menor "
+"dblock\">sob conteúdo enviado previamente</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:335
+msgid ""
+"<strong>Diagramação e-mail marketing</strong><em class=\"texto-menor "
+"dblock\">montagem do email seguindo práticas e ações anti-spam</em>"
+msgstr ""
+
+#: parts/servicos/solucoes-recorrentes.php:44
+msgid ""
+"<strong>Enquanto você cuida do seu negócio, o studio cuida do seu site!"
+"</strong> São realizadas otimizações e atualizações de sua plataforma "
+"semanalmente, com planos prevendo edições de layout e outros serviços de "
+"design para seu site."
+msgstr ""
+
+#: parts/servicos/planos-email.php:40
+msgid "<strong>Ilimitado</strong>"
+msgstr ""
+
+#: parts/servicos/planos-email.php:91
+msgid ""
+"<strong>Integração loja virtual</strong><em class=\"texto-menor dblock\">"
+"listas personalizadas para vendas woocommerce</em>"
+msgstr ""
+
+#: parts/servicos/planos-email.php:108
+msgid ""
+"<strong>Integração Zapier</strong><em class=\"texto-menor dblock\">acesso a "
+"API para unir com serviços de automação</em>"
+msgstr ""
+
+#: parts/servicos/planos-email.php:57
+msgid ""
+"<strong>Modelos de email</strong><em class=\"texto-menor dblock\">templates "
+"reutilizáveis com sua marca, cores e mídias</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:351
+msgid ""
+"<strong>Modificações de layout</strong><em class=\"texto-menor dblock\">"
+"adicionar novos elementos no design ou funcionalidades / tarefas de "
+"layout</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:46
+msgid ""
+"<strong>Monitoramento banco de dados</strong> <em class=\"dblock texto-"
+"menor\">limpeza e exclusão de tabelas sobressalentes</em>"
+msgstr ""
+
+#: parts/servicos/planos-email.php:74
+msgid ""
+"<strong>Optin comentários</strong><em class=\"texto-menor dblock\">captura "
+"na área de blog com consentimento</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:123
+msgid ""
+"<strong>Recursos da hospedagem</strong><em class=\"texto-menor dblock\">"
+"supervisão dos limites de uso de espaço, CPU, memória etc.</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:412
+msgid ""
+"<strong>Sendy Email Marketing</strong><em class=\"texto-menor dblock\">"
+"campanhas, listas, segmentações e leads ilimitados</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:137
+msgid ""
+"<strong>Supervisão de desempenho</strong><em class=\"texto-menor dblock\">"
+"monitoramento das principais páginas via GTMetrix e Page Speed, aplicando "
+"melhorias quando possível</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:151
+msgid ""
+"<strong>Supervisão de segurança</strong><em class=\"texto-menor dblock\">"
+"monitoramento dos recursos de segurança do site e anti-spam.</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:62
+msgid ""
+"<strong>Supervisão de versão de PHP</strong> <em class=\"texto-menor "
+"dblock\">atualização quando aplicável</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:277
+msgid ""
+"<strong>Supervisão links quebrados</strong><em class=\"texto-menor dblock\">"
+"para evitar queda no ranking SEO</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:291
+msgid ""
+"<strong>Supervisão logs Woocommerce</strong><em class=\"texto-menor dblock\">"
+"auxílio na resolução de problemas de pagamento em vendas mal-sucedidas</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:165
+msgid ""
+"<strong>Supervisão Woocommerce</strong><em class=\"texto-menor dblock\">"
+"monitoramento de inrtegrações, logs de erro e status de serviços</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:319
+msgid ""
+"<strong>Template e-mail marketing</strong><em class=\"texto-menor dblock\">"
+"para usar no seu serviço favorito</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:106
+msgid ""
+"<strong>Updates Plugins</strong><em class=\"texto-menor dblock\">atualização "
+"quando aplicável</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:76
+msgid ""
+"<strong>Versão CMS Wordpress</strong><em class=\"texto-menor dblock\">"
+"atualização quando aplicável</em>"
+msgstr ""
+
+#: parts/footer/menu.php:32
+msgid "Acervo de plugins"
+msgstr ""
+
+#: functions/pt_faq.php:49
+msgid "Adicionar"
+msgstr ""
+
+#: functions/pt_faq.php:9
+msgid "Adicionar nova pergunta"
+msgstr ""
+
+#. Name of the theme
+msgid "AFC 2022"
+msgstr ""
+
+#. Author of the theme
+msgid "Ana Flávia Cador"
+msgstr ""
+
+#: parts/footer/newsletter.php:10
+#, php-format
+msgid ""
+"Ao deixar o email, estará de acordo com a <a href=\"%s\"><u>política de "
+"privacidade</u></a>."
+msgstr ""
+
+#: functions/shortcodes.php:125
+msgid "Aproveite e leia"
+msgstr ""
+
+#: single-afc_blog.php:31
+msgid "Aproveite e leia também os artigos abaixo"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:20
+msgid ""
+"Aqui no studio é produzido um <strong>layout exclusivo</strong> para ti, com "
+"a estética mais adequada para o seu público. Com design elegante, "
+"inteligente, a personalidade de sua marca será exaltada com um layout "
+"<strong>incrível desde pequenos celulares até o maior dos monitores</strong> "
+"sem perder elegância e facilidade de navegação."
+msgstr ""
+
+#: parts/servicos/como-funciona.php:60
+msgid ""
+"Aqui você irá <strong>analisar a proposta</strong> de layout e ter o direito "
+"de até <em>3 lista de modificações</em> para o projeto ficar bem alinhado "
+"com a estética e estratégias que você espera que seu público vivencie em seu "
+"site. Não avançamos para a próxima fase enquanto esta não for aprovada!"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:51
+msgid ""
+"Aqui é fase de pesquisa e produção de layout com base nos requisitos do "
+"briefing. É produzida a <strong>proposta das principais páginas do seu "
+"site</strong>, principalmente a página inicial. A produção das demais telas "
+"irão depender do seu tipo de site."
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:70
+msgid "As melhores <span class=\"titulo-cursiva cor-bege\">plataformas</span>"
+msgstr ""
+
+#: parts/servicos/planos-bt.php:1
+msgid "Assinar"
+msgstr ""
+
+#: parts/servicos/nav-interna.php:22
+msgid "Assinaturas"
+msgstr ""
+
+#: parts/servicos/faq-txt.php:11
+msgid "Atendimento de seg à sexta, das 14h às 17h."
+msgstr ""
+
+#: functions/pt_faq.php:48
+msgid "Atualizar"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:58
+msgid "Avaliação"
+msgstr ""
+
+#: parts/footer/menu.php:7 parts/header/menu.php:20
+msgid "Blog"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:29
+msgid "Blog <span class=\"menu-mob-link-subitem\">dicas e soluções</span>"
+msgstr ""
+
+#: parts/header/pag-internas.php:35
+msgid "Blog do <span class=\"titulo-cursiva cor-azul\">studio</span>"
+msgstr ""
+
+#: parts/footer/menu.php:14
+msgid "Blogs"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:31
+msgid "Briefing"
+msgstr ""
+
+#: functions/pt_faq.php:13
+msgid "Buscar"
+msgstr ""
+
+#: taxonomy-tipoprojeto.php:5 taxonomy-categoria_blog.php:7
+#: archive-afc_blog.php:5 archive-afc_depoimentos.php:5
+#: archive-etheme_portfolio.php:24
+msgid "Carregando"
+msgstr ""
+
+#. Name of the template
+#: woocommerce-cart.php:17 woocommerce-cart.php:20
+#: parts/header/principal.php:44
+msgid "Carrinho"
+msgstr ""
+
+#: parts/footer/menu.php:27
+msgid "Cliente"
+msgstr ""
+
+#: parts/footer/menu.php:4 parts/header/menu.php:23
+msgid "Clientes"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:35
+msgid "Clientes <span class=\"menu-mob-link-subitem\">depoimentos</span>"
+msgstr ""
+
+#: footer.php:28
+msgid "CNPJ 24.014.911/0001-36<br>Seg à Sexta, das 14h às 17h"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:78
+msgid ""
+"Com a finalização de todo o código do site, chega a <strong>etapa de "
+"testes</strong>. Aqui você têm acesso a um ambiente controlado para <strong>"
+"ver seu site funcionando</strong> e explorar seu painel antes de colocarmos "
+"no ar! Nesta fase você poderá <strong>pedir mudanças finas</strong> que você "
+"não conseguiu enxergar na primeira avaliação."
+msgstr ""
+
+#: parts/servicos/como-funciona.php:87
+msgid ""
+"Com seu site totalmente refinado, é hora de <strong>coloca-lo em sua "
+"hospedagem</strong> e começar a receber visitas! Sua <strong>garantia de 3 "
+"meses</strong> começa no dia da implementação e, nesta mesma data, é gerada "
+"sua nota fiscal. E, logo nos primeiros dias online, são gravadas suas video-"
+"aulas para você ter o treinamento completo de seu painel!"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:10
+msgid "Como <span class=\"titulo-cursiva cor-azul\">funciona</span>"
+msgstr ""
+
+#: parts/footer/menu.php:21
+msgid "Como comprar"
+msgstr ""
+
+#: parts/servicos/nav-interna.php:13
+msgid "Como funciona"
+msgstr ""
+
+#: parts/produto/bt-comprar.php:1
+msgid "Comprar"
+msgstr ""
+
+#: parts/header/pag-internas.php:57
+msgid "Confira os projetos mais recentes do studio."
+msgstr ""
+
+#: woocommerce-cart.php:32 woocommerce-cart.php:35
+msgid "Confirmação"
+msgstr ""
+
+#: parts/servicos/solucoes-recorrentes.php:31
+msgid "conhecer planos"
+msgstr ""
+
+#: parts/servicos/solucoes-recorrentes.php:47
+msgid "conhecer planos "
+msgstr ""
+
+#: parts/projetos-destaque-bt.php:2
+msgid "Conhecer projetos"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:12
+msgid ""
+"Conheça as <em>8 etapas</em> de produção, desde o primeiro contato com o "
+"studio até o site ir ao ar!"
+msgstr ""
+
+#. Name of the template
+msgid "Conta loja"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:75 parts/footer/menu.php:8
+msgid "Contato"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:22
+msgid "Contato e Orçamento"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:40
+msgid "Contrato e pagamento"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:41
+msgid ""
+"Cotação <span class=\"menu-mob-link-subitem cotacao\">orçar projeto</span>"
+msgstr ""
+
+#: parts/area-login.php:45 parts/footer/menu.php:29
+msgid "Criar uma conta"
+msgstr ""
+
+#: parts/footer/selos.php:19
+msgid "Criptografia via"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:29
+msgid "Código <span class=\"titulo-cursiva cor-verde\">otimizado</span>"
+msgstr ""
+
+#: parts/home/servicos.php:25
+msgid ""
+"Código limpo <span class=\"titulo-cursiva cor-verde\">e otimizado</span>"
+msgstr ""
+
+#: single-etheme_portfolio.php:77
+msgid "Depoimento de cliente"
+msgstr ""
+
+#: parts/home/servicos.php:15
+msgid ""
+"Desde 2007 o studio realiza sonhos, produzindo sites e lojas virtuais com "
+"design elegante,\n"
+"                    <strong>inteligente</strong>, cheio de <strong>"
+"personalidade</strong> e <strong>propósito</strong>\n"
+"                    para empreendedoras e influencers."
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:17
+msgid "Design <span class=\"titulo-cursiva cor-verde\">exclusivo</span>"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:89
+msgid "design front-end"
+msgstr ""
+
+#: parts/home/servicos.php:12
+msgid "Design único <span class=\"titulo-cursiva cor-verde\">e elegante</span>"
+msgstr ""
+
+#: parts/servicos/nav-interna.php:19
+msgid "Dúvidas"
+msgstr ""
+
+#: parts/servicos/faq.php:9
+msgid "Dúvidas <span class=\"titulo-cursiva cor-bege\">frequentes</span>"
+msgstr ""
+
+#: parts/blog/header.php:22
+msgid "e atualizado em"
+msgstr ""
+
+#: functions/pt_faq.php:47
+msgid "Editar"
+msgstr ""
+
+#: functions/pt_faq.php:10
+msgid "Editar pergunta"
+msgstr ""
+
+#: parts/header/pag-internas.php:69
+msgid ""
+"Eleve o nível do seu site com dicas sobre de gestão, ferramentas, "
+"produtividade e empreendedorismo."
+msgstr ""
+
+#: parts/servicos/solucoes-recorrentes.php:26
+msgid "Email marketing"
+msgstr ""
+
+#: parts/servicos/solucoes-recorrentes.php:28
+msgid ""
+"Engaje com seu público por email e trabalhe com listas, automações, "
+"segmentações, campanhas e armazenamento de <strong>leads ilimitados</strong>!"
+" Ganhe um <em>template personalizado</em> com sua identidade e integre com "
+"sua loja."
+msgstr ""
+
+#: parts/footer/menu.php:28
+msgid "Entrar no painel"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:24
+msgid ""
+"Entre em contato com o studio através da nossa <strong>calculadora de "
+"cotação</strong>, <strong>email</strong> ou <strong>whatsapp</strong> para "
+"você ter <em>noção inicial de seu investimento</em> e disponibilidade da "
+"agenda de produção. É enviada a proposta comercial e podemos combinar a data "
+"de produção."
+msgstr ""
+
+#: parts/servicos/planos-email.php:13
+msgid "Entusiasta"
+msgstr ""
+
+#: archive-afc_depoimentos.php:13
+msgid "Enviar depoimento"
+msgstr ""
+
+#: 404.php:33
+msgid "Essa página foi excluída recentemente."
+msgstr ""
+
+#: page-briefing.php:60 page-bonus.php:49
+msgid "Esse é o seu caso? Entre em contato e solicite seu acesso!"
+msgstr ""
+
+#: parts/header/pag-internas.php:31
+msgid "Experiências <span class=\"titulo-cursiva cor-azul\">únicas</span>"
+msgstr ""
+
+#: parts/servicos/faq-txt.php:3
+msgid "Fale comigo"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:67
+msgid "Fase de Código"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:49
+msgid "Fase de Design"
+msgstr ""
+
+#: template-usuarios.php:56
+msgid "fazer login"
+msgstr ""
+
+#: parts/header/principal.php:36
+msgid "Fazer<br>login"
+msgstr ""
+
+#: parts/home/intro-bt.php:2
+msgid "Faça sua cotação"
+msgstr ""
+
+#: parts/header/topbar.php:39
+msgid "Fechar"
+msgstr ""
+
+#. Description of the theme
+msgid "Feito com amor, por Ana Flávia Cador. &hearts;"
+msgstr ""
+
+#: parts/footer/menu.php:31
+msgid "Formulário de Briefing"
+msgstr ""
+
+#: sidebar.php:14
+msgid ""
+"Fundadora do studio e a profissional que te guiará para ter o site do seus "
+"sonhos."
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:85
+msgid "gestão de lojas online"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:81
+msgid "gestão de websites"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:33
+msgid ""
+"Hora de <strong>conhecer sua empresa</strong>, seus objetivos, desejos, "
+"sonhos, metas e preferências. São direcionadas perguntas específicas para "
+"conseguirmos traçar o seu perfil e <strong>conhecer suas reais "
+"necessidades</strong>. <em>É nesta fase que conseguimos chegar no valor "
+"definitivo do investimento de seu projeto.</em>"
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "https://afcweb.design/"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:56
+msgid ""
+"Há vários <strong>campos personalizados</strong> e dinâmicos em todo layout "
+"para garantir total <strong>autonomia na gestão e das informações</strong> "
+"via painel. É possível criar soluções para seu negócio para promover uma "
+"experiência incrível para seu público como: área de membros, conteúdo "
+"restrito a usuários com login único e muito mais!"
+msgstr ""
+
+#: parts/servicos/planos-email.php:5
+msgid "Iniciante"
+msgstr ""
+
+#: parts/header/topbar.php:13
+msgid "Início"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:11
+msgid "Início <span class=\"menu-mob-link-subitem\">página inicial</span>"
+msgstr ""
+
+#: taxonomy-tipoprojeto.php:5 taxonomy-categoria_blog.php:7
+#: archive-afc_blog.php:5 archive-afc_depoimentos.php:5
+#: archive-etheme_portfolio.php:24
+msgid "Isso é tudo!"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:61
+msgid "itens"
+msgstr ""
+
+#: functions/shortcodes.php:125
+msgid "Leituras complementares"
+msgstr ""
+
+#: functions/pt_faq.php:46
+msgid "Local mãe:"
+msgstr ""
+
+#: functions/pt_faq.php:45
+msgid "Local principal"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:55
+msgid "Login <span class=\"menu-mob-link-subitem shop\">entrar</span>"
+msgstr ""
+
+#: woocommerce-cart.php:9 woocommerce-cart.php:12
+msgid "Loja"
+msgstr ""
+
+#: parts/footer/menu.php:19
+msgid "Loja online"
+msgstr ""
+
+#: parts/footer/menu.php:12
+msgid "Lojas virtuais"
+msgstr ""
+
+#: taxonomy-categoria_blog.php:7 archive-afc_blog.php:5
+msgid "Mais artigos"
+msgstr ""
+
+#: functions/elementos.php:127
+msgid "Mais depoimentos"
+msgstr ""
+
+#: taxonomy-tipoprojeto.php:5 archive-etheme_portfolio.php:24
+msgid "Mais projetos"
+msgstr ""
+
+#: archive-afc_depoimentos.php:5
+msgid "Mais relatos"
+msgstr ""
+
+#: parts/home/servicos-bt-mais.php:2
+msgid "mais sobre serviços"
+msgstr ""
+
+#: parts/servicos/solucoes-recorrentes.php:42
+msgid "Manutenção técnica"
+msgstr ""
+
+#: parts/header/principal.php:34
+msgid "Minha<br>conta"
+msgstr ""
+
+#: parts/header/linguas-moedas.php:26
+msgid "Moedas"
+msgstr ""
+
+#: parts/footer/selos.php:9
+msgid "Métodos de pagamento aceitos"
+msgstr ""
+
+#: parts/footer/selos.php:13
+msgid "Navegação segura"
+msgstr ""
+
+#: functions/pt_faq.php:14
+msgid "Nenhum pergunta encontrada"
+msgstr ""
+
+#: functions/pt_faq.php:15
+msgid "Nenhum pergunta encontrada na lixeira"
+msgstr ""
+
+#: parts/blog/header.php:17
+msgid "No ar em"
+msgstr ""
+
+#: functions/pt_faq.php:11
+msgid "Nova pergunta"
+msgstr ""
+
+#: parts/footer/newsletter.php:5
+msgid "Novidades por email"
+msgstr ""
+
+#: functions/pt_faq.php:50
+msgid "Novo local"
+msgstr ""
+
+#: parts/home/servicos.php:39
+msgid ""
+"Não estará sozinha momentos mais difíceis na hora de gerenciar seu novo site!"
+" É fornecido\n"
+"                    <strong>orientações técnicas</strong>, dicas de <strong>"
+"boas práticas de gestão</strong> e\n"
+"                    treinamento para sua dashboard.<strong></strong>"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:32
+msgid ""
+"O <strong>código é escrito do zero para seu projeto</strong>, atendendo suas "
+"necessidades de forma direta e prática, sem uso de templates prontos ou page "
+"builders pesados. É seguido à risca o layout e estratégias do seu modelo de "
+"negócio, alinhado às boas práticas de programação e SEO para te "
+"auxiliar<strong> no ranking de buscas Google</strong>."
+msgstr ""
+
+#: page-bonus.php:48
+msgid ""
+"O acervo de materiais pode ser usufruído apenas por clientes que contrataram "
+"serviços de design e/ou desenvolvimento do studio"
+msgstr ""
+
+#: page-briefing.php:59
+msgid ""
+"O formulário de briefing é visível apenas por clientes que contrataram ou "
+"pretendem contratar serviços de design e/ou desenvolvimento do studio"
+msgstr ""
+
+#: functions/elementos.php:112
+msgid "O que as clientes do studio têm a dizer sobre os serviços"
+msgstr ""
+
+#: parts/header/pag-internas.php:63
+msgid "O que as clientes do studio têm a dizer."
+msgstr ""
+
+#: parts/footer/menu.php:3
+msgid "O Studio"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:73
+msgid ""
+"O studio projeto sites nas melhores plataformas para garantir <strong>maior "
+"compatibilidade</strong> nas integrações e <strong>liberdade "
+"criativa</strong> no design!"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:44
+msgid ""
+"O studio te ajuda nos momentos mais difíceis na hora de gerir um site depois "
+"de ir ao ar, com <strong>orientações técnicas</strong> sempre que precisar, "
+"90 dias de garantia e dicas de <strong>boas práticas de gestão</strong> "
+"enquanto usar o layout. Também é produzido diversas video-aulas ensinando "
+"como usar seu novo painel para você consultar quando necessário."
+msgstr ""
+
+#: parts/footer/newsletter.php:6
+msgid "Ofertas e informações sobre agenda de produção"
+msgstr ""
+
+#: footer.php:23 parts/servicos/nav-interna-bt.php:3
+msgid "Orçar projeto"
+msgstr ""
+
+#: single-afc_blog.php:30
+msgid "Outros <span class=\"titulo-cursiva cor-azul\">artigos</span>"
+msgstr ""
+
+#: parts/projeto/infos.php:16
+msgid "Outros profissionais neste projeto"
+msgstr ""
+
+#: woocommerce-cart.php:25 woocommerce-cart.php:28
+msgid "Pagamento"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:53
+msgid "Painel <span class=\"titulo-cursiva cor-verde\">dedicado</span>"
+msgstr ""
+
+#: page-planos.php:18 page-email-marketing.php:18 parts/produto/faq.php:4
+msgid "Perguntas <span class=\"titulo-cursiva cor-azul\">frequentes</span>"
+msgstr ""
+
+#: parts/servicos/nav-interna.php:10
+msgid "Plataformas"
+msgstr ""
+
+#: parts/servicos/solucoes-plataformas.php:67
+msgid "Plataformas utilizadas"
+msgstr ""
+
+#: parts/footer/menu.php:15
+msgid "Portfolios"
+msgstr ""
+
+#: functions/pt_faq.php:8
+msgctxt "post type - add new"
+msgid "Adicionar pergunta"
+msgstr ""
+
+#: functions/pt_faq.php:6
+msgctxt "post type general name"
+msgid "Perguntas e respostas"
+msgstr ""
+
+#: functions/pt_faq.php:7
+msgctxt "post type singular name"
+msgid "Pergunta"
+msgstr ""
+
+#: 404.php:30
+msgid "Precisa de ajuda?"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:67 parts/header/topbar.php:18
+msgid "Privacidade"
+msgstr ""
+
+#: functions/pt_faq.php:43
+msgid "Procurar"
+msgstr ""
+
+#: parts/header/pag-internas-loja.php:12
+msgid "Produtos <span class=\"titulo-cursiva cor-azul\">digitais</span>"
+msgstr ""
+
+#: single-etheme_portfolio.php:70
+msgid "Profissionais envolvidos neste projeto"
+msgstr ""
+
+#: alm_templates/depoimento.php:34 alm_templates/depoimento.php:54
+msgid "Projeto"
+msgstr ""
+
+#: parts/footer/menu.php:5 parts/footer/menu.php:11 parts/header/menu.php:17
+#: parts/servicos/nav-interna.php:16
+msgid "Projetos"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:23
+msgid "Projetos <span class=\"menu-mob-link-subitem\">trabalhos feitos</span>"
+msgstr ""
+
+#: parts/header/pag-internas.php:27
+msgid "Projetos <span class=\"titulo-cursiva cor-azul\">destaque</span>"
+msgstr ""
+
+#: parts/header/pag-internas.php:39
+msgid "Projetos de"
+msgstr ""
+
+#. Name of the template
+msgid "Página simples"
+msgstr ""
+
+#: parts/produto/faq.php:21
+msgid "Quero comprar!"
+msgstr ""
+
+#: parts/footer/menu.php:23
+msgid "Rastrear pedido"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:76
+msgid "Refinamento"
+msgstr ""
+
+#: functions/elementos.php:111
+msgid "Relatos de <span class=\"titulo-cursiva cor-verde\">clientes</span>"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:112
+msgid "role para o lado e descubra"
+msgstr ""
+
+#: woocommerce-cart.php:50 parts/footer/cnpj-horarios.php:5
+msgid "Seg à sexta, das 14h às 17h"
+msgstr ""
+
+#. Name of the template
+msgid "Senhas e cadastros"
+msgstr ""
+
+#: parts/footer/menu.php:6 parts/header/menu.php:14
+msgid "Serviços"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:17
+msgid "Serviços <span class=\"menu-mob-link-subitem\">para seu site</span>"
+msgstr ""
+
+#: parts/servicos/solucoes-recorrentes.php:15
+msgid ""
+"Serviços especiais recorrentes opcionais <strong>para quem já é cliente da "
+"casa</strong> e possui um layout exclusivo implementado."
+msgstr ""
+
+#: parts/servicos/solucoes-recorrentes.php:12
+msgid ""
+"Serviços por <span class=\"titulo-cursiva cor-roxo\">assinatura</span><span "
+"class=\"titulo-cursiva cor-verde\"></span>"
+msgstr ""
+
+#: parts/footer/selos.php:23
+msgid "Site hospedado na"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:85
+msgid "Site no ar!"
+msgstr ""
+
+#: page-briefing.php:61 page-bonus.php:50
+msgid "Solicitar acesso"
+msgstr ""
+
+#: parts/servicos/nav-interna.php:7
+msgid "Soluções"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:79
+msgid "Suporte"
+msgstr ""
+
+#: parts/home/servicos.php:36 parts/servicos/solucoes-plataformas.php:41
+msgid "Suporte <span class=\"titulo-cursiva cor-verde\">direcionado</span>"
+msgstr ""
+
+#: parts/footer/menu.php:22 parts/header/topbar.php:31
+msgid "Suporte da loja"
+msgstr ""
+
+#: functions/pt_faq.php:41
+msgctxt "taxonomy general name"
+msgid "Local de uso"
+msgstr ""
+
+#: functions/pt_faq.php:42
+msgctxt "taxonomy singular name"
+msgid "Local"
+msgstr ""
+
+#: parts/footer/menu-mobile.php:49
+msgid ""
+"Tema pronto <span class=\"menu-mob-link-subitem shop\">comprou, baixou</span>"
+msgstr ""
+
+#: alm_templates/depoimento.php:42 alm_templates/depoimento.php:62
+msgid "Template"
+msgstr ""
+
+#: parts/footer/menu.php:20
+msgid "Template Aurora"
+msgstr ""
+
+#: parts/header/menu.php:26
+msgid "Template pronto"
+msgstr ""
+
+#: parts/header/pag-internas-loja.php:17
+msgid "Templates à pronta entrega e extensões para seu site."
+msgstr ""
+
+#: parts/area-login.php:41
+msgid ""
+"Tenha acesso ao seu histórico de pedidos, downloads, acervo de plugins "
+"premium e panorama geral de sua afiliação."
+msgstr ""
+
+#: parts/footer/menu-mobile.php:71
+msgid "Termos"
+msgstr ""
+
+#: parts/footer/menu.php:24 parts/header/topbar.php:23
+msgid "Termos de uso"
+msgstr ""
+
+#: parts/home/intro.php:19
+msgid "Tire seu projeto do papel e tenha o site que sempre sonhou."
+msgstr ""
+
+#: parts/header/pag-internas.php:81
+msgid "Todos os artigos deste assunto no blog."
+msgstr ""
+
+#: functions/pt_faq.php:44
+msgid "Todos os locais"
+msgstr ""
+
+#: parts/header/pag-internas.php:75
+msgid "Todos os projetos deste mesmo segmento."
+msgstr ""
+
+#: parts/home/ana-bt.php:2
+msgid "Trabalhe comigo"
+msgstr ""
+
+#: sidebar.php:18
+msgid "Tópicos da publicação"
+msgstr ""
+
+#: parts/produto/bt-aovivo.php:1
+msgid "Ver ao vivo"
+msgstr ""
+
+#: parts/loop-projeto.php:37
+msgid "ver detalhes"
+msgstr ""
+
+#: single-etheme_portfolio.php:40
+msgid "ver online"
+msgstr ""
+
+#: functions/pt_faq.php:12
+msgid "Ver pergunta"
+msgstr ""
+
+#: parts/footer/menu.php:16
+msgid "Ver todos"
+msgstr ""
+
+#: 404.php:34
+msgid ""
+"Você poderá navegar pelo site através da navegação acima, ou entrar em "
+"contato caso precise de ajuda."
+msgstr ""
+
+#: 404.php:37 template-simples.php:40 woocommerce-cart.php:51
+#: parts/footer/cnpj-horarios.php:6
+msgid "voltar ao site"
+msgstr ""
+
+#: parts/footer/selos.php:30
+msgid "voltar ao topo"
+msgstr ""
+
+#: sidebar.php:13
+msgid "Web designer, 31 anos. Goiás, BR."
+msgstr ""
+
+#: parts/footer/menu.php:13
+msgid "Websites"
+msgstr ""
+
+#: functions/admin.php:8 functions/admin.php:9
+msgid "Whatsapp"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:69
+msgid ""
+"É aqui que a mágica acontece! Nesta fase é feita a <strong>programação do "
+"seu layout</strong>, composta pelo front-end, que codifica a parte visual "
+"(posições, colunas, cores, imagens etc) e o back-end, que une o design com a "
+"linguagem do painel de controle Wordpress, sendo responsável em cumprir as "
+"tarefas e funcionalidades do site."
+msgstr ""
+
+#: archive-afc_depoimentos.php:9
+msgid ""
+"É cliente ou conhece a qualidade dos meus serviços?<br>Conte sua experiência "
+"e junte-se ao time acima!"
+msgstr ""
+
+#: parts/servicos/como-funciona.php:42
+msgid ""
+"É redigido o contrato com informações sobre tudo o que será feito, "
+"obrigações, termos de uso, informes sobre garantia e licença do layout. A "
+"assinatura do contrato é feita digitalmente, com <strong>validade "
+"jurídica</strong>! E no mesmo dia do acordo, você já poderá realizar o a "
+"<strong>primeira parte do pagamento</strong>."
+msgstr ""
+
+#: parts/home/servicos.php:28
+msgid ""
+"É seguido à risca as diretrizes de layout e estratégias do seu modelo de "
+"negócio, alinhado às boas práticas de programação, com o código feito do "
+"zero e SEO amigável."
+msgstr ""

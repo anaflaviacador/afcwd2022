@@ -4243,10 +4243,6 @@ blockquote {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
 }
 
 .prod-venda-mockup {
@@ -4258,6 +4254,10 @@ blockquote {
 .prod-venda-comprar {
   width: 50%;
   padding: 2em;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .prod-venda-meios {
@@ -4940,6 +4940,45 @@ blockquote {
 .afc-menu-afiliadas-txt.ativo {
   color: #9e9b80;
   font-weight: 600;
+}
+
+.prod-preco {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.prod-preco-moeda {
+  position: relative;
+  top: 6px;
+}
+
+.prod-preco-valor {
+  position: relative;
+  font-family: Recoleta, Georgia, sans-serif;
+  color: #eed7c4;
+  font-size: 6em;
+}
+
+.prod-preco-txt {
+  width: 100%;
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
 }
 
 @media screen and (min-width: 1440px) {

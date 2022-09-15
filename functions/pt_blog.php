@@ -5,7 +5,7 @@
 add_action('init', 'afc_cpt_dicas', 1);  
 function afc_cpt_dicas(){
 	$labels = array(
-		'name' => _x('Blog', 'post type general name', 'afcwebdesign'),
+		'name' => _x('Blog', 'post type general name', 'afcwd2022'),
 		'singular_name' => _x('Artigo', 'post type singular name', 'afcwebdesign'),
 		'add_new' => _x('Adicionar novo', 'artigo', 'afcwebdesign'),
 		'add_new_item' => __('Adicionar novo artigo', 'afcwebdesign'),
@@ -44,7 +44,7 @@ function afc_cpt_dicas(){
 	
 
     $catArgs = array(
-        'name' => _x( 'Assunto', 'taxonomy general name', 'afcwebdesign' ),
+        'name' => _x( 'Assunto', 'taxonomy general name', 'afcwd2022' ),
         'singular_name' => _x( 'Assunto', 'taxonomy singular name', 'afcwebdesign' ),
         'search_items' =>  __( 'Procurar', 'afcwebdesign' ),
         'all_items' => __( 'Todos os Assuntos', 'afcwebdesign' ),

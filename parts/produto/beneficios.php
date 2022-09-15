@@ -46,7 +46,7 @@ global $post, $product;
       </div>
       <div class="prod-benefts-item"><img src="<?php echo $urlTema; ?>/assets/images/org-bege-4.svg" loading="lazy" alt="Grafismo" class="prod-benefits-detalhe inverso">
         <div class="prod-benefits-ico">
-          <i class="fa-thin fa-pen-paintbrush"></i>
+          <i class="fa-thin fa-screwdriver-wrench"></i>
         </div>
         <h4>Builder nativo</h4>
         <p class="mb-0 texto-menor"><strong>Monte sua página inicial</strong> com os recursos nativos do tema, habilitando sessões e organizando-as conforme seu negócio, sem precisar de Elementor.</p>
@@ -63,13 +63,10 @@ global $post, $product;
       </div>
       <div class="prod-benefts-item"><img src="<?php echo $urlTema; ?>/assets/images/org-bege-4.svg" loading="lazy" alt="Grafismo" class="prod-benefits-detalhe inverso">
         <div class="prod-benefits-ico">
-          <i class="fa-thin fa-screwdriver-wrench"></i>
+          <i class="fa-thin fa-pen-paintbrush"></i>
         </div>
-        <h4>Instalação do tema*</h4>
-        <p class="mb-0 texto-menor">No suporte estendido você poderá solicitar a instalação gratuitamente de seu tema <strong>sempre quando precisar</strong> nos seus domínios adicionais.</p>
-        <div class="posrel">
-          <a href="https://afcwebdesign.freshdesk.com/support/solutions/articles/70000255069" target="_blank" rel="noopener" class="botao-liso bege">Veja as condições <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
-        </div>
+        <h4>Instalação & Personalização*</h4>
+        <p class="mb-0 texto-menor">Compre seu tema e deixa toda instalação e customização com o studio! São até 8h de personalização para seu site ficar com a identidade do seu negócio.</p>
       </div>
     </div>
     <div class="has-text-align-right texto-menor"><em class="cor-bege">* itens opcionais, com custo adicional.</em></div>

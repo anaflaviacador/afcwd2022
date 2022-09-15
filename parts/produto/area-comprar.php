@@ -32,11 +32,28 @@ $intro = get_field('intro', $post->ID);
           <div class="prod-venda-comprar">
             <h2 class="has-text-align-center">Compre o tema <span class="titulo-cursiva cor-bege-medio"><?php echo $nome; ?></span></h2>
             
-            <div class="wrap-adicionar-carrinho">
+            <?php /*?><div class="wrap-adicionar-carrinho">
                 <?php 
                     do_action( 'woocommerce_single_product_summary' );
                     do_action( 'woocommerce_after_single_product' ); 
                 ?>
+            </div><?php */ ?>
+
+            <?php 
+              $p_original = $product->get_regular_price();
+              $p_promo = $product->get_sale_price();
+              $p_final = $product->get_price();
+            ?>
+            <div class="prod-preco-txt">a partir de<?php echo $p_promo ? ' <del>&nbsp;<span class="cor-bege-medio">R$'.$p_original.'</span>&nbsp;</del>' : '';?></div>
+            <div class="prod-preco">
+              <span class="prod-preco-moeda">R$</span>
+              <span class="prod-preco-valor"><?php echo $p_final; ?></span>
+            </div>
+
+            <div class="flexb-justify-center mb-10px texto-maior">
+              <a href="#" class="botao inverso afirmacao grande">
+                Quero comprar!<i class="fa-light fa-arrow-right-long bt-seta"></i>
+              </a>
             </div>
 
 

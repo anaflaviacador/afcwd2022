@@ -63,4 +63,5 @@ afc_depoimentos(4,'');
 		do_action( 'woocommerce_after_single_product_summary' );
 	echo '</div>'; 
 	do_action( 'woocommerce_after_single_product' );
+	echo '<div class="clear"></div>';
 }

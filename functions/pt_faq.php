@@ -4,15 +4,15 @@ add_action('init', 'afc_type_faq', 1);
 function afc_type_faq(){
   $labels = array(
     'name' => _x('Perguntas e respostas', 'post type general name', 'afcwd2022'),
-    'singular_name' => _x('Pergunta', 'post type singular name', 'afcwd2022'),
-    'add_new' => _x('Adicionar pergunta', 'post type - add new', 'afcwd2022'),
-    'add_new_item' => __('Adicionar nova pergunta', 'afcwd2022'),
-    'edit_item' => __('Editar pergunta', 'afcwd2022'),
-    'new_item' => __('Nova pergunta', 'afcwd2022'),
-    'view_item' => __('Ver pergunta', 'afcwd2022'),
-    'search_items' => __('Buscar', 'afcwd2022'),
-    'not_found' =>  __('Nenhum pergunta encontrada', 'afcwd2022'),
-    'not_found_in_trash' => __('Nenhum pergunta encontrada na lixeira', 'afcwd2022'),
+    'singular_name' => _x('Pergunta', 'post type singular name', 'afcwebdesign'),
+    'add_new' => _x('Adicionar pergunta', 'post type - add new', 'afcwebdesign'),
+    'add_new_item' => __('Adicionar nova pergunta', 'afcwebdesign'),
+    'edit_item' => __('Editar pergunta', 'afcwebdesign'),
+    'new_item' => __('Nova pergunta', 'afcwebdesign'),
+    'view_item' => __('Ver pergunta', 'afcwebdesign'),
+    'search_items' => __('Buscar', 'afcwebdesign'),
+    'not_found' =>  __('Nenhum pergunta encontrada', 'afcwebdesign'),
+    'not_found_in_trash' => __('Nenhum pergunta encontrada na lixeira', 'afcwebdesign'),
     'parent_item_colon' => '',
     'menu_name' => 'F.A.Q.'
   );
@@ -38,16 +38,16 @@ function afc_type_faq(){
   register_post_type('afc_faq',$args);
 
     $tags = array(
-        'name' => _x( 'Local de uso', 'taxonomy general name', 'afcwd2022' ),
-        'singular_name' => _x( 'Local', 'taxonomy singular name', 'afcwd2022' ),
-        'search_items' =>  __( 'Procurar', 'afcwd2022' ),
-        'all_items' => __( 'Todos os locais', 'afcwd2022' ),
-        'parent_item' => __( 'Local principal', 'afcwd2022' ),
-        'parent_item_colon' => __( 'Local mãe:', 'afcwd2022' ),
-        'edit_item' => __( 'Editar', 'afcwd2022' ),
-        'update_item' => __( 'Atualizar', 'afcwd2022' ),
-        'add_new_item' => __( 'Adicionar', 'afcwd2022' ),
-        'new_item_name' => __( 'Novo local', 'afcwd2022' ),
+        'name' => _x( 'Local de uso', 'taxonomy general name', 'afcwebdesign' ),
+        'singular_name' => _x( 'Local', 'taxonomy singular name', 'afcwebdesign' ),
+        'search_items' =>  __( 'Procurar', 'afcwebdesign' ),
+        'all_items' => __( 'Todos os locais', 'afcwebdesign' ),
+        'parent_item' => __( 'Local principal', 'afcwebdesign' ),
+        'parent_item_colon' => __( 'Local mãe:', 'afcwebdesign' ),
+        'edit_item' => __( 'Editar', 'afcwebdesign' ),
+        'update_item' => __( 'Atualizar', 'afcwebdesign' ),
+        'add_new_item' => __( 'Adicionar', 'afcwebdesign' ),
+        'new_item_name' => __( 'Novo local', 'afcwebdesign' ),
         'menu_name' => 'Categorias'
     );
 

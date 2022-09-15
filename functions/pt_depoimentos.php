@@ -3,7 +3,7 @@
 add_action('init', 'afc_cpt_depoimentos', 1);  
 function afc_cpt_depoimentos(){
 	$labels = array(
-		'name' => _x('Depoimentos', 'post type general name', 'afcwebdesign'),
+		'name' => _x('Depoimentos', 'post type general name', 'afcwd2022'),
 		'singular_name' => _x('Depoimento', 'post type singular name', 'afcwebdesign'),
 		'add_new' => _x('Add novo', 'depoimento', 'afcwebdesign'),
 		'add_new_item' => __('Add novo depoimento', 'afcwebdesign'),
