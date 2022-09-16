@@ -52,19 +52,6 @@ function afc_cpt_portfolio(){
         'new_item_name' => __( 'Nova tag de projeto', 'afcwebdesign' ),
         'menu_name' => 'Tags de projeto'
 	);
-	
-	// Custom taxonomy for Project Tags
-	register_taxonomy('tag',array('etheme_portfolio'), array(
-        'hierarchical' => true,
-        'labels' => $labels,
-        'show_ui' => true,
-        'show_in_rest' => true, // gutenberg
-        'query_var' => true,
-        'public' => true,
-        'publicly_queryable' => true,
-        'show_admin_column' => true,
-        'rewrite' => array( 'slug' => 'tipo-projeto' ),
-	));
 
     // Custom taxonomy for Project Tags
     register_taxonomy('tipoprojeto', array('etheme_portfolio'), array(
