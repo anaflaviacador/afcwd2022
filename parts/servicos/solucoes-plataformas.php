@@ -1,9 +1,13 @@
 <?php
 $urlTema = get_template_directory_uri();
-$img1 = '6135';
-$img2 = '6136';
-$img3 = '6137';
-$img4 = '6138';
+$img1 = '6445'; // producao
+$img2 = '6446'; // producao
+$img3 = '6447'; // producao
+$img4 = '6448'; // producao
+// $img1 = '6135'; // local
+// $img2 = '6136'; // local
+// $img3 = '6137'; // local
+// $img4 = '6138'; // local
 ?>
 <div class="container mb-2em">
     <h2 class="para-seo">Soluções</h2>

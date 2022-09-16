@@ -1,6 +1,7 @@
 <?php
 $urlTema = get_template_directory_uri();
-$anafoto = '6094';
+$anafoto = '6438'; // producao
+// $anafoto = '6094'; // local
 ?>
 <div class="aninha">
     <div class="container">

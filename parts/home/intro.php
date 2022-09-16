@@ -1,6 +1,7 @@
 <?php
 $urlTema = get_template_directory_uri();
-$heroImg = '6087';
+$heroImg = '6441'; // producao
+// $heroImg = '6087'; // local
 ?>
 
 <div class="home-intro">

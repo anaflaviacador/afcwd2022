@@ -1,7 +1,8 @@
 <?php
 $urlTema = get_template_directory_uri();
 global $post, $product;
-$mockupImg = '6093';
+$mockupImg = '6444'; // producao
+// $mockupImg = '6093'; // local
 
 $nome = get_field('nome_produto', $post->ID);
 $print = get_field('print_principal', $post->ID);

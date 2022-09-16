@@ -1,5 +1,9 @@
-<?php $bannerNuvem = '6368' ?>
-<?php $fotoAna = '6130' ?>
+<?php 
+$bannerNuvem = '6440'; // producao
+// $bannerNuvem = '6368'; // local
+$fotoAna = '6439'; // producao
+// $fotoAna = '6130'; // local
+?>
 <aside id="lateral-post" class="colmenor flexb-column dir">
     <div class="aside-topo">
         <div class="post-autoria w-clearfix">

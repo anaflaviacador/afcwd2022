@@ -2,7 +2,8 @@
 global $post;
 $info = get_field('info_proj_resumo', $post->ID);
 $print = get_field('imagem_extra_print', $post->ID);
-$mockupImg = '6093';
+$mockupImg = '6444'; // producao
+// $mockupImg = '6093'; // local
 ?>
 
 <div class="proj-grid-item">

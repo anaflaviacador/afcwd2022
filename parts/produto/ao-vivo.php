@@ -1,7 +1,8 @@
 <?php
 $urlTema = get_template_directory_uri();
 global $post, $product;
-$mockupIpadImg = '6092';
+$mockupIpadImg = '6443'; // producao
+// $mockupIpadImg = '6092'; // local
 ?>
 
 <div id="aovivo" class="area-jump">

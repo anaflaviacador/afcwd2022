@@ -1,7 +1,9 @@
 <?php
 $urlTema = get_template_directory_uri();
-$img1 = '6139';
-$img2 = '6140';
+$img1 = '6449'; // producao
+$img2 = '6450'; // producao
+// $img1 = '6139'; // local
+// $img2 = '6140'; // local
 ?>
 
 

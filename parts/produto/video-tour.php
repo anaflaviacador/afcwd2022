@@ -1,7 +1,8 @@
 <?php
 $urlTema = get_template_directory_uri();
 global $post, $product;
-$printPainel = '6269';
+$printPainel = '6437'; // producao
+// $printPainel = '6269'; // local
 ?>
 
    <div class="container">
