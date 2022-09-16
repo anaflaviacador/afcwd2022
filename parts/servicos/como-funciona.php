@@ -1,6 +1,7 @@
 <?php
 $urlTema = get_template_directory_uri();
-$img = '6141';
+$img = '6442'; // producao
+// $img = '6141'; // local
 ?>
 
 <div id="como-funciona" class="container <?php if(is_post_type_archive('etheme_portfolio')) :?>padding-0<?php else: ?>area-jump<?php endif; ?>">
