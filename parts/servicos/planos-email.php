@@ -122,7 +122,7 @@
       </div>
       <div class="plano-sessao last">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<em class="cor-verde">Faca sua assinatura e cancele quando quiser</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<em class="cor-verde">Cancele quando quiser</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-botao emailmkt">

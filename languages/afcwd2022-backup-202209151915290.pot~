@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AFC 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-15 19:35+0000\n"
+"POT-Creation-Date: 2022-09-15 19:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -28,8 +28,14 @@ msgstr ""
 msgid "50mil envios"
 msgstr ""
 
-#: parts/servicos/planos-manutencao.php:429 parts/servicos/planos-email.php:125
-msgid "<em class=\"cor-verde\">Cancele quando quiser</em>"
+#: parts/servicos/planos-email.php:125
+msgid ""
+"<em class=\"cor-verde\">Faca sua assinatura e cancele quando quiser</em>"
+msgstr ""
+
+#: parts/servicos/planos-manutencao.php:429
+msgid ""
+"<em class=\"cor-verde\">Faça sua assinatura e cancele quando quiser</em>"
 msgstr ""
 
 #: parts/servicos/planos-manutencao.php:9
@@ -99,11 +105,12 @@ msgid "<em>diário</em>"
 msgstr ""
 
 #: parts/servicos/planos-manutencao.php:358
-msgid "<em>edições de <strong>baixa</strong> complexidade</em>"
+msgid "<em>edições </em><strong><em>baixa</em></strong><em> complexidade</em>"
 msgstr ""
 
 #: parts/servicos/planos-manutencao.php:362
-msgid "<em>edições de <strong>média</strong> complexidade</em>"
+msgid ""
+"<em>edições de </em><strong><em>média</em></strong><em> complexidade</em>"
 msgstr ""
 
 #: parts/servicos/planos-manutencao.php:110

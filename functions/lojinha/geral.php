@@ -176,37 +176,25 @@ function woocommerce_maybe_add_multiple_products_to_cart() {
 
         $product_id        = apply_filters( 'woocommerce_add_to_cart_product_id', absint( $product_id ) );
         $was_added_to_cart = false;
+
         $adding_to_cart    = wc_get_product( $product_id );
 
         if ( ! $adding_to_cart ) {
             continue;
         }
 
-        $add_to_cart_handler = apply_filters( 'woocommerce_add_to_cart_handler', $adding_to_cart->product_type, $adding_to_cart );
+        // only works for simple atm
+        if ( $adding_to_cart->is_type( 'simple' ) ) {
 
-        /*
-        * Sorry.. if you want non-simple products, you're on your own.
-        *
-        * Related: WooCommerce has set the following methods as private:
-        * WC_Form_Handler::add_to_cart_handler_variable(),
-        * WC_Form_Handler::add_to_cart_handler_grouped(),
-        * WC_Form_Handler::add_to_cart_handler_simple()
-        *
-        * Why you gotta be like that WooCommerce?
-        */
-        if ( 'simple' !== $add_to_cart_handler ) {
-            continue;
-        }
+            // quantity applies to all products atm
+            $quantity          = empty( $_REQUEST['quantity'] ) ? 1 : wc_stock_amount( $_REQUEST['quantity'] );
+            $passed_validation = apply_filters( 'woocommerce_add_to_cart_validation', true, $product_id, $quantity );
 
-        // For now, quantity applies to all products.. This could be changed easily enough, but I didn't need this feature.
-        $quantity          = empty( $_REQUEST['quantity'] ) ? 1 : wc_stock_amount( $_REQUEST['quantity'] );
-        $passed_validation = apply_filters( 'woocommerce_add_to_cart_validation', true, $product_id, $quantity );
+            if ( $passed_validation && false !== WC()->cart->add_to_cart( $product_id, $quantity ) ) {
+                wc_add_to_cart_message( array( $product_id => $quantity ), true );
+            }
 
-        if ( $passed_validation && false !== WC()->cart->add_to_cart( $product_id, $quantity ) ) {
-            wc_add_to_cart_message( array( $product_id => $quantity ), true );
         }
     }
 }
-
-// Fire before the WC_Form_Handler::add_to_cart_action callback.
 add_action( 'wp_loaded', 'woocommerce_maybe_add_multiple_products_to_cart', 15 );

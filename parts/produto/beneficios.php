@@ -66,7 +66,10 @@ global $post, $product;
           <i class="fa-thin fa-pen-paintbrush"></i>
         </div>
         <h4>Instalação & Personalização*</h4>
-        <p class="mb-0 texto-menor">Compre seu tema e deixa toda instalação e customização com o studio! São até 8h de personalização para seu site ficar com a identidade do seu negócio.</p>
+        <p class="mb-0 texto-menor">Compre seu tema e <strong>deixa toda instalação e customização com o studio</strong>! São até 8h de personalização para seu site ficar com a identidade do seu negócio.</p>
+        <div class="posrel">
+          <a href="https://afcwebdesign.freshdesk.com/support/solutions/articles/70000634857" target="_blank" rel="noopener" class="botao-liso bege">Veja as condições <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
+        </div>
       </div>
     </div>
     <div class="has-text-align-right texto-menor"><em class="cor-bege">* itens opcionais, com custo adicional.</em></div>

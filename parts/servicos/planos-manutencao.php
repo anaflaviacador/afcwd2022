@@ -355,11 +355,11 @@
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>edições </em><strong><em>baixa</em></strong><em> complexidade</em>', 'afcwd2022' ); ?></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>edições de <strong>baixa</strong> complexidade</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in last">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>edições de </em><strong><em>média</em></strong><em> complexidade</em>', 'afcwd2022' ); ?></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>edições de <strong>média</strong> complexidade</em>', 'afcwd2022' ); ?></div>
         </div>
       </div>
       <div class="plano-sessao">
@@ -426,7 +426,7 @@
       </div>
       <div class="plano-sessao last">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<em class="cor-verde">Faca sua assinatura e cancele quando quiser</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<em class="cor-verde">Cancele quando quiser</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
           <div class="plano-botao">

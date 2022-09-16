@@ -81,13 +81,15 @@ $mockupIpadImg = '6092';
             <?php endif; ?>
 
           </ul>
-          <div class="flexb-justify-center hide-mobile">
+          <?php /* ?><div class="flexb-justify-center hide-mobile">
             <a href="#comprar" class="botao inverso verde grande jump"><?php get_template_part('parts/produto/bt','comprar'); ?> <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
-          </div>
+          </div><?php */ ?>
         </div>
+        <?php /* ?>
         <div class="flexb-justify-center hide-desk">
           <a href="#" class="botao inverso verde"><?php get_template_part('parts/produto/bt','comprar'); ?> <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
         </div>
+        <?php */ ?>
       </div>
     </div>
   </div>

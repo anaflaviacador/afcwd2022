@@ -4249,6 +4249,9 @@ blockquote {
   position: relative;
   z-index: 2;
   width: 50%;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 .prod-venda-comprar {
@@ -4695,13 +4698,8 @@ blockquote {
   text-transform: uppercase;
 }
 
-.jornada-cart-item.com-link {
-  -webkit-transition: background-color 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out;
-}
-
 .jornada-cart-item.com-link:hover {
-  background-color: #d7d2e1;
+  font-weight: 600;
 }
 
 .jornada-cart-item.ativo {
@@ -4955,16 +4953,15 @@ blockquote {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
   line-height: 1;
 }
 
 .prod-preco-moeda {
   position: relative;
   top: 6px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .prod-preco-valor {
@@ -4976,9 +4973,13 @@ blockquote {
 
 .prod-preco-txt {
   width: 100%;
-  font-size: 0.9em;
+  font-size: 1em;
   font-style: italic;
   text-align: center;
+}
+
+.prod-preco-antigo {
+  text-decoration: line-through;
 }
 
 @media screen and (min-width: 1440px) {

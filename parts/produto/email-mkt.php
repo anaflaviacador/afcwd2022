@@ -8,10 +8,12 @@ global $post, $product;
       <div class="prod-mail-cnt">
         <h2>Email <span class="titulo-cursiva cor-azul">marketing</span></h2>
         <p class="mb-10px">Utilize o seu serviço de <strong><em>e-mail marketing favorito</em></strong> ou incorpore um formulário personalizado.</p>
+        <?php /* ?>
         <div class="flexb-justify-center hide-mobile">
           <a href="#comprar" class="botao inverso azul jump">comprar<span class="bt-seta"></span></a>
           <a href="#aovivo" class="botao ml-20px azul jump">ver ao vivo<span class="bt-seta"></span></a>
         </div>
+        <?php */ ?>
       </div>
       <div class="prod-mail-brands">
         <img src="<?php echo $urlTema; ?>/assets/images/org-azul-3.svg" loading="lazy" aria-hidden="true" alt="Grafismo" class="prod-mail-detalhe">
@@ -40,9 +42,11 @@ global $post, $product;
           </svg>
 
       </div>
+      <?php /* ?>
       <div class="flexb-justify-center hide-desk">
         <a href="#" class="botao inverso azul"><?php get_template_part('parts/produto/bt','comprar'); ?> <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
         <a href="#" class="botao ml-20px azul"><?php get_template_part('parts/produto/bt','aovivo'); ?> <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
       </div>
+      <?php */ ?>
     </div>
   </div>
