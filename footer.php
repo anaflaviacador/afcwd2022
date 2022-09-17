@@ -17,7 +17,7 @@ $lang = esc_attr(get_bloginfo('language'));
             <?php get_template_part('parts/footer/menu'); ?>
 
             <div class="rodape-news-infos">
-                <?php if (!is_user_logged_in()) get_template_part('parts/footer/newsletter'); ?>
+                <?php get_template_part('parts/footer/newsletter'); ?>
 
                 <div class="rodape-infos">
                     <a href="/orcamento-projeto" class="botao negacao"><?php esc_html_e( 'Orçar projeto', 'afcwd2022' ); ?> <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
