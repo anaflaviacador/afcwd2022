@@ -43,7 +43,7 @@ article {
         &:not(.botao):hover,
         &:not(.botao):focus {
             outline: 0;
-            color: $roxo;
+            color: darken($roxo,6%);
             text-decoration: none;
         }
 
@@ -58,35 +58,29 @@ article {
         margin-top: 0
     }
 
-    // blockquote {
-    //     background: var(--cor-cinza);
-    //     border: 1px solid #ddd;
+    blockquote {
+        &.rosa {
+            border-left-color: $rosa-medio;
+        }
 
-    //     &.rosa {
-    //         background: var(--cor-rosa-claro);
-    //         border-color: var(--cor-rosa-medio);
-    //     }
+        &.roxo {
+            border-left-color: $roxo-medio;
+        }
 
-    //     &.roxo {
-    //         background: var(--cor-roxo-claro);
-    //         border-color: var(--cor-roxo-medio);
-    //     }
+        &.verde {
+            border-left-color: $verde-medio;
+        }
 
-    //     &.verde {
-    //         background: var(--cor-verde-claro);
-    //         border-color: var(--cor-verde-medio);
-    //     }
+        &.bege {
+            border-left-color: $bege-medio;
+        }
 
-    //     &.bege {
-    //         background: var(--cor-bege-claro);
-    //         border-color: var(--cor-bege-medio);
-    //     }
+        &.azul {
+            border-left-color: $azul-medio;
+        }
 
-    //     &.azul {
-    //         background: var(--cor-azul-claro);
-    //         border-color: var(--cor-azul-medio);
-    //     }
-    // }
+        p:last-of-type { margin-bottom: 0 !important;}
+    }
 
     .videofolio {
         width: 100%;
