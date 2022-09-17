@@ -33,7 +33,7 @@ $urlTema = get_template_directory_uri();
 
           <div class="afc-login-wrap">
             <div class="login-area-form">
-              <?php echo do_shortcode('[wpforms id="5973" title="false"]'); ?>
+              <?php echo do_shortcode('[wpforms id="6505" title="false"]'); ?>
             </div>
             <div class="login-txt">
               <div>

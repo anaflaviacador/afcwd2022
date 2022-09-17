@@ -12,7 +12,7 @@
 	
 	input, textarea, .wpforms-field-phone > div {margin-top: 5px !important}
 
-    input:not([type="radio"]):not([type="checkbox"]) {
+    input:not([type="radio"]):not([type="checkbox"]), textarea {
         @extend .input-text;
     }
 
