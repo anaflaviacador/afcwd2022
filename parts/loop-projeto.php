@@ -8,7 +8,7 @@ $mockupImg = '6444'; // producao
 
 <div class="proj-grid-item">
     
-    <?php $terms = wp_get_post_terms($post->ID, 'tag'); ?>
+    <?php $terms = wp_get_post_terms($post->ID, 'tipoprojeto'); ?>
     <?php if ($terms) : ?>
         <div class="fonte-caixa-baixa proj-grid-cat">
             <?php $out = array();

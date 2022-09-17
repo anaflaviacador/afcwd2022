@@ -25,7 +25,7 @@ $depo = get_field('info_proj_relato', $post->ID);
     <div class="colunas-wrap-dupla mb-3em">
       <div class="colmenor esq flexb-column flexb-justify-space-between">
         <div class="projeto-info">
-        <?php $terms = wp_get_post_terms($post->ID, 'tag'); ?>
+        <?php $terms = wp_get_post_terms($post->ID, 'tipoprojeto'); ?>
         <?php if ($terms) : ?>
             <h3 class="cor-roxo mb-0"><span class="titulo-cursiva fonte-caixa-baixa">
                 <?php $out = array();
