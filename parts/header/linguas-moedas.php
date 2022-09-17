@@ -1,7 +1,6 @@
 <?php $urlTema = get_template_directory_uri(); ?>  
-
+<div class="flexb">
 <?php if(class_exists('SitePress')) : ?>
-    <div class="flexb">
     <?php $languages = icl_get_languages('skip_missing=0&orderby=code'); ?>
     <?php if(!empty($languages)) : ?>
         <div class="area-linguas">
@@ -12,12 +11,10 @@
             <?php endforeach; ?>
         </div>
     <?php endif; ?>
-    </div>
 <?php /*else : ?>
-    <div class="flexb">
-        <div class="area-linguas">
-          <a href="#pt" class="glink w-inline-block notranslate" onclick="doGTranslate('pt|pt');return false;" class="glink w-inline-block"><img src="<?php echo $urlTema;?>/assets/images/flag-pt-br.svg" loading="lazy" alt="Português Brasileiro"></a>
-          <a href="#en" class="glink w-inline-block notranslate" onclick="doGTranslate('pt|en');return false;" class="glink w-inline-block"><img src="<?php echo $urlTema;?>/assets/images/flag-en.svg" loading="lazy" alt="English"></a>
-        </div>
+    <div class="area-linguas">
+        <a href="#pt" class="glink w-inline-block notranslate" onclick="doGTranslate('pt|pt');return false;" class="glink w-inline-block"><img src="<?php echo $urlTema;?>/assets/images/flag-pt-br.svg" loading="lazy" alt="Português Brasileiro"></a>
+        <a href="#en" class="glink w-inline-block notranslate" onclick="doGTranslate('pt|en');return false;" class="glink w-inline-block"><img src="<?php echo $urlTema;?>/assets/images/flag-en.svg" loading="lazy" alt="English"></a>
     </div>
 <?php */ endif; ?>  
+</div>
