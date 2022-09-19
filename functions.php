@@ -174,3 +174,10 @@ function my_lost_password_page( $lostpassword_url, $redirect ) {
     // return home_url( '/minha-conta/redefinir-senha/?redirect_to=' . $redirect );
     return home_url( '/minha-conta/redefinir-senha/' );
 }
+
+// ========================================//
+// WPROCKET
+// ========================================//
+if(defined('WP_ROCKET_FILE')){
+    add_filter( 'pre_get_rocket_option_emoji', function($value){ return 0; } );
+}
