@@ -30,8 +30,8 @@ body.login {
             background-image: url('https://afcweb.design/wp-content/uploads/2022/09/foto-fundo-login-afcwebdesign.jpg');
             background-position: 50% 50%;
             opacity: .3;
-            background-size: contain;
-            background-repeat: repeat-x;
+            background-size: cover;
+            background-repeat: no-repeat;
             z-index: 1;
         }
     }
