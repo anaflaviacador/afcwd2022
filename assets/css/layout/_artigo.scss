@@ -6,7 +6,8 @@ article {
 
     & > *,
     .wp-block-gallery,
-    .wp-block-column >* {
+    .wp-block-image, 
+    .wp-block-column > * {
         margin-bottom: 1.8rem;
     }
 
