@@ -171,5 +171,6 @@ if (class_exists( 'Affiliate_WP' )) {
 add_filter( 'lostpassword_url', 'my_lost_password_page', 10, 2 );
 function my_lost_password_page( $lostpassword_url, $redirect ) {
     // https://wpforms.com/how-to-customize-the-wordpress-password-reset-form/
-    return home_url( '/minha-conta/redefinir-senha/?redirect_to=' . $redirect );
+    // return home_url( '/minha-conta/redefinir-senha/?redirect_to=' . $redirect );
+    return home_url( '/minha-conta/redefinir-senha/' );
 }

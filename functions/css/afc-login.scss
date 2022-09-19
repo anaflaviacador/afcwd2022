@@ -104,7 +104,7 @@ body.login {
         &[href$="action=register"], &[href$="wp-login.php"] {
             color: white; font-weight: bold;
         }
-        &[href$="action=register"] { color: $afirmacao;
+        &[href$="action=register"] { color: $verde-medio;
             &:before { content: '\f234'; font-weight: bold; font-family: $fonte-icone; display: inline-block; margin-right: 4px; }
         }
     }
