@@ -60,53 +60,10 @@ function afc_checkout_field_alerta_email( $field, $key ){
 // mensagens de aviso sobre o nao parcelamento para planos recorrentes, descontos e parcelamentos
 add_action( 'woocommerce_review_order_before_payment', 'afc_mensagem_acima_pagamentos' );
 function afc_mensagem_acima_pagamentos() {  
-    $time = date('d-m-Y');
-    $hoje = date("d",strtotime($time));
-    $cat_check = false;
-
     echo '<h3>Meio de pagamento</h3>';
-
-    foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
-        $product = $cart_item['data'];
-        
-        if ( has_term( 'planos', 'product_cat', $product->get_id() ) ) {
-            $cat_check = true;            
-
-            $recurring_total = 0;
-
-            foreach ( WC()->cart->cart_contents as $item_key => $item ){
-                $item_quantity = $item['quantity'];
-                $item_monthly_price = $item['data']->subscription_price;
-                $item_recurring_total = $item_quantity * $item_monthly_price;
-                $recurring_total += $item_recurring_total; 
-            }
-
-            
-            echo '<p class="mb-10px texto-menor"><strong class="cor-negacao">Atenção:</strong> <u>Assinar um plano não é o mesmo que parcelar uma compra.</u> Será cobrado do seu cartão <strong>R$'.$recurring_total.' sempre no dia '.$hoje.'</strong>, incluindo hoje, e se manterá enquanto sua assinatura estiver ativa (como um Netflix). Você pode pedir reembolso apenas nos próximos 7 dias e cancelar a renovação quando quiser, sem tempo mínimo!</p>';
-
-            echo '<p class="mb-0 texto-menor">Aceitamos cartão de crédito estrangeiro! É só ter um cartão apto a realizar transação internacional (será em moeda BRL) de bandeira Visa ou Master.</p>';
-            
-
-            break;
-
-        } else {
-
-            // $valorCart = WC()->cart->get_cart_subtotal();
-            $valorCart = WC()->cart->subtotal; // valor sem $
-
-            echo '<p class="mb-10px texto-menor">';
-                if($valorCart < 90 ) echo 'Parcelamos compras acima de R$90 em até 6x sem juros e damos 5%OFF no Pix para compras acima de R$180!</p>';
-                elseif ($valorCart >= 90 && $valorCart < 180) echo 'Damos 5% de desconto no Pix para compras acima de R$180! Você pode parcelar sua compra no cartão de crédito em até 6x sem juros.</p>';
-                elseif ($valorCart >= 180) echo 'Pague no cartão em <strong>até 6x s/juros</strong> ou ganhe <strong>5%OFF no Pix</strong>!</p>';
-
-                echo '<p class="mb-0 texto-menor">Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito internacional cadastrado para fazer a transação na moeda BRL.';
-            echo '</p>';
-
-            break;
-
-        }
-    }
- 
+    echo '<p class="mb-10px texto-menor">';
+        echo '<p class="mb-0 texto-menor">Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito apto a transações internacionais em sua conta (pagamento em moeda BRL).';
+    echo '</p>';
 }
 
 
