@@ -24,7 +24,7 @@ $politicapg = get_option( 'wp_page_for_privacy_policy' );
                 <div class="cor-bege ml-10px">●</div>
             </li>
             <li class="toplinks-li">
-                <a href="https://api.whatsapp.com/send?phone=5562996269941" target="_blank">Contato</a>
+                <a href="/contato" target="_blank">Contato</a>
                 <div class="cor-bege ml-10px">●</div>
             </li>
             <li class="toplinks-li">
