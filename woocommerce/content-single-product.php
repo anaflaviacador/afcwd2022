@@ -45,7 +45,7 @@ get_template_part('parts/produto/video-tour');
 get_template_part('parts/produto/ao-vivo');
 get_template_part('parts/produto/area-comprar');
 get_template_part('parts/produto/faq');
-afc_depoimentos(4,'');
+afc_depoimentos(4,'template-aurora');
 
 
 // ========================================//

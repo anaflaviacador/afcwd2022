@@ -88,7 +88,7 @@ function afc_depoimentos($num = '', $term = '') {
 			'orderby' => 'rand',
 			'posts_per_page' => $num, 
 			'tax_query' => array(
-				array( 'taxonomy' => 'cat_depo', 'terms' => $term ),
+				array( 'taxonomy' => 'cat_depo', 'field' => 'slug', 'terms' => $term ),
 			),
 		);
 	} else {
