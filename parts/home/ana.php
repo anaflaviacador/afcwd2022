@@ -11,7 +11,7 @@ $anafoto = '6438'; // producao
                 
                 <?php echo wp_get_attachment_image($anafoto,'full', '', [
                     'class' => 'aninha-img',
-                    'loading' => 'lazy',
+                    // 'loading' => 'lazy',
                 ]); ?>
 
                 <img src="<?php echo $urlTema; ?>/assets/images/org-bege-2.svg" loading="lazy" data-w-id="e50aa55c-835d-892b-b330-f816055f58d7" alt="Grafismo" aria-hidden="true" class="aninha-detalhe-2">

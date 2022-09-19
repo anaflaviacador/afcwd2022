@@ -29,7 +29,7 @@ $mockupIpadImg = '6443'; // producao
                                             <?php if($print): ?>
                                                 <?php echo wp_get_attachment_image($print['ID'],'medium', '', [
                                                     'class' => 'mockup-img',
-                                                    'loading' => 'lazy',
+                                                    // 'loading' => 'lazy',
                                                 ]); ?>    
                                             <?php endif; ?>     
                                         </div>

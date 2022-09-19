@@ -12,7 +12,7 @@ $intro = get_field('intro', $post->ID);
   <div class="container">
     <div class="prod-intro">
       <div class="prod-intro-preview hide-mobile">
-            <img src="<?php echo $urlTema; ?>/assets/images/flor-roxo-1.svg" loading="lazy" alt="Grafismo" class="prod-intro-detalhe">
+            <img src="<?php echo $urlTema; ?>/assets/images/flor-roxo-1.svg" alt="Grafismo" class="prod-intro-detalhe">
         <div class="prod-preview">
           <div class="proj-grid-item">
                 <div class="mockup">
@@ -20,7 +20,7 @@ $intro = get_field('intro', $post->ID);
                         <?php if($print): ?>
                             <?php echo wp_get_attachment_image($print['ID'],'full', '', [
                                 'class' => 'mockup-img',
-                                'loading' => 'lazy',
+                                // 'loading' => 'lazy',
                             ]); ?>    
                         <?php endif; ?>            
                     </div>

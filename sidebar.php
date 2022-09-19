@@ -10,7 +10,7 @@ $fotoAna = '6439'; // producao
             <div class="autoria-foto">
                 <?php echo wp_get_attachment_image($fotoAna,'thumbnail', '', [
                     'class' => 'autoria-foto-item',
-                    'loading' => 'lazy',
+                    // 'loading' => 'lazy',
                 ]); ?></div>
             <div class="autoria-sobre">
                 <h4 class="mb-0"><span class="titulo-cursiva cor-roxo">Ana Flávia</span></h4>
@@ -34,7 +34,7 @@ $fotoAna = '6439'; // producao
             <a href="https://cliente.nuvemhospedagem.com.br/aff.php?aff=20" target="_blank" class="dblock w-inline-block">
                 <?php echo wp_get_attachment_image($bannerNuvem,'medium', '', [
                     'class' => 'fullwidth',
-                    'loading' => 'lazy',
+                    // 'loading' => 'lazy',
                 ]); ?>                
             </a>
         <div class="has-text-align-right">

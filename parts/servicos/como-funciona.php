@@ -122,7 +122,7 @@ $img = '6442'; // producao
 
         <?php echo wp_get_attachment_image($img,'full', '', [
             'class' => 'pro-criativo-img',
-            'loading' => 'lazy',
+            // 'loading' => 'lazy',
         ]); ?>
     </div>
 </div>

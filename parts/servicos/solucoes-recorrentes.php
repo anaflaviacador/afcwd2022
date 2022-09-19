@@ -22,7 +22,7 @@ $img2 = '6450'; // producao
                 <div class="area-servico-cliente">
                     <?php echo wp_get_attachment_image($img1,'full', '', [
                         'class' => 'servico-cliente-img',
-                        'loading' => 'lazy',
+                        // 'loading' => 'lazy',
                     ]); ?>
                     <div class="servico-cnt">
                         <h4 class="mb-0"><?php esc_html_e( 'Email marketing', 'afcwd2022' ); ?></h4>
@@ -38,7 +38,7 @@ $img2 = '6450'; // producao
                 <div class="area-servico-cliente">
                     <?php echo wp_get_attachment_image($img2,'full', '', [
                         'class' => 'servico-cliente-img',
-                        'loading' => 'lazy',
+                        // 'loading' => 'lazy',
                     ]); ?>
                     <div class="servico-cnt">
                         <h4 class="mb-0"><?php esc_html_e( 'Manutenção técnica', 'afcwd2022' ); ?></h4>

@@ -28,7 +28,7 @@
         <?php if (has_post_thumbnail()) : ?>
             <?php echo the_post_thumbnail('large', array(
                 'class' => 'fullwidth',
-                'loading' => 'lazy'
+                // 'loading' => 'lazy'
             )); ?>
         <?php endif; ?>
     </figure>

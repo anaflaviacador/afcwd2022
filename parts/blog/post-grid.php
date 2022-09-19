@@ -8,7 +8,7 @@ $terms = get_the_terms($post->ID,'categoria_blog');
         <?php if (has_post_thumbnail($post->ID)) : ?>
             <?php echo the_post_thumbnail('afc_blog_thumb', array(
                 'class' => 'post-grid-img',
-                'loading' => 'lazy'
+                // 'loading' => 'lazy'
             )); ?>
         <?php endif; ?>
     </figure>

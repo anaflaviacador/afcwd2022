@@ -15,7 +15,7 @@ $img4 = '6448'; // producao
         <div class="area-servico">
             <?php echo wp_get_attachment_image($img1,'full', '', [
                 'class' => 'servico-img',
-                'loading' => 'lazy',
+                // 'loading' => 'lazy',
             ]); ?>
             <h3 class="servico-titulo">
                 <?php _e( 'Design <span class="titulo-cursiva cor-verde">exclusivo</span>', 'afcwd2022' ); ?>
@@ -27,7 +27,7 @@ $img4 = '6448'; // producao
         <div class="area-servico">
             <?php echo wp_get_attachment_image($img2,'full', '', [
                 'class' => 'servico-img',
-                'loading' => 'lazy',
+                // 'loading' => 'lazy',
             ]); ?>
             <h3 class="servico-titulo">
                 <?php _e( 'Código <span class="titulo-cursiva cor-verde">otimizado</span>', 'afcwd2022' ); ?>
@@ -39,7 +39,7 @@ $img4 = '6448'; // producao
         <div class="area-servico">
             <?php echo wp_get_attachment_image($img3,'full', '', [
                 'class' => 'servico-img',
-                'loading' => 'lazy',
+                // 'loading' => 'lazy',
             ]); ?>
             <h3 class="servico-titulo">
                 <?php _e( 'Suporte <span class="titulo-cursiva cor-verde">direcionado</span>', 'afcwd2022' ); ?>
@@ -51,7 +51,7 @@ $img4 = '6448'; // producao
         <div class="area-servico">
             <?php echo wp_get_attachment_image($img4,'full', '', [
                 'class' => 'servico-img',
-                'loading' => 'lazy',
+                // 'loading' => 'lazy',
             ]); ?>
             <h3 class="servico-titulo">
                 <?php _e( 'Painel <span class="titulo-cursiva cor-verde">dedicado</span>', 'afcwd2022' ); ?>

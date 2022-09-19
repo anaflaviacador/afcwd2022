@@ -22,7 +22,7 @@ $printPainel = '6437'; // producao
         <div class="prod-tour-video-cover">
             <?php echo wp_get_attachment_image($printPainel,'full', '', [
                 'class' => 'fullwidth',
-                'loading' => 'lazy',
+                // 'loading' => 'lazy',
             ]); ?>   
           <div class="prod-tour-video-overlay"></div>
           <div class="prod-tour-play"><i class="fa-thin fa-circle-play"></i></div>

@@ -7,7 +7,7 @@ $urlTema = get_template_directory_uri();
 
 <div class="header-site">
     <a href="<?php echo $homeurl; ?>" aria-current="page" class="marca-site w-inline-block w--current">
-        <img src="<?php echo $urlTema; ?>/assets/images/marca-afcwebdesign.svg" loading="lazy"
+        <img src="<?php echo $urlTema; ?>/assets/images/marca-afcwebdesign.svg" 
             alt="Marca AFC Web Design">
     </a>
 
