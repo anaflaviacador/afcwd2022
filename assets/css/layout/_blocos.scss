@@ -1,3 +1,21 @@
+// cores via $afcwd_colors
+@each $name, $color in $afcwd_colors {
+    .has-#{$name}-background-color {
+        background-color: $color;
+    }
+
+    .has-#{$name}-color {
+        color: $color;
+    }
+
+    .has-#{$name}-border-color {
+        border-color: $color;
+    }
+}
+
+// ========================================//
+// BLOCO PLUGIN PREMIUM
+// ========================================//
 .item-servico {
     width: 100%; position: relative;
     background: white;

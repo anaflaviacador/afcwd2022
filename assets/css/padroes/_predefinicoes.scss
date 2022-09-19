@@ -2,36 +2,59 @@
 /// codigos hex originais, mas use apenas as cores em var()
 $negacao: #BA5040;
 $afirmacao: #A7AF66;
-
 $grafite: #333;
 $cinza: #999;
 $cinza-medio: #ddd;
 $cinza-claro: #f5f5f5;
 $texto: #444;
 $branco: #fff;
-
 $rosa: #d19389;
 $rosa-medio: #EBB7AF;
 $rosa-claro: #FBF6F6;
 $negacao: #BA5040;
-
 $roxo: #a297b3;
 $roxo-medio: #D1C8E2;
 $roxo-claro: #F7F5FA;
 $roxo-escuro: #564b66;
-
 $verde: #9e9a6f;
 $verde-medio: #DDDABD;
 $verde-claro: #F8F8F4;
-
 $bege: #D1A680;
 $bege-medio: #F6DAC1;
 $bege-claro: #FDF9F6;
-
 $azul: #8AA8C4;
 $azul-medio: #CBD9E5;
 $azul-claro: #F7F9FB;
 $azul-escuro: #4e759a;
+
+
+$afcwd_colors: 	(negacao, $negacao),
+                (afirmacao, $afirmacao),
+                (grafite, $grafite),
+                (cinza, $cinza),
+                (cinza-medio, $cinza-medio),
+                (cinza-claro, $cinza-claro),
+                (texto, $texto),
+                (branco, $branco),
+                (rosa, $rosa),
+                (rosa-medio, $rosa-medio),
+                (rosa-claro, $rosa-claro),
+                (negacao, $negacao),
+                (roxo, $roxo),
+                (roxo-medio, $roxo-medio),
+                (roxo-claro, $roxo-claro),
+                (roxo-escuro, $roxo-escuro),
+                (verde, $verde),
+                (verde-medio, $verde-medio),
+                (verde-claro, $verde-claro),
+                (bege, $bege),
+                (bege-medio, $bege-medio),
+                (bege-claro, $bege-claro),
+                (azul, $azul),
+                (azul-medio, $azul-medio),
+                (azul-claro, $azul-claro),
+                (azul-escuro, $azul-escuro);
+
 
 /////// FAMILIAS VARIAVEIS
 $fonte-padrao: 'Work Sans', system-ui, sans-serif;

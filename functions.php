@@ -1,5 +1,37 @@
 <?php
 // ========================================//
+// VARIAVEIS GLOBAIS
+// ========================================// 
+$afcwd_colors = array(
+    array("nome" => "negacao", "hex" => "#BA5040"),
+    array("nome" => "afirmacao", "hex" => "#A7AF66"),
+    array("nome" => "grafite", "hex" => "#333"),
+    array("nome" => "cinza", "hex" => "#999"),
+    array("nome" => "cinza-medio", "hex" => "#ddd"),
+    array("nome" => "cinza-claro", "hex" => "#f5f5f5"),
+    array("nome" => "texto", "hex" => "#444"),
+    array("nome" => "branco", "hex" => "#fff"),
+    array("nome" => "rosa", "hex" => "#d19389"),
+    array("nome" => "rosa-medio", "hex" => "#EBB7AF"),
+    array("nome" => "rosa-claro", "hex" => "#FBF6F6"),
+    array("nome" => "negacao", "hex" => "#BA5040"),
+    array("nome" => "roxo", "hex" => "#a297b3"),
+    array("nome" => "roxo-medio", "hex" => "#D1C8E2"),
+    array("nome" => "roxo-claro", "hex" => "#F7F5FA"),
+    array("nome" => "roxo-escuro", "hex" => "#564b66"),
+    array("nome" => "verde", "hex" => "#9e9a6f"),
+    array("nome" => "verde-medio", "hex" => "#DDDABD"),
+    array("nome" => "verde-claro", "hex" => "#F8F8F4"),
+    array("nome" => "bege", "hex" => "#D1A680"),
+    array("nome" => "bege-medio", "hex" => "#F6DAC1"),
+    array("nome" => "bege-claro", "hex" => "#FDF9F6"),
+    array("nome" => "azul", "hex" => "#8AA8C4"),
+    array("nome" => "azul-medio", "hex" => "#CBD9E5"),
+    array("nome" => "azul-claro", "hex" => "#F7F9FB"),
+    array("nome" => "azul-escuro", "hex" => "#4e759a")
+);
+
+// ========================================//
 // SETUP THEME
 // ========================================// 
 add_action( 'after_setup_theme', 'afc_setup' );
@@ -45,6 +77,38 @@ function afc_setup() {
 
     // loja
     add_theme_support( 'woocommerce' );
+
+    // gutenberg
+    add_theme_support( 'editor-styles' );
+    add_theme_support( 'responsive-embeds' );
+
+    add_theme_support('editor-font-sizes', array());
+    add_theme_support('disable-custom-colors');
+    add_theme_support('disable-custom-gradients');   
+
+    add_theme_support('editor-gradient-presets', array() );
+
+
+    // cores do tema
+    global $afcwd_colors;
+    
+    // array para adicionar ao editor
+    $args_cores_editor = []; 
+
+    // criando array de estrutura das cores do gutenberg via declarações do $afcwd_colors
+    for ($i=0; $i < count($afcwd_colors); $i++) { 
+        array_push($args_cores_editor, array(
+            'name'  => $afcwd_colors[$i]['nome'],
+            'slug'  => $afcwd_colors[$i]['nome'],
+            'color' => $afcwd_colors[$i]['hex']
+        ));
+    }
+
+    // aplicando a estrutura criada acima
+    add_theme_support('editor-color-palette', $args_cores_editor);
+
+    // remove padroes de blocos
+    remove_theme_support('core-block-patterns');
 }
 
 
