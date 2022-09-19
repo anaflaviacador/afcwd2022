@@ -54,25 +54,24 @@ jQuery(document).ready(function ($) {
     //////////////////////////////////////// GET MOCKUP HEIGHT
     var mockup = $('.mockup-area'),
         mockupiPad = $('.mockup-area-ipad'),
-        almID = $('#ajax-load-more');      
+        almID = $('#ajax-load-more');  
+        
+    var updateAlturaMockup = function() {
+        mockup = $('.mockup-area');
+        mockup.each(function (index, el) {
+            var height = $(el).height();
+            $(el).attr("style", "--alturaMockup: " + height + "px");
+        });
+    }
+
+    updateAlturaMockup();
 
     if (almID.length > 0) {
         console.log('tem mockup alm');
         window.almComplete = function (alm) {
             console.log('alm completou');
-            mockup.each(function (index, el) {
-                var height = $(el).height();
-                $(el).attr("style", "--alturaMockup: " + height + "px");
-            });
+            updateAlturaMockup();
         }; 
-    } else {
-        if (mockup.length > 0) {
-            console.log('tem mockup');
-            mockup.each(function (index, el) {
-                var height = $(el).height();
-                $(el).attr("style", "--alturaMockup: " + height + "px");
-            });            
-        }
     }
 
     if (mockupiPad.length > 0) {
