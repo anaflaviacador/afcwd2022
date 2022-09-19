@@ -39,6 +39,7 @@ body, html {
 @import "layout/wpforms";
 @import "layout/blocos";
 @import "layout/afilliatewp";
+@import "layout/cookielaw";
 
 // projetos
 body.page-servicos, body.home {
@@ -114,3 +115,5 @@ body.post-type-archive-etheme_portfolio, body.tax-tipoprojeto {
 }
 
 #pag-simples { overflow: hidden !important; }
+
+// cookies
