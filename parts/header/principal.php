@@ -27,7 +27,7 @@ $urlTema = get_template_directory_uri();
     <ul role="list" class="shop-nav">
         <li class="shop-nav-li">
             <a href="<?php echo $conta; ?>" class="shop-nav-link w-inline-block"><img
-                    src="<?php echo $urlTema; ?>/assets/images/ico-login.svg" loading="lazy" alt="Login"
+                    src="<?php echo $urlTema; ?>/assets/images/ico-login.svg" alt="Login"
                     aria-hidden="true" class="shop-nav-ico mr-10px">
                 <span>
                     <?php if(is_user_logged_in()): ?>
@@ -40,7 +40,7 @@ $urlTema = get_template_directory_uri();
         </li>
         <li class="shop-nav-li">
             <a href="<?php echo $pgCarrinho; ?>" class="shop-nav-link w-inline-block"><img
-                    src="<?php echo $urlTema; ?>/assets/images/ico-cart.svg" loading="lazy"
+                    src="<?php echo $urlTema; ?>/assets/images/ico-cart.svg"
                     alt="<?php esc_html_e( 'Carrinho', 'afcwd2022' ); ?>" class="shop-nav-ico">
                 <span class="shop-nav-ncart">
                     <?php echo $numItens; ?>

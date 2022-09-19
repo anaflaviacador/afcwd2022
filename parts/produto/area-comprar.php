@@ -22,9 +22,9 @@ $intro = get_field('intro', $post->ID);
       <?php endif; ?>
 
       <div class="container">
-        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-1.svg" loading="lazy" aria-hidden="true" alt="Grafismo" class="prod-venda-flor-1 sem-clique">
-        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-2.svg" loading="lazy" aria-hidden="true" alt="Grafismo" class="prod-venda-flor-3 sem-clique">
-        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-3.svg" loading="lazy" aria-hidden="true" alt="Grafismo" class="prod-venda-flor-2 sem-clique">
+        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-1.svg" aria-hidden="true" alt="Grafismo" class="prod-venda-flor-1 sem-clique">
+        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-2.svg" aria-hidden="true" alt="Grafismo" class="prod-venda-flor-3 sem-clique">
+        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-3.svg" aria-hidden="true" alt="Grafismo" class="prod-venda-flor-2 sem-clique">
 
         
         <?php do_action( 'woocommerce_before_single_product' ); // notificacoes ?>
@@ -84,7 +84,7 @@ $intro = get_field('intro', $post->ID);
         <div class="container">
           <div class="prod-venda">
             <div class="prod-venda-col">
-                <img src="<?php echo $urlTema; ?>/assets/images/logos-pgtos2@2x.png" loading="lazy" alt="Formas de pagamento: cartão, pix ou paypal" style="height:19px;">
+                <img src="<?php echo $urlTema; ?>/assets/images/logos-pgtos2@2x.png" alt="Formas de pagamento: cartão, pix ou paypal" style="height:19px;">
             </div>
             <div class="prod-venda-col">
               <div><em>A nota fiscal é emitida em até 7 dias após o pagamento.</em></div>

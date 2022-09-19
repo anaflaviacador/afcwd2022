@@ -24,12 +24,12 @@ $urlTema = get_template_directory_uri();
       <div class="login-fundo-overlay"></div>
 
     <div class="afc-login-container pt-2em pb-2em">
-        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-2.svg" loading="lazy" aria-hidden="true" alt="Grafismo" class="login-detalhe-fundo-2">
-        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-1.svg" loading="lazy" aria-hidden="true" alt="Grafismo" class="login-detalhe-fundo-1">
+        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-2.svg" aria-hidden="true" alt="Grafismo" class="login-detalhe-fundo-2">
+        <img src="<?php echo $urlTema; ?>/assets/images/flor-preto-1.svg" aria-hidden="true" alt="Grafismo" class="login-detalhe-fundo-1">
 
       <div class="flexb-column flexb-center">
         <a href="/" class="marca-site marca-login w-inline-block">
-            <img src="<?php echo $urlTema; ?>/assets/images/marca-afcwebdesign-negative.svg" loading="lazy" alt="Marca AFC web Design">
+            <img src="<?php echo $urlTema; ?>/assets/images/marca-afcwebdesign-negative.svg" alt="Marca AFC web Design">
         </a>
 
         <div class="afc-login-wrap">

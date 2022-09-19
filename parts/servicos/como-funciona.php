@@ -18,7 +18,7 @@ $img = '6442'; // producao
                     <div class="splide__track">
                         <div class="splide__list">
                             <div class="splide__slide">
-                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" loading="lazy" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo">
+                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo">
                                     <div class="pro-criativo-item-num">1</div>
                                     <h3 class="mb-0"><?php esc_html_e( 'Contato e Orçamento', 'afcwd2022' ); ?></h3>
                                     <p class="pro-criativo-item-cnt-txt">
@@ -27,7 +27,7 @@ $img = '6442'; // producao
                                 </div>
                             </div>
                             <div class="splide__slide pro-criativo-item">
-                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" loading="lazy" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo inverso">
+                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo inverso">
                                     <div class="pro-criativo-item-num">2</div>
                                     <h3 class="mb-0"><?php esc_html_e( 'Briefing', 'afcwd2022' ); ?></h3>
                                     <p class="pro-criativo-item-cnt-txt">
@@ -36,7 +36,7 @@ $img = '6442'; // producao
                                 </div>
                             </div>
                             <div class="splide__slide pro-criativo-item">
-                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" loading="lazy" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo">
+                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo">
                                     <div class="pro-criativo-item-num">3</div>
                                     <h3 class="mb-0"><?php esc_html_e( 'Contrato e pagamento', 'afcwd2022' ); ?></h3>
                                     <p class="pro-criativo-item-cnt-txt">
@@ -45,7 +45,7 @@ $img = '6442'; // producao
                                 </div>
                             </div>
                             <div class="splide__slide pro-criativo-item">
-                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" loading="lazy" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo inverso">
+                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo inverso">
                                     <div class="pro-criativo-item-num">4</div>
                                     <h3 class="mb-0"><?php esc_html_e( 'Fase de Design', 'afcwd2022' ); ?></h3>
                                     <p class="pro-criativo-item-cnt-txt">
@@ -54,7 +54,7 @@ $img = '6442'; // producao
                                 </div>
                             </div>
                             <div class="splide__slide pro-criativo-item">
-                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" loading="lazy" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo">
+                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo">
                                     <div class="pro-criativo-item-num">5</div>
                                     <h3 class="mb-0"><?php esc_html_e( 'Avaliação', 'afcwd2022' ); ?></h3>
                                     <p class="pro-criativo-item-cnt-txt">
@@ -63,7 +63,7 @@ $img = '6442'; // producao
                                 </div>
                             </div>
                             <div class="splide__slide pro-criativo-item">
-                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" loading="lazy" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo inverso">
+                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo inverso">
                                     <div class="pro-criativo-item-num">6</div>
                                     <h3 class="mb-0"><?php esc_html_e( 'Fase de Código', 'afcwd2022' ); ?></h3>
                                     <p class="pro-criativo-item-cnt-txt">
@@ -72,7 +72,7 @@ $img = '6442'; // producao
                                 </div>
                             </div>
                             <div class="splide__slide pro-criativo-item">
-                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" loading="lazy" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo">
+                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo">
                                     <div class="pro-criativo-item-num">7</div>
                                     <h3 class="mb-0"><?php esc_html_e( 'Refinamento', 'afcwd2022' ); ?></h3>
                                     <p class="pro-criativo-item-cnt-txt">
@@ -81,7 +81,7 @@ $img = '6442'; // producao
                                 </div>
                             </div>
                             <div class="splide__slide pro-criativo-item">
-                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" loading="lazy" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo inverso">
+                                <div class="pro-criativo-item-cnt"><img src="<?php echo $urlTema; ?>/assets/images/org-azul-2.svg" alt="Grafismo" aria-hidden="true" class="pro-criativo-item-fundo inverso">
                                     <div class="pro-criativo-item-num">8</div>
                                     <h3 class="mb-0"><?php esc_html_e( 'Site no ar!', 'afcwd2022' ); ?></h3>
                                     <p class="pro-criativo-item-cnt-txt">

@@ -6,7 +6,7 @@ $urlTema = get_template_directory_uri();
     <div class="container">
         <div class="home-servicos-wrap">
             <div class="home-serv-col">
-                <img src="<?php echo $urlTema;?>/assets/images/org-verde-1.svg" loading="lazy" alt="grafismo orgânico" aria-hidden="true" class="home-serv-fundo-1 sem-clique">
+                <img src="<?php echo $urlTema;?>/assets/images/org-verde-1.svg" alt="grafismo orgânico" aria-hidden="true" class="home-serv-fundo-1 sem-clique">
 
                 <h3>
                     <?php _e('Design único <span class="titulo-cursiva cor-verde">e elegante</span>','afcwd2022'); ?>
@@ -19,7 +19,7 @@ $urlTema = get_template_directory_uri();
             </div>
 
             <div class="home-serv-col middle">
-                <img src="<?php echo $urlTema;?>/assets/images/org-verde-1.svg" loading="lazy" alt="grafismo orgânico" aria-hidden="true" class="home-serv-fundo-2 sem-clique">
+                <img src="<?php echo $urlTema;?>/assets/images/org-verde-1.svg" alt="grafismo orgânico" aria-hidden="true" class="home-serv-fundo-2 sem-clique">
 
                 <h3>
                     <?php _e('Código limpo <span class="titulo-cursiva cor-verde">e otimizado</span>','afcwd2022'); ?>
@@ -30,7 +30,7 @@ $urlTema = get_template_directory_uri();
             </div>
 
             <div class="home-serv-col last">
-                <img src="<?php echo $urlTema;?>/assets/images/org-verde-1.svg" loading="lazy" alt="grafismo orgânico" aria-hidden="true" class="home-serv-fundo-3 sem-clique">
+                <img src="<?php echo $urlTema;?>/assets/images/org-verde-1.svg" alt="grafismo orgânico" aria-hidden="true" class="home-serv-fundo-3 sem-clique">
 
                 <h3>
                     <?php _e('Suporte <span class="titulo-cursiva cor-verde">direcionado</span>','afcwd2022'); ?>

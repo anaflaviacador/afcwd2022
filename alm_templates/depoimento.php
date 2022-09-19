@@ -14,7 +14,7 @@ if($produto) $nometema = get_field('nome_produto',$produto);
 
 <div class="cliente">
     <div class="cliente-container w-clearfix">
-        <img src="<?php echo $urlTema; ?>/assets/images/aspas.svg" loading="lazy" aria-hidden="true" alt="Grafismo" class="ico-aspas">
+        <img src="<?php echo $urlTema; ?>/assets/images/aspas.svg" aria-hidden="true" alt="Grafismo" class="ico-aspas">
 
         <?php if (has_post_thumbnail($post->ID)) : ?>
             <figure class="cliente-foto mb-0">

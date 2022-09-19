@@ -78,20 +78,20 @@ $img4 = '6448'; // producao
                     </div>
                 </div>
 
-                <img src="<?php echo $urlTema; ?>/assets/images/arrow-sessao.svg" loading="lazy" alt="Seta" class="area-plataformas-div" aria-hidden="true">
+                <img src="<?php echo $urlTema; ?>/assets/images/arrow-sessao.svg" alt="Seta" class="area-plataformas-div" aria-hidden="true">
 
                 <div class="plataformas-lista overflowy">
                     <div class="plataforma-item">
                         <em><?php esc_html_e( 'gestão de websites', 'afcwd2022' ); ?></em>
-                        <img src="<?php echo $urlTema; ?>/assets/images/logo-webflow.svg" loading="lazy" alt="Logo Wordpress" height="" class="plataforma-logo">
+                        <img src="<?php echo $urlTema; ?>/assets/images/logo-webflow.svg" alt="Logo Wordpress" height="" class="plataforma-logo">
                     </div>
                     <div class="plataforma-item">
                         <em><?php esc_html_e( 'gestão de lojas online', 'afcwd2022' ); ?></em>
-                        <img src="<?php echo $urlTema; ?>/assets/images/logo-wordpress.svg" loading="lazy" alt="Logo Woocommerce" height="" class="plataforma-logo">
+                        <img src="<?php echo $urlTema; ?>/assets/images/logo-wordpress.svg" alt="Logo Woocommerce" height="" class="plataforma-logo">
                     </div>
                     <div class="plataforma-item">
                         <em><?php esc_html_e( 'design front-end', 'afcwd2022' ); ?></em>
-                        <img src="<?php echo $urlTema; ?>/assets/images/logo-woocommerce.svg" loading="lazy" alt="Logo webflow" height="" class="plataforma-logo">
+                        <img src="<?php echo $urlTema; ?>/assets/images/logo-woocommerce.svg" alt="Logo webflow" height="" class="plataforma-logo">
                     </div>
                 </div>
             </div>

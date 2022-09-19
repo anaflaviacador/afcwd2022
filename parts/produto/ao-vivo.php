@@ -6,13 +6,13 @@ $mockupIpadImg = '6443'; // producao
 ?>
 
 <div id="aovivo" class="area-jump">
-    <div class="container"><img src="<?php echo $urlTema; ?>/assets/images/org-verde-2.svg" loading="lazy" alt="" class="prod-exs-fundo">
+    <div class="container"><img src="<?php echo $urlTema; ?>/assets/images/org-verde-2.svg" alt="" class="prod-exs-fundo">
       <div class="container-menor has-text-align-center">
         <h2>Exemplos de <span class="titulo-cursiva cor-verde">uso e clientes</span></h2>
         <p>Veja abaixo <strong>prints de blogs e sites</strong> que fazem uso do template e uma lista com vários outros <strong>exemplos ao vivo</strong>.</p>
       </div>
       <div class="prod-exs">
-        <div class="prod-prints"><img src="<?php echo $urlTema; ?>/assets/images/flor-verde-1.svg" loading="lazy" alt="Grafismo" class="prod-prints-flor">
+        <div class="prod-prints"><img src="<?php echo $urlTema; ?>/assets/images/flor-verde-1.svg" alt="Grafismo" class="prod-prints-flor">
           <div class="prod-prints-slider">
             <div id="prints-template" class="splide">
               <div class="splide__track">

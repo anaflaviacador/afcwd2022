@@ -16,8 +16,8 @@ $printPainel = '6437'; // producao
         </div>
       </div>
       <div class="prod-tour-video">
-        <img src="<?php echo $urlTema; ?>/assets/images/org-rosa-1.svg" loading="lazy" alt="" class="prod-tour-video-detalhe">
-        <img src="<?php echo $urlTema; ?>/assets/images/flor-rosa-4.svg" loading="lazy" aria-hidden="true" alt="" class="prod-tour-video-flor">
+        <img src="<?php echo $urlTema; ?>/assets/images/org-rosa-1.svg" alt="" class="prod-tour-video-detalhe">
+        <img src="<?php echo $urlTema; ?>/assets/images/flor-rosa-4.svg" aria-hidden="true" alt="" class="prod-tour-video-flor">
 
         <div class="prod-tour-video-cover">
             <?php echo wp_get_attachment_image($printPainel,'full', '', [
