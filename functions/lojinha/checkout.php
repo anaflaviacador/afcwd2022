@@ -95,9 +95,9 @@ function afc_mensagem_acima_pagamentos() {
             $valorCart = WC()->cart->subtotal; // valor sem $
 
             echo '<p class="mb-10px texto-menor">';
-                if($valorCart < 90 ) echo 'Parcelamos compras acima de R$90 em até 6x sem juros e damos 10%OFF no Pix para compras acima de R$180!</p>';
-                elseif ($valorCart >= 90 && $valorCart < 180) echo 'Damos 10% de desconto no Pix para compras acima de R$180! Você pode parcelar sua compra no cartão de crédito em até 6x sem juros.</p>';
-                elseif ($valorCart >= 180) echo 'Pague no cartão em <strong>até 6x s/juros</strong> ou ganhe <strong>10%OFF no Pix</strong>!</p>';
+                if($valorCart < 90 ) echo 'Parcelamos compras acima de R$90 em até 6x sem juros e damos 5%OFF no Pix para compras acima de R$180!</p>';
+                elseif ($valorCart >= 90 && $valorCart < 180) echo 'Damos 5% de desconto no Pix para compras acima de R$180! Você pode parcelar sua compra no cartão de crédito em até 6x sem juros.</p>';
+                elseif ($valorCart >= 180) echo 'Pague no cartão em <strong>até 6x s/juros</strong> ou ganhe <strong>5%OFF no Pix</strong>!</p>';
 
                 echo '<p class="mb-0 texto-menor">Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito internacional cadastrado para fazer a transação na moeda BRL.';
             echo '</p>';
