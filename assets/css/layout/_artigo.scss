@@ -142,14 +142,14 @@ article {
         }
     }
 
-    ul:not(.share-links):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
+    ul:not(.wc-item-meta):not(.commentlist):not(.share-links):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
         li::marker {
             content: '\2192\0020\0020';
             font-size: 1.3em;
         }
     }
 
-    ol:not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
+    ol:not(.wc-item-meta):not(.commentlist):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
         list-style-type: decimal;
     }
 

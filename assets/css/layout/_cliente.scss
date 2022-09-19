@@ -11,3 +11,25 @@ span.afc-pedido-status {
 	&.refunded {color: LightCoral;}
 	&.failed {color: red;}
 }
+
+// ========================================//
+// COMENTARIOS DE PEDIDO
+// ========================================//
+.commentlist {
+	margin: 0 0 2em !important;
+    // list-style-position: inside; 
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-bottom-width: 2px;
+	border-right-width: 2px;
+	border-radius: 5px;
+	padding: 6px 12px !important;
+
+    li {
+        list-style-type: decimal-leading-zero; margin-bottom: 1em;
+
+        &::marker {color: $azul; font-weight: bold; }
+
+        p { margin-bottom: 10px; }
+		.meta { font-weight: bold; background-color: $azul-claro;}
+    }
+}
