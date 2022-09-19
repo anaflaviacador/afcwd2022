@@ -25,7 +25,6 @@ function afc_load_styles() {
     ////////// scripts
     wp_enqueue_script( 'texto-animado', $urltheme . '/assets/js/texto-animado.js?v='.$vs, array('jquery-core'), '', true);
     wp_enqueue_script( 'whatsapp', $urltheme . '/assets/js/whatapp.js?v='.$vs, array('jquery-core'), '', true);
-    // wp_enqueue_script( 'loader', $urltheme . '/assets/js/loader.js?v='.$vs, array('jquery-core'), '', true);
     if(is_singular('afc_blog')) wp_enqueue_script( 'indice', $urltheme . '/assets/js/indice.js?v='.$vs, array('jquery-core'), '', true);
     wp_enqueue_script( 'scripts', $urltheme . '/assets/js/app.js?v='.$vs, array('jquery-core'), '', true);
 
