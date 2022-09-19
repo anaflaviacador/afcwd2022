@@ -87,9 +87,23 @@ jQuery(document).ready(function ($) {
     //////////////////////////////////////// DEPOIMENTOS
     var clientes = $('.clientes-lista');
     if (clientes.length > 0) {
-        janela.on("load", function () {
-            clientes.masonry({
-                itemSelector: '.cliente'
+        // janela.on("load", function () {
+        //     clientes.masonry({
+        //         itemSelector: '.cliente'
+        //     });
+        // });
+        var masonryArgs = {
+            itemSelector: '.cliente',
+            percentPosition: true
+        };
+        clientes.each(function (index, el) {
+            var $thisMasonry = $(el);
+            $thisMasonry.masonry(masonryArgs);
+            $thisMasonry.find('img').each(function (index, el) {
+                $(el).on('load', function (event) {
+                    console.log('imagem de cliente carregou');
+                    $thisMasonry.masonry('layout');
+                });
             });
         });
     }
