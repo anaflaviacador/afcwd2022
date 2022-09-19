@@ -18,7 +18,7 @@
     <li class="menu-rodape-li">
         <a href="/loja/temas/aurora" class="menu-rodape-link"><?php esc_html_e( 'Loja online', 'afcwd2022' ); ?></a>
         <a href="/loja/temas/aurora" class="menu-rodape-sublink"><?php esc_html_e( 'Template Aurora', 'afcwd2022' ); ?></a>
-        <a href="/loja/como-comprar" class="menu-rodape-sublink"><?php esc_html_e( 'Como comprar', 'afcwd2022' ); ?></a>
+        <?php /* ?><a href="/loja/como-comprar" class="menu-rodape-sublink"><?php esc_html_e( 'Como comprar', 'afcwd2022' ); ?></a><?php */ ?>
         <a onclick="openFreshdesk()" href="#ticket" class="menu-rodape-sublink"><?php esc_html_e( 'Suporte da loja', 'afcwd2022' ); ?></a>
         <a href="/loja/rastrear-pedido" class="menu-rodape-sublink"><?php esc_html_e( 'Rastrear pedido', 'afcwd2022' ); ?></a>
         <a href="/termos" class="menu-rodape-sublink"><?php esc_html_e( 'Termos de uso', 'afcwd2022' ); ?></a>
@@ -27,7 +27,7 @@
         <a href="/minha-conta" class="menu-rodape-link"><?php esc_html_e( 'Cliente', 'afcwd2022' ); ?></a>
         <a href="/minha-conta" class="menu-rodape-sublink"><?php esc_html_e( 'Entrar no painel', 'afcwd2022' ); ?></a>
         <a href="/criar-conta" class="menu-rodape-sublink"><?php esc_html_e( 'Criar uma conta', 'afcwd2022' ); ?></a>
-        <!-- <a href="#" class="menu-rodape-sublink"><?php //esc_html_e( 'Programa de afiliados', 'afcwd2022' ); ?></a> -->
+        <a href="/termos/programa-afiliadas" class="menu-rodape-sublink"><?php esc_html_e( 'Programa de afiliados', 'afcwd2022' ); ?></a>
         <a href="/minha-conta/briefing" class="menu-rodape-sublink"><?php esc_html_e( 'Formulário de Briefing', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
         <a href="/minha-conta/bonus" class="menu-rodape-sublink"><?php esc_html_e( 'Acervo de plugins', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
     </li>

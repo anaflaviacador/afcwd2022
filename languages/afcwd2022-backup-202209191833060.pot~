@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AFC 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-19 18:33+0000\n"
+"POT-Creation-Date: 2022-09-15 19:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -125,7 +125,7 @@ msgid ""
 "serviços e forma de trabalho.</p>"
 msgstr ""
 
-#: parts/area-login.php:42
+#: parts/area-login.php:40
 msgid "<span class=\"titulo-cursiva cor-bege\">painel</span><br>área cliente"
 msgstr ""
 
@@ -218,7 +218,7 @@ msgid ""
 "dblock\">montagem do email seguindo práticas e ações anti-spam</em>"
 msgstr ""
 
-#: parts/servicos/solucoes-recorrentes.php:46
+#: parts/servicos/solucoes-recorrentes.php:44
 msgid ""
 "<strong>Enquanto você cuida do seu negócio, o studio cuida do seu site!"
 "</strong> São realizadas otimizações e atualizações de sua plataforma "
@@ -361,7 +361,7 @@ msgstr ""
 msgid "Aproveite e leia também os artigos abaixo"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:24
+#: parts/servicos/solucoes-plataformas.php:20
 msgid ""
 "Aqui no studio é produzido um <strong>layout exclusivo</strong> para ti, com "
 "a estética mais adequada para o seu público. Com design elegante, "
@@ -370,7 +370,7 @@ msgid ""
 "sem perder elegância e facilidade de navegação."
 msgstr ""
 
-#: parts/servicos/como-funciona.php:61
+#: parts/servicos/como-funciona.php:60
 msgid ""
 "Aqui você irá <strong>analisar a proposta</strong> de layout e ter o direito "
 "de até <em>3 lista de modificações</em> para o projeto ficar bem alinhado "
@@ -378,7 +378,7 @@ msgid ""
 "site. Não avançamos para a próxima fase enquanto esta não for aprovada!"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:52
+#: parts/servicos/como-funciona.php:51
 msgid ""
 "Aqui é fase de pesquisa e produção de layout com base nos requisitos do "
 "briefing. É produzida a <strong>proposta das principais páginas do seu "
@@ -386,7 +386,7 @@ msgid ""
 "irão depender do seu tipo de site."
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:74
+#: parts/servicos/solucoes-plataformas.php:70
 msgid "As melhores <span class=\"titulo-cursiva cor-bege\">plataformas</span>"
 msgstr ""
 
@@ -402,7 +402,7 @@ msgstr ""
 msgid "Atendimento de seg à sexta, das 14h às 17h."
 msgstr ""
 
-#: parts/servicos/como-funciona.php:59
+#: parts/servicos/como-funciona.php:58
 msgid "Avaliação"
 msgstr ""
 
@@ -422,7 +422,7 @@ msgstr ""
 msgid "Blogs"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:32
+#: parts/servicos/como-funciona.php:31
 msgid "Briefing"
 msgstr ""
 
@@ -454,7 +454,7 @@ msgstr ""
 msgid "CNPJ 24.014.911/0001-36<br>Seg à Sexta, das 14h às 17h"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:79
+#: parts/servicos/como-funciona.php:78
 msgid ""
 "Com a finalização de todo o código do site, chega a <strong>etapa de "
 "testes</strong>. Aqui você têm acesso a um ambiente controlado para <strong>"
@@ -463,7 +463,7 @@ msgid ""
 "não conseguiu enxergar na primeira avaliação."
 msgstr ""
 
-#: parts/servicos/como-funciona.php:88
+#: parts/servicos/como-funciona.php:87
 msgid ""
 "Com seu site totalmente refinado, é hora de <strong>coloca-lo em sua "
 "hospedagem</strong> e começar a receber visitas! Sua <strong>garantia de 3 "
@@ -472,8 +472,12 @@ msgid ""
 "aulas para você ter o treinamento completo de seu painel!"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:11
+#: parts/servicos/como-funciona.php:10
 msgid "Como <span class=\"titulo-cursiva cor-azul\">funciona</span>"
+msgstr ""
+
+#: parts/footer/menu.php:21
+msgid "Como comprar"
 msgstr ""
 
 #: parts/servicos/nav-interna.php:13
@@ -492,11 +496,11 @@ msgstr ""
 msgid "Confirmação"
 msgstr ""
 
-#: parts/servicos/solucoes-recorrentes.php:33
+#: parts/servicos/solucoes-recorrentes.php:31
 msgid "conhecer planos"
 msgstr ""
 
-#: parts/servicos/solucoes-recorrentes.php:49
+#: parts/servicos/solucoes-recorrentes.php:47
 msgid "conhecer planos "
 msgstr ""
 
@@ -504,7 +508,7 @@ msgstr ""
 msgid "Conhecer projetos"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:13
+#: parts/servicos/como-funciona.php:12
 msgid ""
 "Conheça as <em>8 etapas</em> de produção, desde o primeiro contato com o "
 "studio até o site ir ao ar!"
@@ -518,11 +522,11 @@ msgstr ""
 msgid "Contato"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:23
+#: parts/servicos/como-funciona.php:22
 msgid "Contato e Orçamento"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:41
+#: parts/servicos/como-funciona.php:40
 msgid "Contrato e pagamento"
 msgstr ""
 
@@ -531,7 +535,7 @@ msgid ""
 "Cotação <span class=\"menu-mob-link-subitem cotacao\">orçar projeto</span>"
 msgstr ""
 
-#: parts/area-login.php:47 parts/footer/menu.php:29
+#: parts/area-login.php:45 parts/footer/menu.php:29
 msgid "Criar uma conta"
 msgstr ""
 
@@ -539,7 +543,7 @@ msgstr ""
 msgid "Criptografia via"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:33
+#: parts/servicos/solucoes-plataformas.php:29
 msgid "Código <span class=\"titulo-cursiva cor-verde\">otimizado</span>"
 msgstr ""
 
@@ -561,11 +565,11 @@ msgid ""
 "                    para empreendedoras e influencers."
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:21
+#: parts/servicos/solucoes-plataformas.php:17
 msgid "Design <span class=\"titulo-cursiva cor-verde\">exclusivo</span>"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:93
+#: parts/servicos/solucoes-plataformas.php:89
 msgid "design front-end"
 msgstr ""
 
@@ -591,11 +595,11 @@ msgid ""
 "produtividade e empreendedorismo."
 msgstr ""
 
-#: parts/servicos/solucoes-recorrentes.php:28
+#: parts/servicos/solucoes-recorrentes.php:26
 msgid "Email marketing"
 msgstr ""
 
-#: parts/servicos/solucoes-recorrentes.php:30
+#: parts/servicos/solucoes-recorrentes.php:28
 msgid ""
 "Engaje com seu público por email e trabalhe com listas, automações, "
 "segmentações, campanhas e armazenamento de <strong>leads ilimitados</strong>!"
@@ -607,7 +611,7 @@ msgstr ""
 msgid "Entrar no painel"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:25
+#: parts/servicos/como-funciona.php:24
 msgid ""
 "Entre em contato com o studio através da nossa <strong>calculadora de "
 "cotação</strong>, <strong>email</strong> ou <strong>whatsapp</strong> para "
@@ -640,11 +644,11 @@ msgstr ""
 msgid "Fale comigo"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:68
+#: parts/servicos/como-funciona.php:67
 msgid "Fase de Código"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:50
+#: parts/servicos/como-funciona.php:49
 msgid "Fase de Design"
 msgstr ""
 
@@ -672,21 +676,21 @@ msgstr ""
 msgid "Formulário de Briefing"
 msgstr ""
 
-#: sidebar.php:18
+#: sidebar.php:14
 msgid ""
 "Fundadora do studio e a profissional que te guiará para ter o site do seus "
 "sonhos."
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:89
+#: parts/servicos/solucoes-plataformas.php:85
 msgid "gestão de lojas online"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:85
+#: parts/servicos/solucoes-plataformas.php:81
 msgid "gestão de websites"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:34
+#: parts/servicos/como-funciona.php:33
 msgid ""
 "Hora de <strong>conhecer sua empresa</strong>, seus objetivos, desejos, "
 "sonhos, metas e preferências. São direcionadas perguntas específicas para "
@@ -700,7 +704,7 @@ msgstr ""
 msgid "https://afcweb.design/"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:60
+#: parts/servicos/solucoes-plataformas.php:56
 msgid ""
 "Há vários <strong>campos personalizados</strong> e dinâmicos em todo layout "
 "para garantir total <strong>autonomia na gestão e das informações</strong> "
@@ -771,12 +775,16 @@ msgstr ""
 msgid "mais sobre serviços"
 msgstr ""
 
-#: parts/servicos/solucoes-recorrentes.php:44
+#: parts/servicos/solucoes-recorrentes.php:42
 msgid "Manutenção técnica"
 msgstr ""
 
 #: parts/header/principal.php:34
 msgid "Minha<br>conta"
+msgstr ""
+
+#: parts/header/linguas-moedas.php:26
+msgid "Moedas"
 msgstr ""
 
 #: parts/footer/selos.php:9
@@ -804,7 +812,7 @@ msgid ""
 "                    treinamento para sua dashboard.<strong></strong>"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:36
+#: parts/servicos/solucoes-plataformas.php:32
 msgid ""
 "O <strong>código é escrito do zero para seu projeto</strong>, atendendo suas "
 "necessidades de forma direta e prática, sem uso de templates prontos ou page "
@@ -837,14 +845,14 @@ msgstr ""
 msgid "O Studio"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:77
+#: parts/servicos/solucoes-plataformas.php:73
 msgid ""
 "O studio projeto sites nas melhores plataformas para garantir <strong>maior "
 "compatibilidade</strong> nas integrações e <strong>liberdade "
 "criativa</strong> no design!"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:48
+#: parts/servicos/solucoes-plataformas.php:44
 msgid ""
 "O studio te ajuda nos momentos mais difíceis na hora de gerir um site depois "
 "de ir ao ar, com <strong>orientações técnicas</strong> sempre que precisar, "
@@ -873,7 +881,7 @@ msgstr ""
 msgid "Pagamento"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:57
+#: parts/servicos/solucoes-plataformas.php:53
 msgid "Painel <span class=\"titulo-cursiva cor-verde\">dedicado</span>"
 msgstr ""
 
@@ -885,7 +893,7 @@ msgstr ""
 msgid "Plataformas"
 msgstr ""
 
-#: parts/servicos/solucoes-plataformas.php:71
+#: parts/servicos/solucoes-plataformas.php:67
 msgid "Plataformas utilizadas"
 msgstr ""
 
@@ -924,10 +932,6 @@ msgstr ""
 msgid "Profissionais envolvidos neste projeto"
 msgstr ""
 
-#: parts/footer/menu.php:30
-msgid "Programa de afiliados"
-msgstr ""
-
 #: alm_templates/depoimento.php:34 alm_templates/depoimento.php:54
 msgid "Projeto"
 msgstr ""
@@ -961,7 +965,7 @@ msgstr ""
 msgid "Rastrear pedido"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:77
+#: parts/servicos/como-funciona.php:76
 msgid "Refinamento"
 msgstr ""
 
@@ -969,7 +973,7 @@ msgstr ""
 msgid "Relatos de <span class=\"titulo-cursiva cor-verde\">clientes</span>"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:113
+#: parts/servicos/como-funciona.php:112
 msgid "role para o lado e descubra"
 msgstr ""
 
@@ -989,13 +993,13 @@ msgstr ""
 msgid "Serviços <span class=\"menu-mob-link-subitem\">para seu site</span>"
 msgstr ""
 
-#: parts/servicos/solucoes-recorrentes.php:17
+#: parts/servicos/solucoes-recorrentes.php:15
 msgid ""
 "Serviços especiais recorrentes opcionais <strong>para quem já é cliente da "
 "casa</strong> e possui um layout exclusivo implementado."
 msgstr ""
 
-#: parts/servicos/solucoes-recorrentes.php:14
+#: parts/servicos/solucoes-recorrentes.php:12
 msgid ""
 "Serviços por <span class=\"titulo-cursiva cor-roxo\">assinatura</span><span "
 "class=\"titulo-cursiva cor-verde\"></span>"
@@ -1005,7 +1009,7 @@ msgstr ""
 msgid "Site hospedado na"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:86
+#: parts/servicos/como-funciona.php:85
 msgid "Site no ar!"
 msgstr ""
 
@@ -1021,7 +1025,7 @@ msgstr ""
 msgid "Suporte"
 msgstr ""
 
-#: parts/home/servicos.php:36 parts/servicos/solucoes-plataformas.php:45
+#: parts/home/servicos.php:36 parts/servicos/solucoes-plataformas.php:41
 msgid "Suporte <span class=\"titulo-cursiva cor-verde\">direcionado</span>"
 msgstr ""
 
@@ -1055,7 +1059,7 @@ msgstr ""
 msgid "Templates à pronta entrega e extensões para seu site."
 msgstr ""
 
-#: parts/area-login.php:43
+#: parts/area-login.php:41
 msgid ""
 "Tenha acesso ao seu histórico de pedidos, downloads, acervo de plugins "
 "premium e panorama geral de sua afiliação."
@@ -1069,7 +1073,7 @@ msgstr ""
 msgid "Termos de uso"
 msgstr ""
 
-#: parts/home/intro.php:20
+#: parts/home/intro.php:19
 msgid "Tire seu projeto do papel e tenha o site que sempre sonhou."
 msgstr ""
 
@@ -1085,7 +1089,7 @@ msgstr ""
 msgid "Trabalhe comigo"
 msgstr ""
 
-#: sidebar.php:22
+#: sidebar.php:18
 msgid "Tópicos da publicação"
 msgstr ""
 
@@ -1093,7 +1097,7 @@ msgstr ""
 msgid "Ver ao vivo"
 msgstr ""
 
-#: parts/loop-projeto.php:38
+#: parts/loop-projeto.php:37
 msgid "ver detalhes"
 msgstr ""
 
@@ -1120,7 +1124,7 @@ msgstr ""
 msgid "voltar ao topo"
 msgstr ""
 
-#: sidebar.php:17
+#: sidebar.php:13
 msgid "Web designer, 31 anos. Goiás, BR."
 msgstr ""
 
@@ -1132,7 +1136,7 @@ msgstr ""
 msgid "Whatsapp"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:70
+#: parts/servicos/como-funciona.php:69
 msgid ""
 "É aqui que a mágica acontece! Nesta fase é feita a <strong>programação do "
 "seu layout</strong>, composta pelo front-end, que codifica a parte visual "
@@ -1147,7 +1151,7 @@ msgid ""
 "e junte-se ao time acima!"
 msgstr ""
 
-#: parts/servicos/como-funciona.php:43
+#: parts/servicos/como-funciona.php:42
 msgid ""
 "É redigido o contrato com informações sobre tudo o que será feito, "
 "obrigações, termos de uso, informes sobre garantia e licença do layout. A "
