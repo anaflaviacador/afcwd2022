@@ -22,7 +22,7 @@ $mockupImg = '6444'; // producao
             <?php if($print): ?>
                 <?php echo wp_get_attachment_image($print['ID'],'full', '', [
                     'class' => 'mockup-img',
-                    'loading' => 'lazy',
+                    // 'loading' => 'lazy',
                 ]); ?>    
             <?php endif; ?>            
         </div>

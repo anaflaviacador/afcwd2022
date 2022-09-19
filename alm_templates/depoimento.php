@@ -21,7 +21,7 @@ if($produto) $nometema = get_field('nome_produto',$produto);
                 <?php echo the_post_thumbnail('thumbnail', array(
                     'alt' => 'Depoimento de '.$nome.' para o site AFC Web Design', 
                     'class' => 'cliente-foto-item',
-                    'loading' => 'lazy'
+                    // 'loading' => 'lazy'
                 )); ?>
             </figure>
         <?php endif; ?>

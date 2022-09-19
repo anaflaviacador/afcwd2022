@@ -147,7 +147,7 @@ function afc_post_grid($post_id,$cor) {
           <?php if (has_post_thumbnail($post_id)) : ?>
               <?php echo the_post_thumbnail('afc_blog_thumb', array(
                   'class' => 'post-grid-img',
-                  'loading' => 'lazy'
+                  // 'loading' => 'lazy'
               )); ?>
           <?php endif; ?>
       </figure>
