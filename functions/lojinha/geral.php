@@ -102,7 +102,7 @@ function child_manage_woocommerce_styles() {
         //dequeue scripts and styles
         // wp_dequeue_style('woocommerce-layout');
 
-        if ( !is_woocommerce() && !is_cart() && !is_checkout() && !is_account_page() && !is_product() && !is_product_category() && !is_shop() ) {
+        if ( !is_woocommerce() && !is_cart() && !is_checkout() && !is_account_page() && !is_product() && !is_product_category() && !is_shop() && !is_page('rastrear-pedido') ) {
             wp_dequeue_style('woocommerce-general');    
             wp_dequeue_style('woocommerce-smallscreen');
             wp_dequeue_style('woocommerce_frontend_styles');
