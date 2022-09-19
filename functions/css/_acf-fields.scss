@@ -1,0 +1,86 @@
+
+// add imagem no option de radio
+.acf-image-select, .acf-image-select-gutenberg {
+	label {
+		input { display: none; }
+		p { margin: 0; font-weight: bold; text-align: center; }
+		img { border: 2px solid #EEEEEE; width: 120px; height: auto; }
+		&:not(.selected) {
+			img { opacity: .85; }
+		}
+		&:hover img { opacity: 1; }
+		&.selected img {opacity: 1; border-color: $ativoimg; box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1); }
+	}
+}
+
+.acf-image-select-gutenberg label {
+	img { width: 100px;}
+}
+
+
+// accordion admin dashboard
+.acf-postbox {
+	&.seamless > .acf-fields > .acf-accordion {
+		margin-bottom: 10px;
+
+		& > .acf-label.acf-accordion-title {
+			label { margin: 0 0 10px; font-size: 1.3em;}
+		}
+
+		&.-open > .acf-label.acf-accordion-title {
+			background: $ativo;
+			color: white;
+			p { color: white}
+		}
+	}
+}
+
+// layout flexível
+.acf-field-flexible-content {
+	&:not(.acf-dragdrop-options) .acf-flexible-content .values {
+		.layout {
+			& > .acf-fc-layout-handle {
+				font-size: 16px; font-weight: bold;
+				padding: 13px;
+			}
+
+			&:not(.-collapsed) > .acf-fc-layout-handle {
+				background: $ativo;
+				color: white;
+
+				.acf-fc-layout-order { background: white;}
+			}
+		}
+	}
+	&.acf-dragdrop-options .acf-flexible-content .values {
+		.layout {
+			margin-top: 10px;
+
+			.acf-fc-layout-controls .acf-icon { 
+				&:not(.-plus):not(.-minus) {display: none;}
+			}
+		}
+	}
+}
+
+
+// labels 
+.acf-fields:not(.acf-widget-fields) .acf-field .acf-label label {
+	font-size: 1.15em;
+}
+
+// switch
+.acf-true-false {
+	.acf-switch + span { display: block; margin: 10px 0 0 0}
+}
+
+
+// dividoria basica dentro dos accordions
+.afc-divider-accordion-inside {
+	border-top: #ccd0d4 solid 2px !important;
+	.acf-label { margin: 0 !important; text-transform: uppercase;}
+	.acf-input {
+		p:first-child { margin-top: 0;}
+	}
+}
+

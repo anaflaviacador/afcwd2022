@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import "../../assets/css/padroes/predefinicoes";
+@import "fontface";
+@import "../../assets/css/padroes/mixins";
+@import "../../assets/css/padroes/fontawesome";
+
+// body
+body, html { overflow-x: hidden; }
+
+body.login {
+    font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.6;
+	color: $grafite;
+	font-family: $fonte-padrao;
+	position: relative;
+    min-height: 100vh;
+    background: $grafite;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-height: 520px) {
+        justify-content: center;
+        &:before {
+            position: fixed; content: '';
+            width: 100vw;
+            height: 100%;
+            min-height: 100vh;
+            background-image: url('https://afcweb.design/wp-content/uploads/2022/09/foto-fundo-login-afcwebdesign.jpg');
+            background-position: 50% 50%;
+            opacity: .3;
+            background-size: contain;
+            background-repeat: repeat-x;
+            z-index: 1;
+        }
+    }
+}
+
+// largura caixa login
+#login { 
+    width: 351px; position: relative; z-index: 2;
+    padding: 40px 10px !important;
+}
+
+// marca
+.login h1 {
+    position: relative;
+    a {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        background-image: url('../../assets/images/marca-afcwebdesign-negative.svg');
+        margin: 0 auto; position: relative;
+        width: 305px;
+        height: 53px;
+    }
+}
+
+// formulario
+.login form {
+    position: relative; box-shadow: 0 0 20px transparentize(black,0.8);
+    border: 0; margin-bottom: 20px;
+    border-radius: 10px;
+
+    .input, input[type=checkbox], input[type=radio] { 
+        border-color: $roxo-medio; background: $roxo-claro;
+        color: $grafite; 
+        font-weight: 500;
+
+        &:focus { box-shadow: 0 0 0 1px $roxo-medio;}
+    }
+
+    label { font-weight: 400;}
+
+    input.password-input {
+        font-family: 'Courier', Courier, monospace;
+    }
+
+    .anr_captcha_field { margin-bottom: 10px;}
+
+    .termos-e-politica {
+        margin-bottom: 20px !important; font-size: 13px;
+    }
+
+    .forgetmenot label { font-size: 12px; vertical-align: text-bottom;}
+
+    #reg_passmail {
+        color: $afirmacao; font-size: 11px;
+        text-align: center; padding:0; margin: 0;
+    }
+}
+
+// links
+.login #nav {
+    margin: 7px 0; padding: 0; //color: $fundo2; 
+    text-align: center;
+    text-transform: uppercase; font-size: 11px;
+
+    a {padding: 7px 7px 4px; border-radius: 4px;
+        color: white;
+        font-weight: bold;
+        &:hover { text-decoration: none; color: $rosa-medio; }
+        &[href$="action=register"], &[href$="wp-login.php"] {
+            color: white; font-weight: bold;
+        }
+        &[href$="action=register"] { color: $afirmacao;
+            &:before { content: '\f234'; font-weight: bold; font-family: $fonte-icone; display: inline-block; margin-right: 4px; }
+        }
+    }
+}
+
+.login #backtoblog { display: none;}
+
+
+// link privacidade
+.login .privacy-policy-page-link {
+    margin-top: 2em; font-size: 10px;
+    font-weight: normal;
+
+    a {
+        text-transform: uppercase; color: $bege-medio; 
+        text-decoration: none;
+    }
+}
+
+// mensagens
+.login #login_error, .login .message, .login .success {
+    margin-top: 20px; position: relative; font-size: 12px;
+    border-radius: 0 10px 10px 0;
+}
+.login .message { border-color: $azul; }
+.login .msuccessessage { border-color: $afirmacao; }
+.login #login_error { border-color: $negacao;}
+
+
+// senha
+.login .button.wp-hide-pw {
+    color: $roxo;
+
+    &:hover, &:focus { color: $azul; outline: 0; }
+    &:focus { border-color: $roxo-claro; box-shadow: 0 0 0 1px $roxo-medio; }
+}
+
+// botoes
+.wp-core-ui .button-primary {
+    background: $azul; color: white;
+    border-color: $azul; font-weight: 500; text-transform: uppercase;
+
+    &:hover, &:focus {
+        outline: 0; background: $roxo;
+        border-color: $roxo;
+    }
+
+    &:focus {box-shadow: 0 0 0 1px #fff, 0 0 0 3px $roxo;}
+}
