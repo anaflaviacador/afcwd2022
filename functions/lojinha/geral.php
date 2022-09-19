@@ -81,7 +81,7 @@ remove_action( 'woocommerce_order_details_after_order_table', 'woocommerce_order
 // ========================================//
 // REDIRECIONAMENTO DIRETO AO CHECKOUT
 // ========================================// 
-// add_filter('add_to_cart_redirect', 'afc_cart_redirect');
+add_filter('add_to_cart_redirect', 'afc_cart_redirect');
 function afc_cart_redirect() {
     global $woocommerce;
     $redirect_checkout = $woocommerce->cart->get_checkout_url();
