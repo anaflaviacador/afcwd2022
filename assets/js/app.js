@@ -197,12 +197,6 @@ jQuery(document).ready(function ($) {
         pagSimples.attr("style", "min-height: calc(100vh - " + heightTotal + "px);");
     }
 
-    ////////////////////////////////// INFO AFILIADO
-    var labelAffiliado = $("div.woocommerce-additional-fields > label[for=\"woocommerce-affiliate\"]");
-
-    if (labelAffiliado.length > 0) {
-        labelAffiliado.replaceWith("<label for=\"woocommerce-affiliate\">Programa de afiliadas: <em>quem indicou esse produto?</em><br><span style=\"font-size: 12px; width: 100%; display:inline-block; font-weight: normal\"><span class=\"cor-negacao\">Atenção:</span> Insira corretamente o <u>username</u> ou <u>ID</u> fornecido diretamente pela afiliada. Caso não saiba, deixe em branco e/ou confirme com a afiliada que indicou os produtos do studio para ti.</span></label>");
-    }
 
     ////////////////////////////////// NEWSLETTER
     $("button.assinar-news").wrapInner("<span></span>");

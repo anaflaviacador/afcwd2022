@@ -77,7 +77,7 @@
 								}
 								
 							?>
-								<li class="afc-menu-afiliadas-li">
+								<li class="afc-menu-afiliadas-li<?php echo $active_tab == 'referrals' || $active_tab == 'graphs' ? ' hidden' : ''; ?>">
 									<a class="afc-menu-afiliadas-link"<?php echo $i == 1 ? ' style="border:0"' : ''; ?> href="<?php echo esc_url( affwp_get_affiliate_area_page_url( $tab_slug ) ); ?>">
 										<span class="afc-menu-afiliadas-ico"><?php echo $tab_ico; ?></span>
 										<span class="afc-menu-afiliadas-txt<?php echo $active_tab == $tab_slug ? ' ativo' : ''; ?>"><?php echo $tab_title; ?></span>
