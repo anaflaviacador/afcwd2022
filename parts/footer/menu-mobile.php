@@ -42,6 +42,14 @@ $politicapg = get_option( 'wp_page_for_privacy_policy' );
           </a>
         </li>
       </ul>
+    <?php if (class_exists('Woocommerce')): 
+        // $conta = esc_url( wp_login_url( get_permalink() ) );
+        // if(is_user_logged_in()) 
+        $conta = esc_url(wc_get_page_permalink('myaccount'));
+        
+        $pgCarrinho = esc_url(wc_get_page_permalink( 'cart' ));
+        $numItens = WC()->cart->get_cart_contents_count();
+    ?>
       <ul role="list" class="menu-mob-items shop">
         <li class="menu-mob-li shop">
           <a href="/loja/temas/aurora" class="menu-mob-link shop w-inline-block">
@@ -50,18 +58,26 @@ $politicapg = get_option( 'wp_page_for_privacy_policy' );
           </a>
         </li>
         <li class="menu-mob-li shop">
-          <a href="/minha-conta" class="menu-mob-link shop w-inline-block">
+          <a href="<?php echo $conta; ?>" class="menu-mob-link shop w-inline-block">
             <div class="menu-mob-link-ico shop"><i class="fa-light fa-circle-user"></i></div>
-            <div class="menu-mob-link-item shop"><?php _e( 'Login <span class="menu-mob-link-subitem shop">entrar</span>', 'afcwd2022' ); ?></div>
+            <div class="menu-mob-link-item shop">
+              <?php if(is_user_logged_in()): ?>
+                <?php _e( 'Conta <span class="menu-mob-link-subitem shop">painel</span>', 'afcwd2022' ); ?>
+              <?php else: ?>
+                <?php _e( 'Login <span class="menu-mob-link-subitem shop">entrar</span>', 'afcwd2022' ); ?>
+              <?php endif; ?>
+            </div>
           </a>
         </li>
         <li class="menu-mob-li shop cart">
-          <a href="/carrinho" class="menu-mob-link shop w-inline-block">
+          <a href="<?php echo $pgCarrinho; ?>" class="menu-mob-link shop w-inline-block">
             <div class="menu-mob-link-ico shop"><i class="fa-light fa-cart-shopping"></i></div>
-            <div class="menu-mob-link-item shop">01 <span class="menu-mob-link-subitem shop"><?php esc_html_e( 'itens', 'afcwd2022' ); ?></span></div>
+            <div class="menu-mob-link-item shop"><?php echo $numItens; ?> <span class="menu-mob-link-subitem shop"><?php esc_html_e( 'itens', 'afcwd2022' ); ?></span></div>
           </a>
         </li>
       </ul>
+
+      <?php endif; ?>
       <ul role="list" class="menu-mini-links">
         <li class="toplinks-li">
           <a href="<?php echo get_permalink($politicapg); ?>"><?php esc_html_e( 'Privacidade', 'afcwd2022' ); ?></a>

@@ -13,7 +13,7 @@ $heroImg = '6441'; // producao
                     // 'loading' => 'lazy',
                 ]); ?>
 
-                <img src="<?php echo $urlTema; ?>/assets/images/flor-roxo-1.svg" loading="lazy" data-w-id="066cb1cb-1545-4c81-b194-7a4cb56eb6dd" alt="Grafismo" aria-hidden="true" class="home-intro-detalhe">
+                <img src="<?php echo $urlTema; ?>/assets/images/flor-roxo-1.svg" data-w-id="066cb1cb-1545-4c81-b194-7a4cb56eb6dd" alt="Grafismo" aria-hidden="true" class="home-intro-detalhe nolazing">
             </div>
             <div class="home-intro-cnt has-text-align-center">
 
