@@ -77,7 +77,7 @@ function afc_shortcode_icone($atts, $content = null) {
     ), $atts));
     ob_start();
 
-    echo '<i class="'.$prefixo.' fa-'.$nome.'" style="font-size:'.($tamanho ? $tamanho : '1').'em;'.($cor ? 'color: var(--cor-'.$cor.');' : '').'" aria-hidden="true"></i>';
+    echo '<i class="'.$prefixo.' fa-'.$nome.($cor ? ' cor-'.$cor : '').'" style="font-size:'.($tamanho ? $tamanho : '1').'em;" aria-hidden="true"></i>';
 
     $output = ob_get_clean();
     return $output;
