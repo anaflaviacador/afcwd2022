@@ -236,6 +236,6 @@ jQuery(document).ready(function ($) {
 
 
     //////////////////////////////////////// LOADER
-    var loader = $('#fakeloader-overlay');
-    if (loader.length > 0) { window.FakeLoader.init({ auto_hide: true }); }
+    // var loader = $('#fakeloader-overlay');
+    // if (loader.length > 0) { window.FakeLoader.init({ auto_hide: true }); }
 });  
