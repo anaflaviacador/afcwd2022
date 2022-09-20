@@ -1,5 +1,5 @@
 <?php /* Template Name: Página simples */
-$subtitulo = get_field('subtitulo',$post->ID);
+
 $nomesite = get_bloginfo('name');
 $nomeslogan = get_bloginfo('description');
 $homeurl = home_url(('/'));
@@ -26,12 +26,12 @@ $urlTema = get_template_directory_uri();
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
-
+  <?php $subtitulo = get_field('subtitulo',$post->ID); ?>
   <main id="pag-simples" class="flexb-column flexb-center flexb-justify-center">
     <article class="pb-2em container-medio">
       <header class="has-text-align-center mb-2em">
         <h1 class="mb-0"><span class="titulo-cursiva cor-roxo"><?php the_title(); ?></span></h1>
-        <h2><?php echo wp_strip_all_tags($subtitulo); ?></h2>
+        <?php if ($subtitulo) : ?><h2><?php echo wp_strip_all_tags($subtitulo); ?></h2><?php endif; ?>
       </header>
       
       <?php the_content(); ?>
