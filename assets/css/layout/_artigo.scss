@@ -122,8 +122,8 @@ article {
     }
 
 
-    ul:not(.post-grid-cats):not(.share-links):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid),
-    ol:not(.post-grid-cats):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
+    ul:not([id^="wpforms"]):not(.post-grid-cats):not(.share-links):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid),
+    ol:not([id^="wpforms"]):not(.post-grid-cats):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
         padding-left: 0;
         margin-left: 2em;
         display: block;
@@ -143,14 +143,14 @@ article {
         }
     }
 
-    ul:not(.wc-item-meta):not(.commentlist):not(.share-links):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
+    ul:not([id^="wpforms"]):not(.wc-item-meta):not(.commentlist):not(.share-links):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
         li::marker {
             content: '\2192\0020\0020';
             font-size: 1.3em;
         }
     }
 
-    ol:not(.wc-item-meta):not(.commentlist):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
+    ol:not([id^="wpforms"]):not(.wc-item-meta):not(.commentlist):not(.wp-block-gallery):not(.woocommerce-shipping-methods):not(.woocommerce-order-overview):not(.blocks-gallery-grid) {
         list-style-type: decimal;
     }
 
