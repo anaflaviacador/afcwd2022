@@ -26,7 +26,7 @@ $urlTema = get_template_directory_uri();
 
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
-  <?php $subtitulo = get_field('subtitulo',$post->ID); ?>
+  <?php $subtitulo = get_field('subtitulo',get_the_ID()); ?>
   <main id="pag-simples" class="flexb-column flexb-center flexb-justify-center">
     <article class="pb-2em container-medio">
       <header class="has-text-align-center mb-2em">
