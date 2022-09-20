@@ -1,5 +1,6 @@
-<?php get_header(); 
+<?php 
 if (is_user_logged_in()) {
+get_header(); 	
 
 $clientevip = array('cliente_vip','administrator');
 	
@@ -69,9 +70,10 @@ echo '<div class="container" id="pagina-briefing">';
 		}
 
 	echo '</div>';		
-echo '</div>';		
+echo '</div>';
+
+get_footer();
 	
 } else { get_template_part('parts/area-login'); }
 
 
-get_footer();

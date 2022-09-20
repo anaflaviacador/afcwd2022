@@ -1,5 +1,5 @@
-<?php get_header(); if (is_user_logged_in()) { 
-
+<?php if (is_user_logged_in()) { 
+get_header(); 
 do_action( 'woocommerce_account_navigation' );
 
 echo '<div class="container" class="container">';
@@ -58,9 +58,9 @@ echo '<div class="container" class="container">';
 	}	
 
 echo '</div>';	
-	
+get_footer();
+
 } else {
 	get_template_part('parts/area-login');
 }	
 
-get_footer();
