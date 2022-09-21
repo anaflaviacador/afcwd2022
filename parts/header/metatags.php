@@ -13,8 +13,8 @@ $tema = get_template_directory_uri();
 echo '<meta property="og:site_name" content="'.$nome.'">';
 
 // nao seguir as paginas simples
-if(get_option('blog_public') != 0 && ! is_page_template('simples.php')) echo '<meta name="robots" content="index, follow, max-image-preview:large" />';
-if(is_page_template('simples.php')) echo '<meta name="robots" content="noindex, follow">';
+if(get_option('blog_public') != 0 && ! is_page_template('template-simples.php')) echo '<meta name="robots" content="index, follow, max-image-preview:large" />';
+if(is_page_template('template-simples.php')) echo '<meta name="robots" content="noindex, follow">';
 
 //////////////// perfis
 echo '<meta property="fb:admins" content="100001760930781">';
