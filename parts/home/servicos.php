@@ -36,9 +36,7 @@ $urlTema = get_template_directory_uri();
                     <?php _e('Suporte <span class="titulo-cursiva cor-verde">direcionado</span>','afcwd2022'); ?>
                 </h3>
                 <p>
-                    <?php _e('Não estará sozinha momentos mais difíceis na hora de gerenciar seu novo site! É fornecido
-                    <strong>orientações técnicas</strong>, dicas de <strong>boas práticas de gestão</strong> e
-                    treinamento para sua dashboard.<strong></strong>','afcwd2022'); ?>
+                    <?php _e('Não estará sozinha nos momentos mais difíceis na hora de gerenciar seu novo site! É fornecido <strong>orientações técnicas</strong>, dicas de <strong>boas práticas de gestão</strong> e treinamento para sua dashboard.<strong></strong>','afcwd2022'); ?>
                 </p>
             </div>
         </div>
