@@ -3,7 +3,7 @@
 // ========================================//
 // HABILITANDO BLOCOS ESPECIFICOS
 // ========================================//
-add_filter( 'allowed_block_types', 'afc_allowed_block_types' );
+add_filter( 'allowed_block_types_all', 'afc_allowed_block_types' );
 function afc_allowed_block_types( $allowed_blocks ) {
  	// lista de blocos: https://rudrastyh.com/gutenberg/remove-default-blocks.html
 	return array(
