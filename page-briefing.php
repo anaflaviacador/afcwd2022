@@ -38,7 +38,7 @@ echo '<div class="container" id="pagina-briefing">';
 
 			echo '<div class="modal medio" id="briefing-adicional">';
 				echo '<h2 class="has-text-align-center">Informações adicionais</h2>';
-				echo '<article><p>Esqueceu de acrescentar algum detalhe no formulário? Não tem problema! Adicione abaixo as informações adicionais a um formulário que você já enviou. Assim, você não precisará preencher tudo novamente. Será mantido tudo em histórico de email e banco de dados. 😉</p>'.do_shortcode('[wpforms id="'.$formADICIONAL.'"]').'</article>'; 
+				echo '<article><p class="mb-0">Esqueceu de acrescentar algum detalhe no formulário? Não tem problema! Adicione abaixo as informações adicionais a um formulário que você já enviou. Assim, você não precisará preencher tudo novamente. Será mantido tudo em histórico de email e banco de dados. 😉</p>'.do_shortcode('[wpforms id="'.$formADICIONAL.'"]').'</article>'; 
 			echo '</div>'; 
 	}
 	
