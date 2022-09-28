@@ -33,7 +33,7 @@ echo '<div class="container" id="pagina-briefing">';
 	if($clienteEnviouForm && array_intersect($clientevip, $user->roles )) {	
 		// colocar aqui a condicional para qdo cliente ja enviou briefing
 			echo '<div class="aviso-vermelho mt-2em">';
-			echo '<p class="has-text-align-center mb-0"><strong>Você já tem um briefing enviado no sistema, '.$cliente.'!</strong><br>Caso não esteja solicitando um novo projeto, <a href="#briefing-adicional" class="abre-modal cor-negacao" data-target="#briefing-adicional"><strong>CLIQUE AQUI</strong></a> e acrescente as informações adicionais ao briefing enviado anteriormente.</p>';
+			echo '<p class="has-text-align-center mb-0"><strong>Você já tem um briefing enviado no sistema, '.$cliente.'!</strong><br>Caso não esteja solicitando um novo projeto, <a href="#briefing-adicional" class="abre-modal cor-negacao" data-target="#briefing-adicional"><strong><u>CLIQUE AQUI</u></strong></a> e acrescente as informações adicionais ao briefing enviado anteriormente.</p>';
 			echo '</div>';
 
 			echo '<div class="modal medio" id="briefing-adicional">';
