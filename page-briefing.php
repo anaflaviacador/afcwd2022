@@ -33,10 +33,10 @@ echo '<div class="container" id="pagina-briefing">';
 	if($clienteEnviouForm && array_intersect($clientevip, $user->roles )) {	
 		// colocar aqui a condicional para qdo cliente ja enviou briefing
 			echo '<div class="aviso-vermelho mt-2em">';
-			echo '<p class="has-text-align-center"><strong>Você já tem um briefing enviado no sistema, '.$cliente.'!</strong><br>Caso não esteja solicitando um novo projeto, <a href="#briefing-adicional" class="abre-modal" data-target="#briefing-adicional"><strong>CLIQUE AQUI</strong></a> e acrescente as informações adicionais ao briefing enviado anteriormente.</p>';
+			echo '<p class="has-text-align-center mb-0"><strong>Você já tem um briefing enviado no sistema, '.$cliente.'!</strong><br>Caso não esteja solicitando um novo projeto, <a href="#briefing-adicional" class="abre-modal cor-negacao" data-target="#briefing-adicional"><strong>CLIQUE AQUI</strong></a> e acrescente as informações adicionais ao briefing enviado anteriormente.</p>';
 			echo '</div>';
 
-			echo '<div class="modal" id="briefing-adicional">';
+			echo '<div class="modal medio" id="briefing-adicional">';
 				echo '<h2 class="has-text-align-center">Informações adicionais</h2>';
 				echo '<article><p>Esqueceu de acrescentar algum detalhe no formulário? Não tem problema! Adicione abaixo as informações adicionais a um formulário que você já enviou. Assim, você não precisará preencher tudo novamente. Será mantido tudo em histórico de email e banco de dados. 😉</p>'.do_shortcode('[wpforms id="'.$formADICIONAL.'"]').'</article>'; 
 			echo '</div>'; 
