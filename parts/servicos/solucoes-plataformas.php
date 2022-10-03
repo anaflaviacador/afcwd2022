@@ -74,7 +74,7 @@ $img4 = '6448'; // producao
                         <?php _e( 'As melhores <span class="titulo-cursiva cor-bege">plataformas</span>', 'afcwd2022' ); ?>
                     </h3>
                     <div>
-                        <?php _e( 'O studio projeto sites nas melhores plataformas para garantir <strong>maior compatibilidade</strong> nas integrações e <strong>liberdade criativa</strong> no design!', 'afcwd2022' ); ?>
+                        <?php _e( 'O studio projeta sites nas melhores plataformas para garantir <strong>maior compatibilidade</strong> nas integrações e <strong>liberdade criativa</strong> no design!', 'afcwd2022' ); ?>
                     </div>
                 </div>
 

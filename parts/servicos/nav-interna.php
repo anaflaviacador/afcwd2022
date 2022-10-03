@@ -18,9 +18,9 @@
                     <li class="nav-interna-topicos-li">
                         <a href="#faq" class="nav-interna-link"><?php esc_html_e( 'Dúvidas', 'afcwd2022' ); ?></a>
                     </li>
-                    <li class="nav-interna-topicos-li">
+                    <?php /*?><li class="nav-interna-topicos-li">
                         <a href="#planos" class="nav-interna-link"><?php esc_html_e( 'Assinaturas', 'afcwd2022' ); ?></a>
-                    </li>
+                    </li><?php */?>
                 </ul>
                 <?php get_template_part('parts/servicos/nav-interna-bt'); ?>
             </div>
