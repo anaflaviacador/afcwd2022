@@ -35,7 +35,7 @@ if($produto) $nometema = get_field('nome_produto',$produto);
                         <a href="<?php echo get_the_permalink($projeto); ?>" class="botao verde inverso mr-10px"><?php esc_html_e( 'Projeto', 'afcwd2022' ); ?></a>
                     <?php endif; ?>
                     <?php if ($site) : ?>
-                        <a href="<?php echo esc_url($site); ?>" class="botao verde">Online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
+                        <a href="<?php echo esc_url($site); ?>" class="botao verde">ver online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
                     <?php endif; ?>
                 </div>
             <?php elseif (class_exists('Woocommerce') && $produto) : ?>
@@ -44,7 +44,7 @@ if($produto) $nometema = get_field('nome_produto',$produto);
                         <a href="<?php echo get_the_permalink($produto); ?>" class="botao verde inverso mr-10px"><?php esc_html_e( 'Template', 'afcwd2022' ); ?></a>
                     <?php endif; ?>
                     <?php if ($site) : ?>
-                        <a href="<?php echo esc_url($site); ?>" class="botao verde">Online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
+                        <a href="<?php echo esc_url($site); ?>" class="botao verde">ver online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
@@ -57,7 +57,7 @@ if($produto) $nometema = get_field('nome_produto',$produto);
                         <a href="<?php echo get_the_permalink($projeto); ?>" class="botao-liso verde inverso mr-10px"><?php esc_html_e( 'Projeto', 'afcwd2022' ); ?></a>
                     <?php endif; ?>
                     <?php if ($site) : ?>
-                        <a href="<?php echo get_the_permalink($site); ?>" class="botao-liso verde">Online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
+                        <a href="<?php echo get_the_permalink($site); ?>" class="botao-liso verde">ver online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
                     <?php endif; ?>
                 </div>
             <?php elseif (class_exists('Woocommerce') && $produto) : ?>
@@ -66,7 +66,7 @@ if($produto) $nometema = get_field('nome_produto',$produto);
                         <a href="<?php echo get_the_permalink($produto); ?>" class="botao-liso verde inverso mr-10px"><?php esc_html_e( 'Template', 'afcwd2022' ); ?></a>
                     <?php endif; ?>
                     <?php if ($site) : ?>
-                        <a href="<?php echo get_the_permalink($site); ?>" class="botao-liso verde">Online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
+                        <a href="<?php echo get_the_permalink($site); ?>" class="botao-liso verde">ver online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
