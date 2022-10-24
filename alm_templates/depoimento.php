@@ -29,9 +29,11 @@ if($produto) $nometema = get_field('nome_produto',$produto);
         <h4 class="cliente-nome ellipsis"><?php echo esc_html($nome); ?></h4>
         
         <div class="hide-mobile">
-            <?php if ($projeto) : ?>
+            <?php if ($projeto || $site) : ?>
                 <div class="cliente-links">
-                    <a href="<?php echo get_the_permalink($projeto); ?>" class="botao verde inverso mr-10px"><?php esc_html_e( 'Projeto', 'afcwd2022' ); ?></a>
+                    <?php if ($projeto) : ?>
+                        <a href="<?php echo get_the_permalink($projeto); ?>" class="botao verde inverso mr-10px"><?php esc_html_e( 'Projeto', 'afcwd2022' ); ?></a>
+                    <?php endif; ?>
                     <?php if ($site) : ?>
                         <a href="<?php echo esc_url($site); ?>" class="botao verde">Online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
                     <?php endif; ?>
@@ -49,9 +51,11 @@ if($produto) $nometema = get_field('nome_produto',$produto);
         </div>
 
         <div class="hide-desk">
-            <?php if ($projeto) : ?>
+            <?php if ($projeto || $site) : ?>
                 <div class="cliente-links">
-                    <a href="<?php echo get_the_permalink($projeto); ?>" class="botao-liso verde inverso mr-10px"><?php esc_html_e( 'Projeto', 'afcwd2022' ); ?></a>
+                    <?php if ($projeto) : ?>
+                        <a href="<?php echo get_the_permalink($projeto); ?>" class="botao-liso verde inverso mr-10px"><?php esc_html_e( 'Projeto', 'afcwd2022' ); ?></a>
+                    <?php endif; ?>
                     <?php if ($site) : ?>
                         <a href="<?php echo get_the_permalink($site); ?>" class="botao-liso verde">Online <i class="fa-light fa-arrow-up-right-from-square bt-seta"></i></a>
                     <?php endif; ?>
