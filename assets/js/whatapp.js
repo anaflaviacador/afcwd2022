@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
     var afcwd_Whaaa = $('#afc_btwhats'),
         afcwd_BTWhaaa = $('#afc_btwhats > button'),
+        afcwd_BTWhaaa_Avulso = $('.bt-abrir-wts'),
         afcwd_StatusWhaaa = $('#afc_btwhats_status'),
         afcwd_formWhaaa = $('input#afc_btwhats_box_form_escrever'),
         afcwd_formWhaaa_link = $('a#afc_btwhats_box_form_mandar'),
@@ -25,6 +26,9 @@ jQuery(document).ready(function ($) {
         afcwd_Numero = afcwd_formWhaaa_link.data('whats-numero');
 
     if (afcwd_Whaaa.length > 0) {
+        afcwd_BTWhaaa_Avulso.click(function () {
+            afcwd_Whaaa.addClass('afc_onclick');
+        });
         afcwd_BTWhaaa.on('click', function (event) {
             afcwd_Whaaa.toggleClass('afc_onclick');
         });

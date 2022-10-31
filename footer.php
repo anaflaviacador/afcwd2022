@@ -20,9 +20,9 @@ $lang = esc_attr(get_bloginfo('language'));
                 <?php get_template_part('parts/footer/newsletter'); ?>
 
                 <div class="rodape-infos">
-                    <a href="/orcamento-projeto" class="botao negacao"><?php esc_html_e( 'Orçar projeto', 'afcwd2022' ); ?> <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
+                    <a href="#" class="botao negacao bt-abrir-wts"><?php esc_html_e( 'Orçar projeto', 'afcwd2022' ); ?> <i class="fa-light fa-arrow-right-long bt-seta"></i></a>
                     <div class="copyright">
-                        <a href="#" class="marca-site-rodape w-inline-block">
+                        <a href="<?php echo $urlHome; ?>" class="marca-site-rodape w-inline-block">
                             <img src="<?php echo $urlTema; ?>/assets/images/marca-afcwebdesign-negative.svg" alt="Marca AFC Web Design de fundo escuro">
                         </a>
                         <div class="copyright-txt"><?php _e( 'CNPJ 24.014.911/0001-36<br>Seg à Sexta, das 14h às 17h', 'afcwd2022' ); ?></div>

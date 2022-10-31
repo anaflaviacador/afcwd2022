@@ -36,7 +36,7 @@ $politicapg = get_option( 'wp_page_for_privacy_policy' );
           </a>
         </li>
         <li class="menu-mob-li">
-          <a href="/orcamento-projeto" class="menu-mob-link cotacao w-inline-block">
+          <a href="#" class="bt-abrir-wts menu-mob-link cotacao w-inline-block">
             <div class="menu-mob-link-ico"><i class="fa-light fa-badge-dollar"></i></div>
             <div class="menu-mob-link-item cotacao"><?php _e( 'Cotação <span class="menu-mob-link-subitem cotacao">orçar projeto</span>', 'afcwd2022' ); ?></div>
           </a>
