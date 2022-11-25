@@ -37,7 +37,41 @@
       </div>
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Ilimitado</strong>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<strong>Ilimitado</strong><em class="texto-menor dblock">Contatos, listas, campanhas e segmentações</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in last emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Auto-respostas</strong><em class="texto-menor dblock">listas ou segmentações</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in last emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+       <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Sequência de emails</strong><em class="texto-menor dblock">a partir da data de inscrição</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
