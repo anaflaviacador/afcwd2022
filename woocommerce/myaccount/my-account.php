@@ -22,6 +22,9 @@ defined( 'ABSPATH' ) || exit;
  *
  * @since 2.6.0
  */
+$clientevip = array('cliente_vip','administrator');
+$user = wp_get_current_user(); 
+
 do_action( 'woocommerce_account_navigation' ); ?>
 
 <div class="afc-cliente-conta container-medio pt-2em pb-4em">
@@ -41,4 +44,19 @@ do_action( 'woocommerce_account_navigation' ); ?>
 		echo '</div>';
 	}
 ?>
+
 </div>
+
+
+<?php if (! is_wc_endpoint_url() && array_intersect($clientevip, $user->roles ) ) : ?>
+	<div class="container pb-4em">
+
+		<h3 class="has-text-align-center">Conheça o <span class="titulo-cursiva cor-verde">Sendy</span><br><span class="texto-menor">o email marketing do studio</span></h3>
+		<div class="container-medio">
+			<p>Conecte-se com seu público de forma descomplicada e simples com o serviço de email do studio!</p>
+		</div>
+		<?php get_template_part('parts/servicos/planos-email'); ?>
+
+		<p class="has-text-align-center pt-2em"><a href="/servicos/email-marketing/" class="botao grande rosa">Saiba mais <i class="fa-light fa-arrow-right-long bt-seta"></i></a></p>
+	</div>
+<?php endif; ?>
