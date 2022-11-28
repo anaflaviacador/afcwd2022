@@ -1,5 +1,5 @@
 <p class="mb-10px"><?php _e( '<strong>Ainda com dúvidas sobre os serviços?<br>‍</strong>Manda um oi no whats e vamos falar sobre seu projeto!', 'afcwd2022' ); ?></p>
-<a href="https://api.whatsapp.com/send?phone=5562996269941" target="_blank" class="botao whatsapp grande">
+<a href="#" target="_blank" class="botao whatsapp grande bt-abrir-wts">
     <?php esc_html_e( 'Fale comigo', 'afcwd2022' ); ?>
     <span class="bt-seta" style="height: 18px; position: relative; top: -4px; line-height: 1; vertical-align: bottom;">
         <svg xmlns="http://www.w3.org/2000/svg" width="18px" viewBox="0 0 448 512">
