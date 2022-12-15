@@ -29,6 +29,6 @@
         <a href="/minha-conta" class="menu-rodape-sublink"><?php esc_html_e( 'Entrar no painel', 'afcwd2022' ); ?></a>
         <a href="/minha-conta/briefing" class="menu-rodape-sublink"><?php esc_html_e( 'Formulário de Briefing', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
         <a href="/minha-conta/bonus" class="menu-rodape-sublink"><?php esc_html_e( 'Acervo de plugins', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
-        <a href="https://billing.stripe.com/p/login/aEUdUAcmK1ML6oo288" class="menu-rodape-sublink"><?php esc_html_e( 'Folha de pagamento', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
+        <a href="https://billing.stripe.com/p/login/aEUdUAcmK1ML6oo288" class="menu-rodape-sublink"><?php _e( 'Folha de pagamento <br>de assinaturas', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
     </li>
 </ul>
