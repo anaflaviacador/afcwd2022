@@ -77,6 +77,7 @@ remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' 
 add_filter( 'woocommerce_available_payment_gateways', 'afc_logos_pgto' );
 function afc_logos_pgto( $gateways ) {
     if ( isset( $gateways['paghiper_pix'] ) ) $gateways['paghiper_pix']->icon = get_stylesheet_directory_uri() . '/assets/images/logo-pix-gateway.svg';
+    if ( isset( $gateways['woocommerce_openpix_pix'] ) ) $gateways['paghiper_pix']->icon = get_stylesheet_directory_uri() . '/assets/images/logo-pix-gateway.svg';
 
     return $gateways;
 }
