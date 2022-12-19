@@ -111,10 +111,10 @@
           <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
         </div>
         <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico"><span>2</span></div>
+          <div class="plano-sessao-in-ico"><span>1</span></div>
         </div>
         <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico"><span>3</span></div>
+          <div class="plano-sessao-in-ico"><span>2</span></div>
         </div>
         <div class="plano-sessao-in last emailmkt">
           <div class="plano-sessao-in-ico"><span>4</span></div>
@@ -138,6 +138,25 @@
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
       </div>
+
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Migração de leads</strong><em class="texto-menor dblock">do serviço antigo para o Sendy</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in last emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
           <div><?php _e( '<strong>Integração Zapier</strong><em class="texto-menor dblock">acesso a API para unir com serviços de automação</em>', 'afcwd2022' ); ?></div>
