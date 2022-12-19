@@ -74,6 +74,8 @@
 
 	.choices { margin: 5px 0 !important;}
 
+	.choices__list--dropdown {z-index:1000 !important} 
+
 	ul {
 		li {
 			&:before { display: none !important; }
