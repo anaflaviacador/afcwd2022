@@ -1,20 +1,27 @@
 // ========================================//
 // WPFORMS
 // ========================================// 
-.wpforms-field-container, .wpforms-container {
-	max-width: $container-medio; margin:0 auto;
+.wpforms-field-container, .wpforms-container, .wpforms-field-container {
+	max-width: $container-medio; margin:0 auto; width: 100%;
 }
 
-.wpforms-container:not(.form-newsletter-footer) .wpforms-field-container, .wpforms-page {
+.wpforms-repeater-field-container { width: 100%;}
+
+.wpforms-container:not(.form-newsletter-footer) .wpforms-field-container, .wpforms-page, .wpforms-repeater-fields-wrapper {
 	display: flex; flex-wrap: wrap; justify-content: space-between;
 	
-	.wpforms-field {width: 100%; margin-top: 12px;}
+	.wpforms-field, .wpforms-field-repeater {width: 100%; margin-top: 12px;}
 	
 	input, textarea, .wpforms-field-phone > div {margin-top: 5px !important}
 
     input:not([type="radio"]):not([type="checkbox"]), textarea {
         @extend .input-text;
     }
+
+	.wpforms-repeater-button {
+		@extend .botao, .azul, .inverso;
+		&.wpforms-repeater-remove { margin-left: 10px;}
+	}
 
 	.label {
 		border:0; font-size: 0.95em; background: $verde-claro;
