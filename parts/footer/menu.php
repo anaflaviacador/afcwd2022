@@ -1,8 +1,8 @@
 <ul role="list" class="menu-rodape">
     <li class="menu-rodape-li">
         <a href="<?php home_url(('/')); ?>" class="menu-rodape-link"><?php esc_html_e( 'O Studio', 'afcwd2022' ); ?></a>
+        <a href="/#sobre" class="menu-rodape-sublink"><?php esc_html_e( 'Quem faz', 'afcwd2022' ); ?></a>
         <a href="/depoimentos" class="menu-rodape-sublink"><?php esc_html_e( 'Clientes', 'afcwd2022' ); ?></a>
-        <a href="/projetos" class="menu-rodape-sublink"><?php esc_html_e( 'Projetos', 'afcwd2022' ); ?></a>
         <a href="/servicos" class="menu-rodape-sublink"><?php esc_html_e( 'Serviços', 'afcwd2022' ); ?></a>
         <a href="/blog" class="menu-rodape-sublink"><?php esc_html_e( 'Blog', 'afcwd2022' ); ?></a>
         <a href="/contato" class="menu-rodape-sublink"><?php esc_html_e( 'Contato', 'afcwd2022' ); ?></a>
@@ -13,7 +13,7 @@
         <a href="/tipo-projeto/website" class="menu-rodape-sublink"><?php esc_html_e( 'Websites', 'afcwd2022' ); ?></a>
         <a href="/tipo-projeto/blog" class="menu-rodape-sublink"><?php esc_html_e( 'Blogs', 'afcwd2022' ); ?></a>
         <a href="/tipo-projeto/portfolio" class="menu-rodape-sublink"><?php esc_html_e( 'Portfolios', 'afcwd2022' ); ?></a>
-        <a href="/projetos" class="menu-rodape-sublink"><?php esc_html_e( 'Ver todos', 'afcwd2022' ); ?></a>
+        <a href="/tipo-projeto/landing-page/" class="menu-rodape-sublink"><?php esc_html_e( 'Landing Pages', 'afcwd2022' ); ?></a>
     </li>
     <li class="menu-rodape-li">
         <a href="/loja/temas/aurora" class="menu-rodape-link"><?php esc_html_e( 'Loja online', 'afcwd2022' ); ?></a>
@@ -29,6 +29,6 @@
         <a href="/minha-conta" class="menu-rodape-sublink"><?php esc_html_e( 'Entrar no painel', 'afcwd2022' ); ?></a>
         <a href="/minha-conta/briefing" class="menu-rodape-sublink"><?php esc_html_e( 'Formulário de Briefing', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
         <a href="/minha-conta/bonus" class="menu-rodape-sublink"><?php esc_html_e( 'Acervo de plugins', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
-        <a href="https://billing.stripe.com/p/login/aEUdUAcmK1ML6oo288" class="menu-rodape-sublink"><?php _e( 'Folha de pagamento <br>de assinaturas', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
+        <a href="/folha-pagamento-assinatura" target="_blank" class="menu-rodape-sublink"><?php _e( 'Folha de pagamento <br>de assinaturas', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
     </li>
 </ul>

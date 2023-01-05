@@ -3,7 +3,7 @@ $urlTema = get_template_directory_uri();
 $anafoto = '6438'; // producao
 // $anafoto = '6094'; // local
 ?>
-<div class="aninha">
+<div class="aninha" id="sobre">
     <div class="container">
         <div class="aninha-wrap">
             <div class="aninha-coluna-foto">
