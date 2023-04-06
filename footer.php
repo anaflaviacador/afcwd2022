@@ -25,7 +25,9 @@ $lang = esc_attr(get_bloginfo('language'));
                         <a href="<?php echo $urlHome; ?>" class="marca-site-rodape w-inline-block">
                             <img src="<?php echo $urlTema; ?>/assets/images/marca-afcwebdesign-negative.svg" alt="Marca AFC Web Design de fundo escuro">
                         </a>
-                        <div class="copyright-txt"><?php _e( 'CNPJ 24.014.911/0001-36<br>Seg à Sexta, das 14h às 17h', 'afcwd2022' ); ?></div>
+                        <!-- <div class="copyright-txt"><?php // _e( 'CNPJ 24.014.911/0001-36<br>Seg à Sexta, das 14h às 17h', 'afcwd2022' ); ?></div> -->
+                        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                        <div class="elfsight-app-036facdd-5556-4de4-be29-458ac6c90390"></div>
                     </div>
                 </div>
             </div>
