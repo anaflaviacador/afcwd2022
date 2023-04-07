@@ -26,8 +26,11 @@ $lang = esc_attr(get_bloginfo('language'));
                             <img src="<?php echo $urlTema; ?>/assets/images/marca-afcwebdesign-negative.svg" alt="Marca AFC Web Design de fundo escuro">
                         </a>
                         <!-- <div class="copyright-txt"><?php // _e( 'CNPJ 24.014.911/0001-36<br>Seg à Sexta, das 14h às 17h', 'afcwd2022' ); ?></div> -->
-                        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-                        <div class="elfsight-app-036facdd-5556-4de4-be29-458ac6c90390"></div>
+
+                        <div class="tr-widget" data-id="4285" data-view="badge_inner" data-lang="">
+                            <a href="https://trust.reviews/" class="trcr" target="_blank">Powered by <span>Trust.Reviews</span></a>
+                        </div>
+                        <script type="text/javascript" src="https://cdn.trust.reviews/widget/embed.min.js" defer></script>
                     </div>
                 </div>
             </div>
