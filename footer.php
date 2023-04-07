@@ -30,7 +30,7 @@ $lang = esc_attr(get_bloginfo('language'));
                         <div class="tr-widget" data-id="4285" data-view="badge_inner" data-lang="">
                             <a href="https://trust.reviews/" class="trcr" target="_blank">Powered by <span>Trust.Reviews</span></a>
                         </div>
-                        <script type="text/javascript" src="https://cdn.trust.reviews/widget/embed.min.js" defer></script>
+                        
                     </div>
                 </div>
             </div>
