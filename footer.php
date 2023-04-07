@@ -28,7 +28,7 @@ $lang = esc_attr(get_bloginfo('language'));
                         <!-- <div class="copyright-txt"><?php // _e( 'CNPJ 24.014.911/0001-36<br>Seg à Sexta, das 14h às 17h', 'afcwd2022' ); ?></div> -->
 
                         <div class="tr-widget" data-id="4285" data-view="badge_inner" data-lang="">
-                            <a href="https://trust.reviews/" class="trcr" target="_blank">Powered by <span>Trust.Reviews</span></a>
+                            <a href="https://trust.reviews/" style="color:transparent" class="trcr" target="_blank">Powered by <span>Trust.Reviews</span></a>
                         </div>
                         
                     </div>
