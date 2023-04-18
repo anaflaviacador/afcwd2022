@@ -56,9 +56,9 @@ function afc_load_scripts_head() {
     // força o css de algumas coisas
     echo '<style>'; 
       echo '.hidden {display:none!important}';
-      echo '.tr-widget { height: 80px !important; overflow: hidden; transform: scale(0.85); transform-origin: bottom right; margin-top:-10px}'; 
-      echo '.tr-widget .rplg .rplg-badge2 {margin-right:0!important; font-family: Work Sans,sans-serif !important;}';
-      echo '.tr-widget .rplg-badge2 .rplg-badge2-border {background: #A7AF66 !important}';
+      echo '.copyright .tr-widget { height: 80px !important; overflow: hidden; transform: scale(0.85); transform-origin: bottom right; margin-top:-10px}'; 
+      echo '.copyright .tr-widget .rplg .rplg-badge2 {margin-right:0!important; font-family: Work Sans,sans-serif !important;}';
+      echo '.copyright .tr-widget .rplg-badge2 .rplg-badge2-border {background: #A7AF66 !important}';
     echo '</style>';
 
     // gfonts
