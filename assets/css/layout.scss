@@ -116,4 +116,9 @@ body.post-type-archive-etheme_portfolio, body.tax-tipoprojeto {
 
 #pag-simples { overflow: hidden !important; }
 
-// cookies
+// depoimentos google
+.wrap-depoimentos-google {
+	margin-bottom: 2em; overflow: hidden;
+	.tr-widget { margin-bottom: -25px; overflow: hidden; }
+	.rplg-slider .rplg-stars { width: 96%;}
+}

@@ -131,6 +131,21 @@ function afc_depoimentos($num = '', $term = '') {
     <?php //endif; ?>
 
 	<?php endif; wp_reset_query();
+  /*?>
+    <div class="cor-verde-claro-bg pb-2em">
+        <div class="container">
+            <div class="upper-titulo">
+                <h2 class="mb-0"><?php _e( 'Relatos de <span class="titulo-cursiva cor-verde">clientes</span>', 'afcwd2022' ); ?></h2>
+                <div><?php esc_html_e( 'O que as clientes do studio têm a dizer sobre os serviços', 'afcwd2022' ); ?></div>
+            </div>
+
+            <div class="wrap-depoimentos-google">
+              <div class="tr-widget" data-id="2644" data-view="slider" data-lang=""><a href="https://trust.reviews/" class="trcr" target="_blank">Powered by <span>Trust.Reviews</span></a></div><script type="text/javascript" src="https://cdn.trust.reviews/widget/embed.min.js" defer></script>
+            </div>
+            
+        </div>
+    </div>
+  <?php */
 }
 
 
