@@ -6,7 +6,7 @@
           <div class="plano-preco">R$<span class="plano-preco-maior">153</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
-            <div><?php _e( '<em class="dblock cor-verde">ideal para</em> sites simples e de baixo tráfego', 'afcwd2022' ); ?></div>
+            <div><?php _e( '<em class="dblock cor-verde">ideal para</em> landing pages ou mini-sites', 'afcwd2022' ); ?></div>
           </div>
         </div>
         <div class="plano-head destaque">
@@ -15,7 +15,7 @@
           <div class="plano-preco">R$<span class="plano-preco-maior">255</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
-            <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites e blogs profissionais', 'afcwd2022' ); ?></div>
+            <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites comuns e blogs monetizáveis', 'afcwd2022' ); ?></div>
           </div>
         </div>
         <div class="plano-head last">
@@ -23,10 +23,122 @@
           <div class="plano-preco">R$<span class="plano-preco-maior">467</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
-            <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites de alto tráfego ou lojas virtuais', 'afcwd2022' ); ?></div>
+            <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites profissionais e lojas virtuais', 'afcwd2022' ); ?></div>
           </div>
         </div>
       </div>
+
+
+
+      <div class="plano-sessao nome-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong class="fonte-caixa-alta dblock">Ações de Conteúdo</strong><em class="texto-menor">realizadas sob solicitação, sob conteúdo enviado previamente</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in vazio">
+          <div class="plano-sessao-in-vazio bg"></div>
+        </div>
+        <div class="plano-sessao-in vazio">
+          <div class="plano-sessao-in-vazio bg"></div>
+        </div>
+        <div class="plano-sessao-in vazio last">
+          <div class="plano-sessao-in-vazio bg last"></div>
+        </div>
+      </div>
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Diagramação de páginas internas</strong><em class="texto-menor dblock">adição de novas páginas internas completas ou edição de existentes</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 2 páginas por mês</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in last">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 10 páginas por mês</em>', 'afcwd2022' ); ?></div>
+        </div>
+      </div>
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Cadastro de produtos</strong><em class="texto-menor dblock">adição de novos produtos ou edição de existentes</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in last">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 30 produtos por mês</em>', 'afcwd2022' ); ?></div>
+        </div>
+      </div>
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Atualização de gráficos e conteúdos pontuais na página inicial e internas</strong><em class="texto-menor dblock">banners para carroseis e chamadas de ação, troca de imagens, ícones, botões e textos pontuais</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in last">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+
+      <div class="plano-sessao nome-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong class="fonte-caixa-alta dblock">Ações de Design</strong><em class="texto-menor">realizadas sob solicitação</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in vazio">
+          <div class="plano-sessao-in-vazio bg"></div>
+        </div>
+        <div class="plano-sessao-in vazio">
+          <div class="plano-sessao-in-vazio bg"></div>
+        </div>
+        <div class="plano-sessao-in vazio last">
+          <div class="plano-sessao-in-vazio bg last"></div>
+        </div>
+      </div>
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Template e-mail marketing</strong><em class="texto-menor dblock">para usar no seu serviço favorito</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 2 por ano</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in last">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 4 por ano</em>', 'afcwd2022' ); ?></div>
+        </div>
+      </div>
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Modificações de layout</strong><em class="texto-menor dblock">adicionar novos elementos no design ou funcionalidades / tarefas de layout</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>edições de <strong>baixa</strong> complexidade</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in last">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>edições de <strong>média</strong> complexidade</em>', 'afcwd2022' ); ?></div>
+        </div>
+      </div>
+
+
+
       <div class="plano-sessao nome-sessao">
         <div class="plano-sessao-in first">
           <div><?php _e( '<strong class="fonte-caixa-alta">Ações preventivas</strong>', 'afcwd2022' ); ?></div>
@@ -103,7 +215,7 @@
       </div>
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Updates Plugins</strong><em class="texto-menor dblock">atualização quando aplicável</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<strong>Atualizações de extensões e plugins integrados</strong><em class="texto-menor dblock">atualização quando aplicável</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
@@ -111,11 +223,11 @@
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>plugins </em><strong><em>premium</em></strong><em>*</em>', 'afcwd2022' ); ?></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>plugins </em><strong><em>premium</em></strong>*<br>presentes no <a href="/minha-conta/bonus"><u>Acervo VIP</u></a> do studio', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in last">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>plugins </em><strong><em>premium</em></strong><em>*</em>', 'afcwd2022' ); ?></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>plugins </em><strong><em>premium</em></strong>*<br>presentes no <a href="/minha-conta/bonus"><u>Acervo VIP</u></a> do studio', 'afcwd2022' ); ?></div>
         </div>
       </div>
       <div class="plano-sessao">
@@ -162,7 +274,21 @@
       </div>
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Supervisão Woocommerce</strong><em class="texto-menor dblock">monitoramento de inrtegrações, logs de erro e status de serviços</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<strong>Supervisão loja virtual</strong><em class="texto-menor dblock">monitoramento de integrações, logs de erro e status de serviços</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in last">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Supervisão de emails</strong><em class="texto-menor dblock">monitoramento da entregabilidade de emails automáticos do site, como formulários de contato e atualizações de status de pedidos</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
@@ -221,10 +347,10 @@
           <div><?php _e( '<strong>Configuração certificado SSL</strong><em class="texto-menor dblock">aplicação de protocolo de segurança e redirecionamento para links seguros</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
         <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
         <div class="plano-sessao-in last">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
@@ -300,99 +426,8 @@
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
       </div>
-      <div class="plano-sessao nome-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong class="fonte-caixa-alta dblock">Ações de Design e Conteúdo</strong><em class="texto-menor">realizadas sob solicitação</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in vazio">
-          <div class="plano-sessao-in-vazio bg"></div>
-        </div>
-        <div class="plano-sessao-in vazio">
-          <div class="plano-sessao-in-vazio bg"></div>
-        </div>
-        <div class="plano-sessao-in vazio last">
-          <div class="plano-sessao-in-vazio bg last"></div>
-        </div>
-      </div>
-      <div class="plano-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Template e-mail marketing</strong><em class="texto-menor dblock">para usar no seu serviço favorito</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 2 por ano</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in last">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 4 por ano</em>', 'afcwd2022' ); ?></div>
-        </div>
-      </div>
-      <div class="plano-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Diagramação e-mail marketing</strong><em class="texto-menor dblock">montagem do email seguindo práticas e ações anti-spam</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 1 por mês</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in last">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 2 por mês</em>', 'afcwd2022' ); ?></div>
-        </div>
-      </div>
-      <div class="plano-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Modificações de layout</strong><em class="texto-menor dblock">adicionar novos elementos no design ou funcionalidades / tarefas de layout</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>edições de <strong>baixa</strong> complexidade</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in last">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>edições de <strong>média</strong> complexidade</em>', 'afcwd2022' ); ?></div>
-        </div>
-      </div>
-      <div class="plano-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Diagramação de páginas internas</strong><em class="texto-menor dblock">sob conteúdo enviado previamente</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 2 páginas por mês</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in last">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 4 páginas por mês</em>', 'afcwd2022' ); ?></div>
-        </div>
-      </div>
-      <div class="plano-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Cadastro produtos Woocomerce</strong><em class="texto-menor dblock">sob conteúdo enviado previamente</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in last">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 30 produtos por mês</em>', 'afcwd2022' ); ?></div>
-        </div>
-      </div>
+
+
       <div class="plano-sessao nome-sessao">
         <div class="plano-sessao-in first">
           <div><?php _e( '<strong class="fonte-caixa-alta dblock">Bonus</strong>', 'afcwd2022' ); ?></div>
