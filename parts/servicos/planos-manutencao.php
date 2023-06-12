@@ -17,7 +17,7 @@
           <div class="plano-preco">R$<span class="plano-preco-maior">340</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
-            <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites comuns e blogs monetizáveis', 'afcwd2022' ); ?></div>
+            <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites com poucas atualizações e blogs monetizáveis', 'afcwd2022' ); ?></div>
           </div>
         </div>
         <div class="plano-head last">
@@ -26,7 +26,7 @@
           <div class="plano-preco">R$<span class="plano-preco-maior">597</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
-            <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites profissionais e lojas virtuais', 'afcwd2022' ); ?></div>
+            <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites com maior frequencia de edição e lojas virtuais', 'afcwd2022' ); ?></div>
           </div>
         </div>
       </div>
