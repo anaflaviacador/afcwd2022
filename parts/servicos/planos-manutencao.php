@@ -3,8 +3,8 @@
         <div class="plano-head vazio"></div>
         <div class="plano-head">
           <div class="plano-nome">Basic</div>
-          <div class="plano-preco">R$<span class="plano-preco-maior">153</span>/mês</div>
-          <!-- <div class="plano-preco">R$<span class="plano-preco-maior">180</span>/mês</div> -->
+          <!-- <div class="plano-preco">R$<span class="plano-preco-maior">153</span>/mês</div> -->
+          <div class="plano-preco">R$<span class="plano-preco-maior">180</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
             <div><?php _e( '<em class="dblock cor-verde">ideal para</em> landing pages ou mini-sites', 'afcwd2022' ); ?></div>
@@ -13,8 +13,8 @@
         <div class="plano-head destaque">
           <div class="plano-nome">Standard</div>
           <div class="plano-head-label">+ popular</div>
-          <div class="plano-preco">R$<span class="plano-preco-maior">255</span>/mês</div>
-          <!-- <div class="plano-preco">R$<span class="plano-preco-maior">340</span>/mês</div> -->
+          <!-- <div class="plano-preco">R$<span class="plano-preco-maior">255</span>/mês</div> -->
+          <div class="plano-preco">R$<span class="plano-preco-maior">340</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
             <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites comuns e blogs monetizáveis', 'afcwd2022' ); ?></div>
@@ -22,8 +22,8 @@
         </div>
         <div class="plano-head last">
           <div class="plano-nome">Premium</div>
-          <div class="plano-preco">R$<span class="plano-preco-maior">467</span>/mês</div>
-          <!-- <div class="plano-preco">R$<span class="plano-preco-maior">597</span>/mês</div> -->
+          <!-- <div class="plano-preco">R$<span class="plano-preco-maior">467</span>/mês</div> -->
+          <div class="plano-preco">R$<span class="plano-preco-maior">597</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
             <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites profissionais e lojas virtuais', 'afcwd2022' ); ?></div>
