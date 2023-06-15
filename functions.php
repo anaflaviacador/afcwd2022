@@ -211,7 +211,7 @@ if($wpp_num && $wpp_bt && $wpp_form) {
             return $fields;
         }
 
-        $url = 'https://wa.me/5562996269941?text='.$fields[5][ 'value' ];
+        $url = 'https://wa.me/5562996269941?text='.wp_strip_all_tags($fields[5][ 'value' ]);
 
         return $url;
     }
