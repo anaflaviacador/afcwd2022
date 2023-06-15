@@ -40,11 +40,11 @@ echo '<div id="afc_btwhats" data-whats-fuso="'.get_option( 'timezone_string' ).'
 		echo '<p data-whats-descricao-on="'.wp_strip_all_tags($descricoes['on']).'" data-whats-descricao-off="'.wp_strip_all_tags($descricoes['off']).'" data-whats-descricao-fds="'.wp_strip_all_tags($descricoes['weekend']).'" class="afc_btwhats_box_chamada" id="afc_btwhats_box_chamada"></p>';
 
 		if($form) { 
-
+			
 			echo do_shortcode('[wpforms id="'.$form.'"]');
 
 		} else {
-			
+
 			echo '<div class="afc_btwhats_box_form">';
 				echo '<input type="text" id="afc_btwhats_box_form_escrever" maxlength="60">';
 				echo '<a href="" data-whats-numero="'.wp_strip_all_tags($numero).'" target="_blank" id="afc_btwhats_box_form_mandar">&nbsp;</a>';

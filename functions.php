@@ -200,20 +200,22 @@ if(defined('WP_ROCKET_FILE')){
  *
  * @return string
  */
-$wpp_num = get_field('whatsapp_numero','option');
-$wpp_bt = get_field('whatsapp_bt','option');
-$wpp_form = get_field('whatsapp_wpforms','option');
 
-if($wpp_num && $wpp_bt && $wpp_form) {
-    function wpf_dev_process_redirect_url( $url, $form_id, $fields, $form_data, $entry_id ) {
-        // Only run on my form with ID
+
+function wpf_dev_process_redirect_url( $url, $form_id, $fields, $form_data, $entry_id ) {
+    $wpp_num = get_field('whatsapp_numero','option');
+    $wpp_bt = get_field('whatsapp_bt','option');
+    $wpp_form = get_field('whatsapp_wpforms','option');
+
+    if($wpp_num && $wpp_bt && $wpp_form) {
         if ( absint( $form_data[ 'id' ] ) !== $wpp_form ) {
             return $fields;
         }
 
-        $url = 'https://wa.me/5562996269941?text='.wp_strip_all_tags($fields[5][ 'value' ]);
-
-        return $url;
+        $url = 'https://wa.me/5562996269941?text='.$fields[5][ 'value' ];
     }
-    add_filter( 'wpforms_process_redirect_url', 'wpf_dev_process_redirect_url', 10, 5 );
+
+    return $url;
 }
+add_filter( 'wpforms_process_redirect_url', 'wpf_dev_process_redirect_url', 10, 5 );
+
