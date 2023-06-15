@@ -212,7 +212,7 @@ function wpf_dev_process_redirect_url( $url, $form_id, $fields, $form_data, $ent
             return $fields;
         }
 
-        $url = 'https://wa.me/5562996269941?text='.$fields[5][ 'value' ];
+        $url = 'https://wa.me/'.wp_strip_all_tags($wpp_num).'?text='.wp_strip_all_tags($fields[5][ 'value' ]);
     }
 
     return $url;
