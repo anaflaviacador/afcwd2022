@@ -35,7 +35,7 @@ $corwhats : #128c7e;
 		&.up {bottom: 30px;}
 	}
 
-	button {
+	& > button {
 		border-radius: 50%;
 		background: $corwhats;
 		text-decoration: none;
@@ -70,7 +70,7 @@ $corwhats : #128c7e;
 		}
 	}
 
-	&:hover button {
+	&:hover > button {
 		background: darken($corwhats, 5%);
 	}
 
@@ -94,30 +94,29 @@ $corwhats : #128c7e;
 			transform: translateY(-100%) scale(0);
 		}
 
+		&:before, &:after {
+			position: absolute; pointer-events: none;
+			display: block; content: "";
+		}
+
 		&:before {
 			top: -24px;
 			left: 9px;
 			background: $corwhats;
 			width: 66px;
 			height: 66px;
-			position: absolute;
-			display: block;
-			content: "";
 			border-radius: 50%;
 			box-shadow: 0 0 10px transparentize(black, 0.75);
 		}
 
 		&:after {
 			background: white;
-			content: '';
 			border-radius: 5px;
 			border-top: 4px solid $corwhats;
 			width: 100%;
 			height: calc(100% - 4px);
-			position: absolute;
 			top: 0;
 			left: 0;
-			display: block;
 		}
 
 		.foto {
@@ -282,11 +281,29 @@ $corwhats : #128c7e;
 			text-overflow: ellipsis;
 			white-space: nowrap;
 		}
+
+		.wpforms-container {
+			position: relative;
+			z-index: 1; margin-bottom: 0 !important;
+
+			.wpforms-field { margin-top: 0 !important; padding-bottom: 0 !important;}
+			.wpforms-field-label { line-height: 1.4; font-weight: normal !important; }
+
+			.wpforms-submit-container {
+				margin-top: 5px; 
+				button.botao.whatsapp { border-radius: 4px; font-size: 1em;}
+				
+				.wpforms-submit-spinner {
+					position: absolute; right: 6px;
+					top: 16px; width: 17px !important;
+				}
+			}
+		}
 	}
 
 
 	&.afc_onclick {
-		button {
+		& > button {
 			background: $corwhats;
 
 			&:before {
@@ -304,7 +321,7 @@ $corwhats : #128c7e;
 	}
 
 	&:not(.afc_onclick) {
-		button:before {
+		& > button:before {
 			animation: whatschacoalha 0.5s ease-in-out 0s infinite normal forwards;
 		}
 	}

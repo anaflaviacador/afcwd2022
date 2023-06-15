@@ -181,3 +181,39 @@ function my_lost_password_page( $lostpassword_url, $redirect ) {
 if(defined('WP_ROCKET_FILE')){
     add_filter( 'pre_get_rocket_option_emoji', function($value){ return 0; } );
 }
+
+
+// ========================================//
+// REDIRECIONA WPFORM PARA WHATSAPP
+// pega campo de texto e coloca no link do whats
+// ========================================//
+/**
+ * Redirect URL.
+ *
+ * @link https://wpforms.com/developers/wpforms_process_redirect_url/
+ *
+ * @param string     $url       URL to redirect to.
+ * @param int        $form_id   The form ID.
+ * @param array      $form_data Processed form settings/data.
+ * @param array      $fields    Sanitized fields data.
+ * @param int        $entry_id  Entry id.
+ *
+ * @return string
+ */
+$wpp_num = get_field('whatsapp_numero','option');
+$wpp_bt = get_field('whatsapp_bt','option');
+$wpp_form = get_field('whatsapp_wpforms','option');
+
+if($wpp_num && $wpp_bt && $wpp_form) {
+    function wpf_dev_process_redirect_url( $url, $form_id, $fields, $form_data, $entry_id ) {
+        // Only run on my form with ID
+        if ( absint( $form_data[ 'id' ] ) !== $wpp_form ) {
+            return $fields;
+        }
+
+        $url = 'https://wa.me/5562996269941?text='.$fields[5][ 'value' ];
+
+        return $url;
+    }
+    add_filter( 'wpforms_process_redirect_url', 'wpf_dev_process_redirect_url', 10, 5 );
+}
