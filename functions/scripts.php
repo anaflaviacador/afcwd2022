@@ -118,15 +118,11 @@ function afc_load_scripts_footer() {
   // if(is_singular('etheme_portfolio')) { echo '<script async defer src="//assets.pinterest.com/js/pinit.js"></>'; }
 
 
-  // widget freshdeskt - exceto pag WPForms conversacional
-  if (! in_array('wpforms-conversational-form-custom-logo',$classes)) {
-    // freshdesk - helpdesk da loja
-    echo '<script>window.fwSettings = { \'widget_id\':70000001417 }; !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() </script>';
-    echo '<script type=\'text/javascript\' src=\'https://widget.freshworks.com/widgets/70000001417.js\' async defer></script>';
+  // widget freshdeskt - helpdesk da loja
+  // echo '<script>window.fwSettings = { \'widget_id\':70000001417 }; !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() </script>';
+  // echo '<script type=\'text/javascript\' src=\'https://widget.freshworks.com/widgets/70000001417.js\' async defer></script>';
 
-    echo '<script>function openFreshdesk() { FreshworksWidget(\'open\'); } window.fwSettings = { \'widget_id\': 70000001417 }; !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()</script>';
-
-  }
+  // echo '<script>function openFreshdesk() { FreshworksWidget(\'open\'); } window.fwSettings = { \'widget_id\': 70000001417 }; !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()</script>';
 
 
   // configuracoes da barra de admin, caso exista

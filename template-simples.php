@@ -14,6 +14,7 @@ $urlTema = get_template_directory_uri();
 		<?php get_template_part('parts/header/metatags'); ?>
 	</head>
 <body class="<?php echo join(' ',get_body_class()); ?>">
+
 <?php get_template_part('parts/header/loader'); ?>
 <?php get_template_part('parts/header/topbar'); ?>
 

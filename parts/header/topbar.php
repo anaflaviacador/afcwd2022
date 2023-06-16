@@ -25,10 +25,7 @@ $politicapg = get_option( 'wp_page_for_privacy_policy' );
             </li>
             <li class="toplinks-li">
                 <a href="/contato">Contato</a>
-                <div class="cor-bege ml-10px">●</div>
-            </li>
-            <li class="toplinks-li">
-                <a onclick="openFreshdesk()" href="#ticket"><?php esc_html_e( 'Suporte da loja', 'afcwd2022' ); ?></a>
+                <!-- <div class="cor-bege ml-10px">●</div> -->
             </li>
         </ul>
         

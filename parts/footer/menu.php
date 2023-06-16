@@ -19,7 +19,6 @@
         <a href="/loja/temas/aurora" class="menu-rodape-link"><?php esc_html_e( 'À pronta entrega', 'afcwd2022' ); ?></a>
         <a href="/loja/temas/aurora" class="menu-rodape-sublink"><?php esc_html_e( 'Template Aurora', 'afcwd2022' ); ?></a>
         <?php /* ?><a href="/loja/como-comprar" class="menu-rodape-sublink"><?php esc_html_e( 'Como comprar', 'afcwd2022' ); ?></a><?php */ ?>
-        <a onclick="openFreshdesk()" href="#ticket" class="menu-rodape-sublink"><?php esc_html_e( 'Suporte do tema', 'afcwd2022' ); ?></a>
         <a href="/loja/rastrear-pedido" class="menu-rodape-sublink"><?php esc_html_e( 'Rastrear compra', 'afcwd2022' ); ?></a>
         <a href="/termos" class="menu-rodape-sublink"><?php esc_html_e( 'Termos de uso', 'afcwd2022' ); ?></a>
         <a href="/termos/programa-afiliadas" class="menu-rodape-sublink"><?php esc_html_e( 'Programa de afiliados', 'afcwd2022' ); ?></a>
