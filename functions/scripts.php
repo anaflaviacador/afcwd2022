@@ -2,7 +2,7 @@
 function afc_load_styles() { 
     // variacoes declaradas
     $urltheme = get_template_directory_uri();
-    $vs = 'fjE4B35';
+    $vs = '5Fyk4Qf';
 
     ////////// css principal de layout
     wp_enqueue_style('layout', $urltheme . '/assets/css/layout.css?v='.$vs, array(), '', 'all', null); 
