@@ -270,10 +270,10 @@ $corwhats : #128c7e;
 		}
 
 		.afc_btwhats_box_horario {
-			margin-top: 8px;
+			margin-top: 10px;
 			text-transform: uppercase;
 			opacity: .7;
-			font-size: 8px;
+			font-size: 9px;
 			z-index: 2;
 			position: relative;
 			width: 325px;
@@ -286,7 +286,14 @@ $corwhats : #128c7e;
 			position: relative;
 			z-index:3; margin-bottom: 0 !important;
 
-			.wpforms-field { margin-top: 0 !important; padding-bottom: 0 !important;}
+			.wpforms-field { 
+				margin-top: 0 !important; padding-bottom: 0 !important; 
+
+				input[type="text"], input[type="email"], 
+				input[type="tel"], input[type="submit"] {
+					font-size: 16px !important;
+				}
+			}
 			.wpforms-field-label { line-height: 1.4; font-weight: normal !important; }
 
 			.wpforms-submit-container {
