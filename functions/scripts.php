@@ -132,7 +132,7 @@ function afc_load_scripts_footer() {
     echo '@media screen and (max-width: 600px) { #wpadminbar {position: fixed} }';
     echo '.cli-modal.cli-blowup {z-index: 2147483002}';
     echo '.menu-mobile {top: 80px;}';
-    echo '#order_review table.woocommerce-checkout-review-order-table {display:none;}';
+    echo '#order_review > table.shop_table {display:none;}';
     echo 'form div div .mp-checkout-custom-card-form-title, .mp-checkout-custom-available-payments .mp-checkout-custom-available-payments-header .mp-checkout-custom-available-payments-title, .mp-checkout-custom-available-payments-text, .mp-input-label {font-family: \'Work Sans\', sans-serif !important}';
     echo '.mp-checkout-custom-available-payments .mp-checkout-custom-available-payments-header .mp-checkout-custom-available-payments-title {font-weight: normal !important;}';
     echo '.mp-checkout-custom-card-form .mp-checkout-custom-card-input {border-color: #dddabd}';
