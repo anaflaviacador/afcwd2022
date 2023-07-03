@@ -31,7 +31,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 <?php if (wc_coupons_enabled()): ?>
 <div class="colunas-wrap num-2">
 	<div class="coluna-item num-2">
-		<div class="aviso-amarelo"><p class="mb-0 texto-menor"><strong>Pagará no cartão de crédito?</strong> Dê preferência em fechar seu pedido com os <u>dados do titular do cartão</u>, que são: nome completo, CPF/CNPJ e telefone. Qualquer divergência de dados podem ser barrados pelo sistema anti-fraude do Paypal e impedir a conclusão do pedido.</p></div>
+		<div class="aviso-amarelo"><p class="mb-0 texto-menor"><strong>ATENÇÃO:</strong> Todos os produtos são digitais e os serviços são realizados remotamente. Quaisquer dados de endereço físico que podem ser pedidos são para validação de seu pagamento e emissão de nota fiscal.</p></div>
 	</div>
 	<div class="coluna-item num-2">
 		<?php wc_get_template_part('checkout/form-coupon');?>
@@ -42,18 +42,22 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 <form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
 		<div class="colunas-wrap num-2" id="customer_details">
-			<?php if ( $checkout->get_checkout_fields() ) : ?>
+			
 			<div class="coluna-item num-2">
-				<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
-				<?php do_action( 'woocommerce_checkout_billing' ); ?>
-				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-				<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
+				<?php if ( $checkout->get_checkout_fields() ) : ?>
+					<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
+					<?php do_action( 'woocommerce_checkout_billing' ); ?>
+					<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+					<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
+				<?php endif; ?>
+
+				<h3 style="margin-top:.8em">Revise seu pedido</h3>
+				<?php wc_get_template_part('checkout/review','order'); ?>
 			</div>
-			<?php endif; ?>
 
 			<div class="coluna-item num-2">
 				<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-				<h3 id="order_review_heading">Detalhes do seu pedido</h3>
+				<!-- <h3 id="order_review_heading">Detalhes do seu pedido</h3> -->
 				<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
 				<div id="order_review" class="woocommerce-checkout-review-order">

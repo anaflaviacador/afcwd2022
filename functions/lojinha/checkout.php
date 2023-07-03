@@ -9,12 +9,44 @@ add_filter( 'wc_add_to_cart_message_html', '__return_null' );
 function custom_override_checkout_fields_ek( $fields ) {
     // credito: https://rudrastyh.com/woocommerce/reorder-checkout-fields.html
 
-    $fields['billing']['billing_neighborhood']['required'] = true;
+    ///////// CHECKOUT COMPLETO - ENDERECO _ CPF E CNPJ
+    // $fields['billing']['billing_neighborhood']['required'] = true;
+
+    // $fields['billing']['billing_email']['priority'] = 21;
+    // $fields['billing']['billing_email']['class'] = array( 'afc-form-row-wide clear' );
+
+    // $fields['billing']['billing_company']['label'] = 'Razão social da empresa <abbr class="required" title="obrigatório">*</abbr>';
+
+
+    // if(is_user_logged_in()) {
+    //     $fields['billing']['billing_email']['label'] = 'E-mail para recebimento dos arquivos';
+    // } else {
+    //     $fields['billing']['billing_email']['label'] = 'E-mail para conta e recebimento';
+    // }
+
+    // $fields['billing']['billing_address_1']['class'] = array( 'afc-form-row-first' );
+    // $fields['billing']['billing_number']['class'] = array( 'afc-form-row-last' );
+    // $fields['billing']['billing_persontype']['class'] = array( 'afc-form-row-first' );
+    // $fields['billing']['billing_cpf']['class'] = array( 'afc-form-row-last' );
+
+    // $fields['billing']['billing_neighborhood']['class'] = array( 'afc-form-row-wide clear' );
+
+    // $fields['billing']['billing_number']['placeholder'] = 'Insira SN se não houver';
+
+
+    ///////// CHECKOUT OTIMIZADO
+    unset($fields['billing']['billing_neighborhood']);
+    unset($fields['billing']['billing_number']);
+    unset($fields['billing']['billing_address_1']);
+    unset($fields['billing']['billing_city']);
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_state']);
 
     $fields['billing']['billing_email']['priority'] = 21;
     $fields['billing']['billing_email']['class'] = array( 'afc-form-row-wide clear' );
 
-    $fields['billing']['billing_company']['label'] = 'Razão social da empresa <abbr class="required" title="obrigatório">*</abbr>';
+    $fields['billing']['billing_company']['label'] = 'Razão social da empresa';
+    $fields['billing']['billing_phone']['label'] = 'Whatsapp';
 
 
     if(is_user_logged_in()) {
@@ -23,15 +55,11 @@ function custom_override_checkout_fields_ek( $fields ) {
         $fields['billing']['billing_email']['label'] = 'E-mail para conta e recebimento';
     }
 
-    $fields['billing']['billing_address_1']['class'] = array( 'afc-form-row-first' );
-    $fields['billing']['billing_number']['class'] = array( 'afc-form-row-last' );
-    $fields['billing']['billing_persontype']['class'] = array( 'afc-form-row-first' );
-    $fields['billing']['billing_cpf']['class'] = array( 'afc-form-row-last' );
-    // $fields['billing']['billing_cnpj']['class'] = array( 'afc-form-row-last' );
 
-    $fields['billing']['billing_neighborhood']['class'] = array( 'afc-form-row-wide clear' );
+    $fields['billing']['billing_persontype']['class'] = array( 'form-row-first' );
+    $fields['billing']['billing_cpf']['class'] = array( 'form-row-last' );
+    $fields['billing']['billing_company']['class'] = array( 'form-row-last' );
 
-    $fields['billing']['billing_number']['placeholder'] = 'Insira SN se não houver';
 
     return $fields;
 }
@@ -41,7 +69,8 @@ add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields_ek'
 add_action( 'woocommerce_form_field_tel','afc_checkout_field_alerta_tel', 10, 2 );
 function afc_checkout_field_alerta_tel( $field, $key ){
     if ( is_checkout() && ( $key == 'billing_phone') ) {
-        $field .= '<p class="form-row form-row-wide" style="font-size: 12px; width: 100%; margin: -7px 0 11px 0 !important; float: left; line-height: 1.5; clear: both;"><span class="cor-negacao">Alerta:</span> caso selecione cartão de crédito, por gentileza, informe o contato que está associado à fatura do cartão utilizado, evitando possíveis bloqueios de pagamento pelo sistema anti-fraude.</p>';
+        // $field .= '<p class="form-row form-row-wide" style="font-size: 12px; width: 100%; margin: -7px 0 11px 0 !important; float: left; line-height: 1.5; clear: both;"><span class="cor-negacao">Alerta:</span> caso selecione cartão de crédito, por gentileza, informe o contato que está associado à fatura do cartão utilizado, evitando possíveis bloqueios de pagamento pelo sistema anti-fraude.</p>';
+        $field .= '<p class="form-row form-row-wide" style="font-size: 12px; width: 100%; margin: -7px 0 11px 0 !important; float: left; line-height: 1.5; clear: both;">O whatsapp é o canal de contato oficial do site, facilitando a comunicação do suporte e identificação de sua compra.</p>';
     }
     return $field;
 }
@@ -61,9 +90,9 @@ function afc_checkout_field_alerta_email( $field, $key ){
 add_action( 'woocommerce_review_order_before_payment', 'afc_mensagem_acima_pagamentos' );
 function afc_mensagem_acima_pagamentos() {  
     echo '<h3>Meio de pagamento</h3>';
-    echo '<p class="mb-10px texto-menor">';
-        echo '<p class="mb-0 texto-menor">Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito apto a transações internacionais em sua conta (pagamento em moeda BRL).';
-    echo '</p>';
+    // echo '<p class="mb-10px texto-menor">';
+    //     echo '<p class="mb-0 texto-menor">Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito apto a transações internacionais em sua conta (pagamento em moeda BRL).';
+    // echo '</p>';
 }
 
 

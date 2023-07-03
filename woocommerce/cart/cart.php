@@ -170,7 +170,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 	<p class="texto-menor"><em><strong>Tem um cupom de desconto?</strong> Ele poderá ser aplicado na próxima etapa. É só clicar em "ir ao pagamento".</em></p>
 
-	<div class="aviso-amarelo mb-10px"><p class="mb-0"><strong>ATENÇÃO:</strong> Todos os produtos são digitais e os serviços são realizados remotamente. Seus dados e endereço físico são pedidos para validação de pagamento e emissão de nota fiscal.</p></div>
+	<div class="aviso-amarelo mb-10px"><p class="mb-0"><strong>ATENÇÃO:</strong> Todos os produtos são digitais e os serviços são realizados remotamente. Quaisquer dados de endereço físico que podem ser pedidos são para validação de seu pagamento e emissão de nota fiscal.</p></div>
 	
 	
 </div>

@@ -59,7 +59,7 @@ $intro = get_field('intro', $post->ID);
             
 
 
-            <div class="texto-menor has-text-align-center"><strong>5%OFF no Pix ou até 6x sem juros no cartão</strong><br><em>os descontos são aplicados no carrinho</em></div>
+            <div class="texto-menor has-text-align-center"><strong>5%OFF no Pix ou até 12x no cartão</strong><br><em>os descontos são aplicados no carrinho</em></div>
           </div>
           <div class="prod-venda-mockup">
             <div class="prod-preview">
