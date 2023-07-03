@@ -90,11 +90,9 @@ function afc_checkout_field_alerta_email( $field, $key ){
 add_action( 'woocommerce_review_order_before_payment', 'afc_mensagem_acima_pagamentos' );
 function afc_mensagem_acima_pagamentos() {  
     echo '<h3>Meio de pagamento</h3>';
-    echo '<p class="mb-10px texto-menor">';
-        echo 'Escolha um método de pagamento para pagar seu pedido de ';
-        wc_cart_totals_order_total_html();
+    // echo '<p class="mb-10px texto-menor">';
     //     echo 'Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito apto a transações internacionais em sua conta (pagamento em moeda BRL).';
-    echo '</p>';
+    // echo '</p>';
 }
 
 
