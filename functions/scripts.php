@@ -126,18 +126,18 @@ function afc_load_scripts_footer() {
 
 
   // configuracoes da barra de admin, caso exista
+  echo '<style>';
   if (is_admin_bar_showing()) {
-    echo '<style>';
     echo '@media screen and (max-width: 782px) { html{ margin-top: 0 !important; } body{ margin-top: 46px !important; } }';
     echo '@media screen and (max-width: 600px) { #wpadminbar {position: fixed} }';
     echo '.cli-modal.cli-blowup {z-index: 2147483002}';
     echo '.menu-mobile {top: 80px;}';
-    echo '#order_review > table.shop_table {display:none;}';
-    echo 'form div div .mp-checkout-custom-card-form-title, .mp-checkout-custom-available-payments .mp-checkout-custom-available-payments-header .mp-checkout-custom-available-payments-title, .mp-checkout-custom-available-payments-text, .mp-input-label {font-family: \'Work Sans\', sans-serif !important}';
-    echo '.mp-checkout-custom-available-payments .mp-checkout-custom-available-payments-header .mp-checkout-custom-available-payments-title {font-weight: normal !important;}';
-    echo '.mp-checkout-custom-card-form .mp-checkout-custom-card-input {border-color: #dddabd}';
-    echo '</style>'; 
   }
+  echo '#order_review > table.shop_table {display:none;}';
+  echo 'form div div .mp-checkout-custom-card-form-title, .mp-checkout-custom-available-payments .mp-checkout-custom-available-payments-header .mp-checkout-custom-available-payments-title, .mp-checkout-custom-available-payments-text, .mp-input-label {font-family: \'Work Sans\', sans-serif !important}';
+  echo '.mp-checkout-custom-available-payments .mp-checkout-custom-available-payments-header .mp-checkout-custom-available-payments-title {font-weight: normal !important;}';
+  echo '.mp-checkout-custom-card-form .mp-checkout-custom-card-input {border-color: #dddabd}';
+  echo '</style>'; 
 
   // css custom para wpforms conversational ROXO
   if (in_array('wpforms-conversational-form-custom-logo',$classes)) echo '<link rel="stylesheet" href="'.get_template_directory_uri(  ).'/assets/css/wpforms-color-scheme-purple.css" type="text/css" media="all" />';
