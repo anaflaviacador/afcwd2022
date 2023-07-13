@@ -90,9 +90,20 @@ function afc_checkout_field_alerta_email( $field, $key ){
 add_action( 'woocommerce_review_order_before_payment', 'afc_mensagem_acima_pagamentos' );
 function afc_mensagem_acima_pagamentos() {  
     echo '<h3>Meio de pagamento</h3>';
-    echo '<p class="mb-10px texto-menor">';
-        echo 'Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito apto a transações internacionais em sua conta (pagamento em moeda BRL).';
-    echo '</p>';
+    
+    foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
+        $product = $cart_item['data'];
+        if ( has_term( array('planos'), 'product_cat', $product->get_id() ) ) {
+            echo '<p class="mb-10px texto-menor">';
+                echo 'O studio agora trabalha com assinatura via Pix! Você irá receber uma notificação por email todos os meses informando sua renovação de plano, facilitando sua gestão financeira e, melhor ainda, <u>zero uso de cartão de crédito</u>!';
+            echo '</p>';            
+        } else {
+            echo '<p class="mb-10px texto-menor">';
+                echo 'Mora fora do Brasil? Aceitamos seu pagamento por conta Paypal. É só ter um cartão de crédito apto a transações internacionais em sua conta (pagamento em moeda BRL).';
+            echo '</p>';
+        }
+        break;
+    }   
 }
 
 
