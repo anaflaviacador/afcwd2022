@@ -221,40 +221,22 @@ function filter_woocommerce_account_downloads_columns( $columns ) {
 add_filter( 'woocommerce_account_downloads_columns', 'filter_woocommerce_account_downloads_columns', 10, 1 );
 
 
-// mostrar / esconder meios de pgto dependendo do pedido - feito manualmente via painel
-add_filter( 'woocommerce_available_payment_gateways', 'conditionally_hide_payment_gateways', 100, 1 );
-function conditionally_hide_payment_gateways( $available_gateways ) {
-    
-    if( is_wc_endpoint_url( 'order-pay' ) ) {
-        $order = wc_get_order( get_query_var('order-pay') ); // pedido
-        $items = $order->get_items(); // get items do pedido
-        $total = $order->get_total();
-        $tags = [ ]; // registra array
-
-        // captura tags dos produtos no pedido
-        foreach ( $items as $item ) {
-            $product_id = $item->get_product_id();
-            $terms = get_the_terms( $product_id, 'product_tag' );
-            if ( ! empty( $terms ) ) {
-                foreach ( $terms as $term ) {
-                    $tags[] = $term->slug;
-                }
-            }
-        }
-
-        // revisa o loop do pedido 'pending', 'on-hold', 'processing' etc
-        foreach( $available_gateways as $gateways_id => $gateways ){
-
-            // definicoes apenas quando está no status aguardando pagamento
-            if($order->has_status('pending')) {
-                // mostra apenas stripe para assinaturas
-                if(in_array('assinaturas', $tags ) && $gateways_id !== 'stripe_cc' ) unset($available_gateways[$gateways_id]);
-
-                // retira stripe para servicos gerais para cliente da loja
-                if(in_array('geral-loja', $tags ) && $gateways_id === 'stripe_cc' ) unset($available_gateways[$gateways_id]);
+// mostrar / esconder meios de pgto dependendo do pedido
+add_filter( 'woocommerce_available_payment_gateways', 'bbloomer_unset_gateway_by_category' );
+function bbloomer_unset_gateway_by_category( $available_gateways ) {
+    if ( is_admin() ) return $available_gateways;
+    if ( ! is_checkout() ) return $available_gateways;
+    $unset = false;
+    $category_id = 8; // TARGET CATEGORY
+    foreach ( WC()->cart->get_cart_contents() as $key => $values ) {
+        $terms = get_the_terms( $values['product_id'], 'product_cat' );    
+        foreach ( $terms as $term ) {        
+            if ( $term->term_id == $category_id ) {
+                $unset = true; // CATEGORY IS IN THE CART
+                break;
             }
         }
     }
-
+    if ( $unset == true ) unset( $available_gateways['woo-mercado-pago-custom'] ); // DISABLE COD IF CATEGORY IS IN THE CART
     return $available_gateways;
 }
