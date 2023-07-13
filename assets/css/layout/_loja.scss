@@ -338,7 +338,7 @@ div.woocommerce {
 
 				&.payment_method_stripe_cc {
 					.wc-stripe-gateway-desc { position: relative; margin-bottom: 1.8em; }
-					#wc-stripe-card-element { border: 1px solid $verde-medio; }
+					// #wc-stripe-card-element { border: 1px solid $verde-medio; }
 				}
 			}
 		}
