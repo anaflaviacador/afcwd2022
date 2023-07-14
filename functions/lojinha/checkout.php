@@ -95,7 +95,7 @@ function afc_mensagem_acima_pagamentos() {
         $product = $cart_item['data'];
         if ( has_term( array('planos'), 'product_cat', $product->get_id() ) ) {
             echo '<p class="mb-10px texto-menor">';
-                echo 'O studio agora trabalha com assinatura via Pix! Você irá receber uma notificação por email todos os meses informando sua renovação de plano, facilitando sua gestão financeira e, melhor ainda, <u>zero uso de cartão de crédito</u>!';
+                echo 'Não quer usar cartão de crédito? O studio agora trabalha com assinatura via Pix! Todo mês chegará uma fatura por email informando sua renovação com o QRCode do Pix da mensalidade.';
             echo '</p>';            
         } else {
             echo '<p class="mb-10px texto-menor">';
