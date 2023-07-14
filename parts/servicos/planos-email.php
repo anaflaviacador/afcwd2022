@@ -180,22 +180,22 @@
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-botao emailmkt">
-            <a href="/finalizar-compra/?add-to-cart=5827" target="_blank" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="/finalizar-compra/?add-to-cart=5827" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
         <div class="plano-sessao-in destaque emailmkt">
           <div class="plano-botao emailmkt">
-            <a href="/finalizar-compra/?add-to-cart=5828" target="_blank" class="botao inverso grafite"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="/finalizar-compra/?add-to-cart=5828" class="botao inverso grafite"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-botao emailmkt">
-            <a href="/finalizar-compra/?add-to-cart=5829" target="_blank" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="/finalizar-compra/?add-to-cart=5829" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
         <div class="plano-sessao-in last end emailmkt">
           <div class="plano-botao emailmkt">
-            <a href="/finalizar-compra/?add-to-cart=5830" target="_blank" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="/finalizar-compra/?add-to-cart=5830" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
       </div>
