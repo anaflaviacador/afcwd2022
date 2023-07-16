@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-	<p>Olá! Você possui um pagamento pendente para o pedido <?php $order->get_order_number() ); ?> lá no site! Por gentileza, realize o pagamento para continuar usufruindo dos serviços do studio.</p>
+	<p>Olá! Você possui um pagamento pendente para o pedido <?php echo $order->get_order_number() ); ?> lá no site! Por gentileza, realize o pagamento para continuar usufruindo dos serviços do studio.</p>
 
 <?php
 
