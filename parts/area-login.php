@@ -40,12 +40,12 @@ $urlTema = get_template_directory_uri();
             <div class="login-txt">
               <div>
                 <h1 class="has-text-align-center"><?php _e( '<span class="titulo-cursiva cor-bege">painel</span><br>área cliente', 'afcwd2022' ); ?></h1>
-                <p class="texto-menor"><?php esc_html_e( 'Tenha acesso ao seu histórico de pedidos, downloads, acervo de plugins premium e panorama geral de sua afiliação.', 'afcwd2022' ); ?></p>
+                <p class="texto-menor"><?php esc_html_e( 'Tenha acesso ao seu histórico de pedidos, downloads, acervo de plugins premium, formulário de briefing e área de afiliados.', 'afcwd2022' ); ?></p>
               </div>
               <div class="has-text-align-right">
-                <a href="/criar-conta" class="botao-liso">
-                  <?php esc_html_e( 'Criar uma conta', 'afcwd2022' ); ?> 
-                  <i class="fa-light fa-arrow-right-long bt-seta"></i>
+                <a href="#" class="botao-liso bt-abrir-wts">
+                  <?php esc_html_e( 'Precisa de ajuda?', 'afcwd2022' ); ?> 
+                  <!-- <i class="fa-light fa-arrow-right-long bt-seta"></i> -->
                 </a>
               </div>
             </div>
