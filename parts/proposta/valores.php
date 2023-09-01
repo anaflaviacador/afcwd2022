@@ -13,7 +13,7 @@
         <div class="w-layout-vflex prop-invest-box">
             <?php if($valor) :?>
             <h2 class="mb-0">
-                <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor['valor_mensal']); ?></span><span class="texto-menor cor-verde-medio">/mês</span> ou 
+                <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor['valor_mensal']); ?></span> ou 
                 <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor['valor_vista']); ?></span> <span class="texto-menor cor-verde-medio">à vista</span>
             </h2>
             
