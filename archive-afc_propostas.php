@@ -1,0 +1,1 @@
+<?php header('Location: https://afcweb.design/projetos/', true, 301); exit(); ?>
