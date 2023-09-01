@@ -36,11 +36,23 @@
             </p>
 
             <?php if ( have_rows( 'proposta_servicos' ) ) : ?>
-                <h3>Serviços inclusos:</h3>
+                <h3>Serviços inclusos</h3>
                 <ul role="list" class="prop-servicos-lista">
                     <?php while ( have_rows( 'proposta_servicos' ) ) : the_row(); ?>
                         <li class="prop-servicos-ul-li">
                             <i class="fa-regular fa-check-double cor-rosa-medio"></i> <?php echo wp_strip_all_tags(get_sub_field( 'servico' )); ?>
+                        </li>
+                    <?php endwhile; ?>
+                </ul>
+            <?php endif; ?>
+
+
+            <?php if ( have_rows( 'proposta_servicos_opc' ) ) : ?>
+                <h4 class="mt-20px">Serviços opcionais <small>(cobrança adicional)</small></h4>
+                <ul role="list" class="prop-servicos-lista">
+                    <?php while ( have_rows( 'proposta_servicos_opc' ) ) : the_row(); ?>
+                        <li class="prop-servicos-ul-li">
+                            <i class="fa-light fa-circle-plus cor-azul-medio"></i> <?php echo wp_strip_all_tags(get_sub_field( 'servico' )); ?>
                         </li>
                     <?php endwhile; ?>
                 </ul>
