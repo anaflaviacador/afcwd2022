@@ -107,9 +107,9 @@
                     },
                     "choices": {
                         "none": "Nenhuma",
-                        "wordpress": "Wordpress",
-                        "woocommerce": "Woocommerce",
-                        "webflow": "Webflow"
+                        "webflow": "Wordpress",
+                        "wordpress": "Woocommerce",
+                        "woocommerce": "Webflow"
                     },
                     "default_value": "none",
                     "return_format": "value",
@@ -405,5 +405,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1693401166
+    "modified": 1693573215
 }
