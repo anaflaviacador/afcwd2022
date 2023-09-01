@@ -22,7 +22,8 @@ body {
   line-height: 1.7;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin-top: 0;
   margin-bottom: 10px;
   font-family: Recoleta, Georgia, sans-serif;
@@ -1591,7 +1592,8 @@ blockquote {
     font-size: 15px;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 28px;
   }
 
@@ -1699,7 +1701,8 @@ blockquote {
     line-height: 1.5;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 24px;
   }
 
@@ -1788,6 +1791,10 @@ blockquote {
     display: none;
   }
 
+  .prop-nav {
+    justify-content: flex-start;
+  }
+
   .prop-nav-link {
     flex: none;
   }
@@ -1831,7 +1838,9 @@ blockquote {
 }
 
 @media screen and (max-width: 479px) {
-  h1, h2 {
+
+  h1,
+  h2 {
     font-size: 21px;
   }
 
@@ -1948,7 +1957,8 @@ blockquote {
     padding: 10px;
   }
 
-  .timeline, .timeline-dot {
+  .timeline,
+  .timeline-dot {
     display: none;
   }
 
@@ -1958,7 +1968,6 @@ blockquote {
     padding: 10px;
   }
 }
-
 
 @font-face {
   font-family: 'Blankers';
