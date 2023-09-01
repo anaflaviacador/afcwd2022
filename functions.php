@@ -142,6 +142,7 @@ include_once(get_template_directory().'/functions/pt_depoimentos.php' );
 include_once(get_template_directory().'/functions/pt_blog.php' );
 include_once(get_template_directory().'/functions/pt_portfolio.php' );
 include_once(get_template_directory().'/functions/pt_faq.php' );
+include_once(get_template_directory().'/functions/pt_propostas.php' );
 include_once(get_template_directory().'/functions/shortcodes.php' );
 include_once(get_template_directory().'/functions/blocks.php' );
 include_once(get_template_directory().'/functions/login-painel.php' );

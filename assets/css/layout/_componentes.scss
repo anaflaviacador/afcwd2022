@@ -344,3 +344,31 @@ label { font-weight: 500; margin-bottom: 0; display: unset;}
         }
     }
 }
+
+/////////// PAGINA DE PROPOSTA
+.tw-balance {
+    text-wrap: balance;
+}
+
+.overflow-clip {
+    overflow: clip !important
+}
+
+/*projetos*/
+@media (max-width: 991px) {
+    .prop-exemplos-proj {
+        overflow-y: hidden;
+    }
+}
+
+/*nav*/
+@media (max-width: 767px) {
+    .prop-nav {
+        overflow-y: hidden;
+    }
+}
+
+/*timeline*/
+.timeline {
+    top: calc(2em + 40px) !important;
+}

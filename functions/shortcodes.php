@@ -171,3 +171,18 @@ function afc_shortcode_hide_mobile( $atts, $content = null ) {
 
 } add_shortcode('hide-mobile','afc_shortcode_hide_mobile');
 
+
+// ========================================//
+// EMAIL CLEAn
+// ========================================// 
+function afc_shortcode_email( $atts, $content = null ) { 
+    extract(shortcode_atts(array(
+        "endereco" => '',
+        "texto" => '',
+    ), $atts));
+
+    if (is_admin()) return $endereco;
+
+    return '<a href="'.esc_url('mailto:' . antispambot( wp_strip_all_tags($endereco) ) ).'">'.($texto ? wp_strip_all_tags( $texto ) : antispambot( wp_strip_all_tags($endereco) )).'</a>';
+}
+add_shortcode('email','afc_shortcode_email');

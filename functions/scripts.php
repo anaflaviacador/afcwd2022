@@ -2,28 +2,32 @@
 function afc_load_styles() { 
     // variacoes declaradas
     $urltheme = get_template_directory_uri();
-    $vs = 'HFs7Z4k';
+    $vs = 'UpKN9E3';
 
     ////////// css principal de layout
     wp_enqueue_style('layout', $urltheme . '/assets/css/layout.css?v='.$vs, array(), '', 'all', null); 
-    
+    if(is_singular('afc_propostas')) wp_enqueue_style('propostas', $urltheme . '/assets/css/propostas.webflow.css?v='.$vs, array(), '', 'all', null); 
+
     ////////// jquery atualizado
     wp_deregister_script( 'jquery-core' );
     wp_register_script( 'jquery-core', $urltheme . '/assets/js/jquery.min.js', array(), '' );
     wp_deregister_script( 'jquery-migrate' );
     wp_register_script( 'jquery-migrate', $urltheme . '/assets/js/jquery-migrate.min.js', array(), '' );
 
-    ////////// frameworks
-    wp_enqueue_script( 'fancyb0x', $urltheme . '/assets/js/fancybox.min.js', array('jquery-core'), '', true);
-    wp_enqueue_script( 'splider', $urltheme . '/assets/js/splide.min.js?v='.$vs, array('jquery-core'), '', true);
-    wp_enqueue_script( 'webflow', $urltheme . '/assets/js/webflow.js?v='.$vs, array('jquery-core'), '', true); 
-    wp_enqueue_script( 'mas0nry', $urltheme . '/assets/js/masonry.js?v='.$vs, array('jquery-core'), '', true); 
-    // wp_enqueue_script( 'googlefonts', $urltheme . '/assets/js/gfont.js?v='.$vs, array('jquery-core'), '', true); 
-    wp_enqueue_script( 'googlefonts', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', array('jquery-core'), '', false); 
+    ////////// frameworks    
+    if(is_singular('afc_propostas')) {
+      wp_enqueue_script( 'webflow-propostas', $urltheme . '/assets/js/webflow-propostas.js?v='.$vs, array('jquery-core'), '', true); 
+    } else {
+      wp_enqueue_script( 'fancyb0x', $urltheme . '/assets/js/fancybox.min.js', array('jquery-core'), '', true);
+      wp_enqueue_script( 'splider', $urltheme . '/assets/js/splide.min.js?v='.$vs, array('jquery-core'), '', true);
+      wp_enqueue_script( 'webflow', $urltheme . '/assets/js/webflow.js?v='.$vs, array('jquery-core'), '', true); 
+      wp_enqueue_script( 'mas0nry', $urltheme . '/assets/js/masonry.js?v='.$vs, array('jquery-core'), '', true); 
+    }
 
+    wp_enqueue_script( 'googlefonts', '//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js', array('jquery-core'), '', false);     
 
     ////////// scripts
-    wp_enqueue_script( 'texto-animado', $urltheme . '/assets/js/texto-animado.js?v='.$vs, array('jquery-core'), '', true);
+    if(is_front_page()) wp_enqueue_script( 'texto-animado', $urltheme . '/assets/js/texto-animado.js?v='.$vs, array('jquery-core'), '', true);
     wp_enqueue_script( 'whatsapp', $urltheme . '/assets/js/whatapp.js?v='.$vs, array('jquery-core'), '', true);
     if(is_singular('afc_blog')) wp_enqueue_script( 'indice', $urltheme . '/assets/js/indice.js?v='.$vs, array('jquery-core'), '', true);
     wp_enqueue_script( 'scripts', $urltheme . '/assets/js/app.js?v='.$vs, array('jquery-core'), '', true);
