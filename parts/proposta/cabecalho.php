@@ -2,6 +2,7 @@
 $homeurl = home_url(('/'));
 $urlTema = get_template_directory_uri();
 $apelido = get_field('proposta_nome');
+$chamada = get_field('proposta_chamada');
 $projetos = get_field('proposta_projetos');
 $bio = get_field('proposta_bio');
 $mockupIpadImg = '6443'; // producao
@@ -33,7 +34,9 @@ $mockupIpadImg = '6443'; // producao
 
     <div class="w-layout-vflex prop-intro">
         <h1 class="cor-roxo"><span class="titulo-cursiva">Olá, <?php echo wp_strip_all_tags( $apelido ); ?>!</span></h1>
-        <h2 class="prop-intro-chamada tw-balance">Saiba como poderei agregar valor ao seu negócio</h2>
+        <h2 class="prop-intro-chamada tw-balance">
+            <?php echo $chamada ? wp_strip_all_tags( $chamada ) : 'Saiba como poderei agregar valor ao seu negócio'; ?>
+        </h2>
         <div class="cor-roxo tw-balance"><em>Aproveite e conheça alguns projetos.</em></div>
     </div>
 </section>

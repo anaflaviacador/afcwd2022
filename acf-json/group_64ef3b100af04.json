@@ -12,7 +12,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "40",
                 "class": "",
                 "id": ""
             },
@@ -20,7 +20,27 @@
             "maxlength": "",
             "placeholder": "",
             "prepend": "Oi,",
-            "append": "! Saiba como poderei agregar valor ao seu negócio."
+            "append": "!"
+        },
+        {
+            "key": "field_64f6348ca9c4c",
+            "label": "Nome chamada",
+            "name": "proposta_chamada",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Saiba como poderei agregar valor ao seu negócio",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_64ef3bec01d4c",
@@ -162,6 +182,26 @@
             "ui_on_text": "Habilitado",
             "ui_off_text": "Desabilitado",
             "ui": 1
+        },
+        {
+            "key": "field_64f631639a5f5",
+            "label": "<hr>Título da proposta #1",
+            "name": "proposta_orc_titulo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_64ef3dc267fcd",
@@ -324,8 +364,188 @@
             ]
         },
         {
+            "key": "field_64f6318b9a5f6",
+            "label": "<hr>Título da proposta #2",
+            "name": "proposta_orc_titulo2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64f631a19a5f7",
+            "label": "Investimento padrão #2",
+            "name": "proposta_orc2",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_64f631a19a5f8",
+                    "label": "Parcelado (valor mensal)",
+                    "name": "valor_mensal",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_64f631a19a5f9",
+                    "label": "À vista",
+                    "name": "valor_vista",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_64f631a19a5fa",
+                    "label": "Prazo",
+                    "name": "prazo",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 60,
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "dias úteis"
+                }
+            ]
+        },
+        {
+            "key": "field_64f631ad9a5fb",
+            "label": "Investimento na urgência #2",
+            "name": "proposta_orc_urgente2",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_64f631ad9a5fc",
+                    "label": "Parcelado (valor mensal)",
+                    "name": "valor_mensal",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_64f631ad9a5fd",
+                    "label": "À vista",
+                    "name": "valor_vista",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_64f631ad9a5fe",
+                    "label": "Prazo",
+                    "name": "prazo",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 30,
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "dias corridos"
+                }
+            ]
+        },
+        {
             "key": "field_64ef3e6267fd5",
-            "label": "Serviços inclusos",
+            "label": "<hr>Serviços inclusos",
             "name": "proposta_servicos",
             "aria-label": "",
             "type": "repeater",
@@ -450,5 +670,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1693577934
+    "modified": 1693856960
 }

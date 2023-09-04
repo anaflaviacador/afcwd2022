@@ -1,6 +1,11 @@
+<?php $titulo = get_field('proposta_orc_titulo'); ?>
 <?php $valor = get_field('proposta_orc'); ?>
 <?php $urgencia = get_field('proposta_orc_urgente'); ?>
 <?php $validade = get_field('proposta_validade'); ?>
+
+<?php $titulo2 = get_field('proposta_orc_titulo2'); ?>
+<?php $valor2 = get_field('proposta_orc2'); ?>
+<?php $urgencia2 = get_field('proposta_orc_urgente2'); ?>
 
 <div id="investimento" class="area-jump"></div>
 <section class="container pb-4em">
@@ -11,29 +16,57 @@
         </div>
 
         <div class="w-layout-vflex prop-invest-box">
-            <?php if($valor) :?>
-            <h2 class="mb-0">
-                <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor['valor_mensal']); ?></span> ou 
-                <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor['valor_vista']); ?></span> <span class="texto-menor cor-verde-medio">à vista</span>
-            </h2>
-            
-
-            <p>
-                <?php if($urgencia) :?>
-                    <i class="fa-regular fa-rocket-launch cor-rosa-medio"></i> 
-                    <em>Urgência na entrega? O investimento é de <?php echo wp_strip_all_tags($urgencia['valor_mensal']); ?> ou <?php echo wp_strip_all_tags($urgencia['valor_vista']); ?> à vista</em><br>
+            <?php if($valor) : if($valor['valor_mensal'] && $valor['valor_vista']) : ?>
+                <?php if($titulo) :?>
+                    <h3>
+                        <?php if($titulo2) : ?><span class="cor-rosa-medio">01.</span> <?php endif; ?>
+                        <?php echo wp_strip_all_tags($titulo); ?>
+                    </h3>
                 <?php endif; ?>
+                <h2 class="mb-0">
+                    <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor['valor_mensal']); ?></span> ou 
+                    <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor['valor_vista']); ?></span> <span class="texto-menor cor-verde-medio">à vista</span>
+                </h2>
+                
 
-                <i class="fa-regular fa-clock cor-azul-medio"></i> Prazo padrão: <?php echo esc_attr($valor['prazo']); ?> dias <span class="sublinhado">úteis</span> &nbsp;|&nbsp; 
-                <?php if($urgencia) : if($urgencia['prazo']) : ?> Prazo na urgência: <?php echo esc_attr($urgencia['prazo']); ?> dias <span class="sublinhado">corridos</span>.<?php endif; endif; ?>
-            </p>
-            <?php endif; ?>
+                <p>
+                    <?php if($urgencia) :?>
+                        <i class="fa-regular fa-rocket-launch cor-rosa-medio"></i> 
+                        <em>Urgência na entrega? O investimento é de <?php echo wp_strip_all_tags($urgencia['valor_mensal']); ?> ou <?php echo wp_strip_all_tags($urgencia['valor_vista']); ?> à vista</em><br>
+                    <?php endif; ?>
+
+                    <i class="fa-regular fa-clock cor-azul-medio"></i> Prazo padrão: <?php echo esc_attr($valor['prazo']); ?> dias <span class="sublinhado">úteis</span> &nbsp;|&nbsp; 
+                    <?php if($urgencia) : if($urgencia['prazo']) : ?> Prazo na urgência: <?php echo esc_attr($urgencia['prazo']); ?> dias <span class="sublinhado">corridos</span>.<?php endif; endif; ?>
+                </p>
+            <?php endif; endif; ?>
+
+
+            <?php if($valor2) : if($valor2['valor_mensal'] && $valor2['valor_vista']) : ?>
+                <?php if($titulo2) :?><h3><span class="cor-rosa-medio">02.</span> <?php echo wp_strip_all_tags($titulo2); ?></h3><?php endif; ?>
+                <h2 class="mb-0">
+                    <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor2['valor_mensal']); ?></span> ou 
+                    <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor2['valor_vista']); ?></span> <span class="texto-menor cor-verde-medio">à vista</span>
+                </h2>
+                
+
+                <p>
+                    <?php if($urgencia2) :?>
+                        <i class="fa-regular fa-rocket-launch cor-rosa-medio"></i> 
+                        <em>Urgência na entrega? O investimento é de <?php echo wp_strip_all_tags($urgencia2['valor_mensal']); ?> ou <?php echo wp_strip_all_tags($urgencia2['valor_vista']); ?> à vista</em><br>
+                    <?php endif; ?>
+
+                    <i class="fa-regular fa-clock cor-azul-medio"></i> Prazo padrão: <?php echo esc_attr($valor2['prazo']); ?> dias <span class="sublinhado">úteis</span> &nbsp;|&nbsp; 
+                    <?php if($urgencia2) : if($urgencia2['prazo']) : ?> Prazo na urgência: <?php echo esc_attr($urgencia2['prazo']); ?> dias <span class="sublinhado">corridos</span>.<?php endif; endif; ?>
+                </p>
+            <?php endif; endif; ?>
 
             
             <p>
                 <i class="fa-regular fa-money-check-dollar-pen cor-verde-medio"></i> A primeira parcela é paga no mesmo dia da assinatura do contrato.<br>
                 <i class="fa-regular fa-credit-card-front cor-verde-medio"></i> É possível parcelar no cartão em até 12x (com juros). <em class="texto-menor cor-cinza">Solicite uma simulação!</em>
             </p>
+
+            <hr style="height:3px; background:#222; width:100%; max-width:100%; margin-bottom:1.8em">
 
             <?php if ( have_rows( 'proposta_servicos' ) ) : ?>
                 <h3>Serviços inclusos</h3>
@@ -67,11 +100,13 @@
                         </svg>
                     </span>
             </a>
-            <div class="texto-menor mt-10px"><em class="cor-cinza">Atenção: O studio não trabalha com copywriting ou produção de conteúdo.</em></div>
+            
 
             <?php if($validade):?>
             <div class="prop-invest-box-timer"><u>Proposta válida até <?php echo esc_attr( $validade ); ?>.</u> Após essa data solicite sua atualização.</div>
             <?php endif; ?>
+
+            <div class="texto-menor mt-10px"><em class="cor-cinza">Atenção: O studio não trabalha com copywriting, produção de conteúdo ou gestão de mídias sociais.</em></div>
         </div>
     </div>
     <div class="home-servicos-wrap">
