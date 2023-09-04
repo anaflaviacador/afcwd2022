@@ -643,13 +643,33 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "40",
                 "class": "",
                 "id": ""
             },
             "display_format": "d\/m\/Y",
             "return_format": "d\/m\/Y",
             "first_day": 1
+        },
+        {
+            "key": "field_64f63bf981bba",
+            "label": "Início imediato?",
+            "name": "proposta_iniciar",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
         }
     ],
     "location": [
@@ -670,5 +690,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1693856960
+    "modified": 1693858839
 }

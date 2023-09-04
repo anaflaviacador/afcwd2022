@@ -1,7 +1,9 @@
 <?php $titulo = get_field('proposta_orc_titulo'); ?>
 <?php $valor = get_field('proposta_orc'); ?>
 <?php $urgencia = get_field('proposta_orc_urgente'); ?>
+
 <?php $validade = get_field('proposta_validade'); ?>
+<?php $imediato = get_field('proposta_iniciar'); ?>
 
 <?php $titulo2 = get_field('proposta_orc_titulo2'); ?>
 <?php $valor2 = get_field('proposta_orc2'); ?>
@@ -10,6 +12,8 @@
 <div id="investimento" class="area-jump"></div>
 <section class="container pb-4em">
     <div class="w-layout-hflex prop-investimento-wrap">
+        <?php if($imediato) :?><div class="plano-head-label">Início imediado!</div><?php endif; ?>
+
         <div class="w-layout-vflex pro-investimento-chamada">
             <h2 class="prop-intro-chamada mb-0">Investimento</h2>
             <div>Custo de produção e serviços inclusos.</div>

@@ -7,6 +7,13 @@
 		<?php get_template_part('parts/header/metatags'); ?>
         <style>
             html, body {overflow: unset !important;}
+            .plano-head-label { 
+                right: -5px; top: 32px; transform: rotate(45deg); left: unset;
+                background-color: #BA5040;
+            }
+            .plano-head-label:before, .plano-head-label:after { border-bottom-color: #BA5040;}
+            .plano-head-label:before { border-left: 24px solid transparent;}
+            .plano-head-label:after { border-right: 24px solid transparent;}
         </style>
 	</head>
 <body class="<?php echo join(' ',get_body_class()); ?>">
