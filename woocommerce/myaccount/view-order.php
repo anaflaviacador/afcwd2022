@@ -52,7 +52,7 @@ if($NFSE['arquivo'] && $NFSE['identificador']) {
 		echo '<table style="margin-bottom:10px" class="woocommerce-table shop_table shop_table_responsive order_details">';
 				echo '<thead>';
 					echo '<tr>';
-						echo '<th><span class="nobr">Código de verificacao *</span></th>';
+						// echo '<th><span class="nobr">Código de verificacao *</span></th>';
 						if($CPF || $CNPJ) echo '<th><span class="nobr">Tomador da nota</span></th>';
 						echo '<th><span class="nobr">Documento NFSe</span></th>';
 					echo '</tr>';
@@ -67,7 +67,7 @@ if($NFSE['arquivo'] && $NFSE['identificador']) {
 					echo '</tr>';
 				echo '</tbody>';
 		echo '</table>';
-		echo '<p style="font-size:12px">* NFSe emitida pelo município de Goiânia - GO. Informações sobre autenticidade podem ser obtidas pelo <a href="http://www2.goiania.go.gov.br/sistemas/snfse/asp/snfse00210f0.asp" target="_blank"><u>site da prefeitura</u></a>.</p>';
+		echo '<p style="font-size:12px">Informações sobre autenticidade via <a href="http://www2.goiania.go.gov.br/sistemas/snfse/asp/snfse00210f0.asp" target="_blank"><u>site da prefeitura de Goiânia</u></a> ou <a href="https://www.nfse.gov.br/consultapublica" target="_blank"><u>NFSe Nacional</u></a> (a partir de 09/2023).</p>';
 	echo '</section>';
 } 
 
