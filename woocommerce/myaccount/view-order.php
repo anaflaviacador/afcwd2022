@@ -60,7 +60,7 @@ if($NFSE['arquivo'] && $NFSE['identificador']) {
 
 				echo '<tbody>';
 					echo '<tr>';
-						echo '<td style="text-transform:uppercase">'.$NFSE['identificador'].'</td>';
+						// echo '<td style="text-transform:uppercase">'.$NFSE['identificador'].'</td>';
 						
 						if($CPF || $CNPJ) echo '<td style="text-transform:uppercase">'.($CPF ? 'CPF '.$CPF : '').($CNPJ ? 'CNPJ '.$CNPJ : '').'</td>';
 						echo '<td><a href="'.esc_url($NFSE['arquivo']).'" class="botao azul" download><i class="far fa-long-arrow-down" style="font-size: 1.2em; line-height: 0; position: relative; bottom: -1px;" aria-hidden="true"></i> Baixar em .PDF</a></td>';
