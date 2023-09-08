@@ -107,7 +107,7 @@
             
 
             <?php if($validade):?>
-            <div class="prop-invest-box-timer"><u>Proposta válida até <?php echo esc_attr( $validade ); ?>.</u> Após essa data solicite sua atualização.</div>
+            <div class="prop-invest-box-timer">Proposta preliminar <u>válida até <?php echo esc_attr( $validade ); ?></u> ou na mudança de requisitos de projeto.</div>
             <?php endif; ?>
 
             <div class="texto-menor mt-10px"><em class="cor-cinza">Atenção: O studio não trabalha com copywriting, produção de conteúdo ou gestão de mídias sociais.</em></div>
