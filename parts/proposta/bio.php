@@ -22,7 +22,7 @@ $anafoto = '6438'; // producao
                 <p>Formada em Design Gráfico pela Universidade Federal de Goiás em 2013 e trabalho desde 2007 na área de web, projetando sites, lojas virtuais e portais de artigos.</p>
                 <p>Fundei o studio AFC Web Design em 2012 para mostrar meu trabalho ao público, possibilitando realizar sonhos de quem busca ter seu espaço na web com delicadeza, afeto, singularidade e, ao mesmo tempo, de forma extremamente profissional.</p>
                 <p>No studio trabalho com design intimista, tratando pessoalmente todas etapas de projeto diretamente com cada cliente, buscando compreender e transparecer a essência de cada pessoa e de seu negócio.</p>
-                <p class="mb-10px"><em>Será um prazer trabalhar contigo, <?php echo wp_strip_all_tags( $apelido ); ?>!</em></p>
+                <p class="mb-10px"><em>Será um prazer trabalhar no projeto, <?php echo wp_strip_all_tags( $apelido ); ?>!</em></p>
                 <h2 class="aninha-titulo"><span class="titulo-cursiva cor-bege">Ana Flávia</span></h2>
             </div>
         </div>
