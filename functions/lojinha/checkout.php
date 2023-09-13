@@ -48,6 +48,9 @@ function custom_override_checkout_fields_ek( $fields ) {
     $fields['billing']['billing_company']['label'] = 'Razão social da empresa';
     $fields['billing']['billing_phone']['label'] = 'Whatsapp';
 
+    $fields['account']['account_username']['label'] = 'Username (acesso ao painel)';
+    $fields['account']['account_username']['placeholder'] = 'ex: mariasantos';
+
 
     if(is_user_logged_in()) {
         $fields['billing']['billing_email']['label'] = 'E-mail para recebimento dos arquivos';
@@ -64,6 +67,15 @@ function custom_override_checkout_fields_ek( $fields ) {
     return $fields;
 }
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields_ek' );
+
+
+add_action( 'woocommerce_form_field_text','afc_checkout_field_alerta_username', 10, 4 );
+function afc_checkout_field_alerta_username( $field, $key ){
+    if ( is_checkout() && ( $key == 'account_username') ) {
+        $field .= '<p class="form-row form-row-wide" style="font-size: 12px; width: 100%; margin: -7px 0 11px 0 !important; float: left; line-height: 1.5; clear: both;"><span class="cor-negacao">Dica:</span> utilize seu apelido ou primeiro nome + ultimo sobrenome, <u>sem acentos, letras maiúsculas ou espaço entre as letras</u>.</p>';
+    }
+    return $field;
+}
 
 
 add_action( 'woocommerce_form_field_tel','afc_checkout_field_alerta_tel', 10, 2 );
