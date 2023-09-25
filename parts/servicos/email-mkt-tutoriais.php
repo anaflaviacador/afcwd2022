@@ -1,4 +1,5 @@
-<div class="pb-4em pt-4em" id="tutoriais">
+<div class="area-jump" id="tutoriais"></div>
+<div class="pb-4em pt-4em">
     <div class="container">
 
         <div class="has-text-align-center">

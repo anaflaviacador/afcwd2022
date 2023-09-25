@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+
+<div class="area-jump" id="assinar"></div>
+
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
     <div class="container-medio has-text-align-center">
@@ -11,15 +14,20 @@
     <?php get_template_part('parts/servicos/planos','email'); ?>
 </div>
 
+<div class="area-jump" id="apresentacao"></div>
 
 <h3 class="has-text-align-center">Apresentação da plataforma</h3>
 <p class="has-text-align-center mb-2em">Conheça as vantagens e a interface do Sendy!</p>
 
 <div class="container-medio mb-4em">
-    <figure class="tutoriais-video"><iframe src="https://drive.google.com/file/d/1ES8RbyF-i4l3iW7Yk7jk43ESNdpYnqxS/preview" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay"></iframe></figure>
+    <figure class="tutoriais-video mb-2em"><iframe src="https://drive.google.com/file/d/1ES8RbyF-i4l3iW7Yk7jk43ESNdpYnqxS/preview" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay"></iframe></figure>
+    <div class="has-text-align-center">
+        <a href="#assinar" class="botao grande inverso azul jump">Conhecer os planos</a>
+    </div>
 </div>
 
 <div class="mb-3em">&nbsp;</div>
+<div class="area-jump" id="FAQ"></div>
 
 <div class="pb-3em cor-roxo-claro-bg">
     <div class="container">
