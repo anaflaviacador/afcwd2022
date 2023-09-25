@@ -22,7 +22,8 @@
 <div class="container-medio mb-4em">
     <figure class="tutoriais-video mb-2em"><iframe src="https://drive.google.com/file/d/1ES8RbyF-i4l3iW7Yk7jk43ESNdpYnqxS/preview" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay"></iframe></figure>
     <div class="has-text-align-center">
-        <a href="#assinar" class="botao grande inverso azul jump">Conhecer os planos</a>
+        <a href="#assinar" class="botao grande inverso azul jump">Ver planos</a> &nbsp; 
+        <a href="#tutoriais" class="botao grande azul jump">&nbsp;Tutoriais&nbsp;</a>
     </div>
 </div>
 
