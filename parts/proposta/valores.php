@@ -69,7 +69,13 @@
             
             <p>
                 <i class="fa-regular fa-money-check-dollar-pen cor-verde-medio"></i> A primeira parcela é paga no mesmo dia da assinatura do contrato.<br>
-                <i class="fa-regular fa-credit-card-front cor-verde-medio"></i> É possível parcelar no cartão em até 12x (com juros). <em class="texto-menor cor-cinza">Solicite uma simulação!</em>
+
+                <?php $moeda = get_field('proposta_moeda'); ?>
+                <?php if($moeda) : ?>
+                    <i class="fa-regular fa-building-columns cor-verde-medio"></i> Pagamento em depósito bancário ou transferência na sua moeda local.
+                <?php else : ?>
+                    <i class="fa-regular fa-credit-card-front cor-verde-medio"></i> É possível parcelar no cartão em até 12x (com juros). <em class="texto-menor cor-cinza">Solicite uma simulação!</em>
+                <?php endif; ?>
             </p>
 
             <hr style="height:3px; background:#222; width:100%; max-width:100%; margin-bottom:1.8em">
