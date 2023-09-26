@@ -8,12 +8,8 @@
 
         <p class="has-text-align-center mb-2em">Diversas dicas de uso sobre as principais ferramentas do email marketing.</p>
 
-        <?php 
-        $clientevip = array('cliente_vip','administrator'); 
-        $user = wp_get_current_user(); 
-        ?>
         
-        <?php if (is_user_logged_in() && array_intersect($clientevip, $user->roles )) : ?>
+        <?php if (is_user_logged_in()) : ?>
 
             <div class="colunas-wrap num-3">
                 <div class="coluna-item num-3 cor-azul-claro-bg padding-20px">
@@ -65,7 +61,7 @@
         <?php else : ?>
 
             <div class="container-medio cor-rosa-claro-bg padding-2em" style="text-align:center;">
-                <p>O acesso aos tutoriais do Sendy é visível apenas por clientes que contrataram ou pretendem contratar serviços de design e/ou desenvolvimento do studio <?php echo do_shortcode('[afc]'); ?></p>
+                <p>O acesso aos tutoriais do Sendy é visível apenas por clientes que adquiriram produto na loja ou um projeto do studio <?php echo do_shortcode('[afc]'); ?></p>
                 <p>Esse é o seu caso? Entre em contato e solicite seu acesso!</p>
                 <p><a href="https://wa.me/5562996269941?text=Oi%20Ana!%20Solicito%20acesso%20aos%20tutoriais%20do%20Sendy." target="_blank" class="botao grande whatsapp">Solicitar acesso
                     <span class="bt-seta" style="height: 18px; position: relative; top: -4px; line-height: 1; vertical-align: bottom;">
@@ -75,7 +71,7 @@
                     </span>
                 </a></p>
                 <p class="texto-menor mb-0">
-                    <strong>Já possui login de cliente?
+                    <strong>Já possui login?
                         <a href="https://afcweb.design/wp-login.php?redirect_to=https%3A%2F%2Fafcweb.design%2Fservicos%2Femail-marketing%2F#tutoriais" class="cor-rosa"><u>Entre aqui</u></a>!
                     </strong>
                 </p>
