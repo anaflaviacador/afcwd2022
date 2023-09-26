@@ -61,8 +61,8 @@
         <?php else : ?>
 
             <div class="container-medio cor-rosa-claro-bg padding-2em" style="text-align:center;">
-                <p>O acesso aos tutoriais do Sendy é visível apenas por clientes que adquiriram produto na loja ou um projeto do studio <?php echo do_shortcode('[afc]'); ?></p>
-                <p>Esse é o seu caso? Entre em contato e solicite seu acesso!</p>
+                <p class="mb-0">O acesso aos tutoriais do Sendy é visível apenas por clientes do studio <?php echo do_shortcode('[afc]'); ?></p>
+                <p>Esse é o seu caso e não possui login? Entre em contato e solicite seu acesso!</p>
                 <p><a href="https://wa.me/5562996269941?text=Oi%20Ana!%20Solicito%20acesso%20aos%20tutoriais%20do%20Sendy." target="_blank" class="botao grande whatsapp">Solicitar acesso
                     <span class="bt-seta" style="height: 18px; position: relative; top: -4px; line-height: 1; vertical-align: bottom;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18px" viewBox="0 0 448 512">
