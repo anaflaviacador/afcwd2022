@@ -61,7 +61,7 @@
                     <em>Urgência na entrega? O investimento é de <?php echo wp_strip_all_tags($urgencia2['valor_mensal']); ?> ou <?php echo wp_strip_all_tags($urgencia2['valor_vista']); ?> à vista</em><br>
                     <?php endif; endif; ?>
 
-                    <i class="fa-regular fa-clock cor-azul-medio"></i> Prazo de produção: <?php echo esc_attr($valor['prazo']); ?> dias <span class="sublinhado">úteis</span>
+                    <i class="fa-regular fa-clock cor-azul-medio"></i> Prazo de produção: <?php echo esc_attr($valor2['prazo']); ?> dias <span class="sublinhado">úteis</span>
                     <?php if($urgencia2) : if($urgencia2['prazo']) : ?> &nbsp;|&nbsp;  Prazo na urgência: <?php echo esc_attr($urgencia2['prazo']); ?> dias <span class="sublinhado">corridos</span>.<?php endif; endif; ?>
                 </p>
             <?php endif; endif; ?>
