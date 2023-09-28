@@ -56,13 +56,13 @@
                 
 
                 <p>
-                    <?php if($urgencia2) :?>
-                        <i class="fa-regular fa-rocket-launch cor-rosa-medio"></i> 
-                        <em>Urgência na entrega? O investimento é de <?php echo wp_strip_all_tags($urgencia2['valor_mensal']); ?> ou <?php echo wp_strip_all_tags($urgencia2['valor_vista']); ?> à vista</em><br>
-                    <?php endif; ?>
+                    <?php if($urgencia2) : if($urgencia2['valor_mensal'] && $urgencia2['valor_vista']) : ?>
+                    <i class="fa-regular fa-rocket-launch cor-rosa-medio"></i> 
+                    <em>Urgência na entrega? O investimento é de <?php echo wp_strip_all_tags($urgencia2['valor_mensal']); ?> ou <?php echo wp_strip_all_tags($urgencia2['valor_vista']); ?> à vista</em><br>
+                    <?php endif; endif; ?>
 
-                    <i class="fa-regular fa-clock cor-azul-medio"></i> Prazo padrão: <?php echo esc_attr($valor2['prazo']); ?> dias <span class="sublinhado">úteis</span> &nbsp;|&nbsp; 
-                    <?php if($urgencia2) : if($urgencia2['prazo']) : ?> Prazo na urgência: <?php echo esc_attr($urgencia2['prazo']); ?> dias <span class="sublinhado">corridos</span>.<?php endif; endif; ?>
+                    <i class="fa-regular fa-clock cor-azul-medio"></i> Prazo de produção: <?php echo esc_attr($valor['prazo']); ?> dias <span class="sublinhado">úteis</span>
+                    <?php if($urgencia2) : if($urgencia2['prazo']) : ?> &nbsp;|&nbsp;  Prazo na urgência: <?php echo esc_attr($urgencia2['prazo']); ?> dias <span class="sublinhado">corridos</span>.<?php endif; endif; ?>
                 </p>
             <?php endif; endif; ?>
 
