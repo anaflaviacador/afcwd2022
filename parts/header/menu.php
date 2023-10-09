@@ -22,7 +22,9 @@ $url_loja = esc_url(home_url().'/loja/temas/aurora');
     <li class="header-nav-li">
         <a href="<?php echo $url_depoimentos;?>" class="<?php echo $current == $url_depoimentos ? 'botao' : 'header-nav-item' ; ?>"><?php esc_html_e( 'Clientes', 'afcwd2022' ); ?></a>
     </li>
+    <?php /* ?>
     <li class="header-nav-li">
         <a href="<?php echo $url_loja;?>" class="<?php echo $current == $url_loja ? 'botao' : 'header-nav-item' ; ?>"><?php esc_html_e( 'Template pronto', 'afcwd2022' ); ?></a>
     </li>
+    <?php */ ?>
 </ul>

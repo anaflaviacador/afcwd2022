@@ -1,4 +1,4 @@
-<ul role="list" class="menu-rodape">
+<ul role="list" class="menu-rodape" style="justify-content: flex-start;">
     <li class="menu-rodape-li">
         <a href="<?php home_url(('/')); ?>" class="menu-rodape-link"><?php esc_html_e( 'O Studio', 'afcwd2022' ); ?></a>
         <a href="/#sobre" class="menu-rodape-sublink"><?php esc_html_e( 'Quem faz', 'afcwd2022' ); ?></a>
@@ -15,14 +15,15 @@
         <a href="/tipo-projeto/portfolio" class="menu-rodape-sublink"><?php esc_html_e( 'Portfolios', 'afcwd2022' ); ?></a>
         <a href="/tipo-projeto/landing-page/" class="menu-rodape-sublink"><?php esc_html_e( 'Landing Pages', 'afcwd2022' ); ?></a>
     </li>
+    <?php /* ?>
     <li class="menu-rodape-li">
         <a href="/loja/temas/aurora" class="menu-rodape-link"><?php esc_html_e( 'À pronta entrega', 'afcwd2022' ); ?></a>
         <a href="/loja/temas/aurora" class="menu-rodape-sublink"><?php esc_html_e( 'Template Aurora', 'afcwd2022' ); ?></a>
-        <?php /* ?><a href="/loja/como-comprar" class="menu-rodape-sublink"><?php esc_html_e( 'Como comprar', 'afcwd2022' ); ?></a><?php */ ?>
         <a href="/loja/rastrear-pedido" class="menu-rodape-sublink"><?php esc_html_e( 'Rastrear compra', 'afcwd2022' ); ?></a>
         <a href="/termos" class="menu-rodape-sublink"><?php esc_html_e( 'Termos de uso', 'afcwd2022' ); ?></a>
         <a href="/termos/programa-afiliadas" class="menu-rodape-sublink"><?php esc_html_e( 'Programa de afiliados', 'afcwd2022' ); ?></a>
     </li>
+    <?php */ ?>
     <li class="menu-rodape-li">
         <a href="/minha-conta" class="menu-rodape-link"><?php esc_html_e( 'Área do Cliente', 'afcwd2022' ); ?></a>
         <a href="/minha-conta" class="menu-rodape-sublink"><?php esc_html_e( 'Entrar no painel', 'afcwd2022' ); ?></a>
