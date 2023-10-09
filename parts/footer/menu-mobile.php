@@ -50,31 +50,35 @@ $politicapg = get_option( 'wp_page_for_privacy_policy' );
         $pgCarrinho = esc_url(wc_get_page_permalink( 'cart' ));
         $numItens = WC()->cart->get_cart_contents_count();
     ?>
-      <ul role="list" class="menu-mob-items shop">
+      <ul role="list" class="menu-mob-items">
+        <?php /* ?>
         <li class="menu-mob-li shop">
           <a href="/loja/temas/aurora" class="menu-mob-link shop w-inline-block">
             <div class="menu-mob-link-ico shop"><i class="fa-light fa-laptop-arrow-down"></i></div>
             <div class="menu-mob-link-item shop"><?php _e( 'Tema pronto <span class="menu-mob-link-subitem shop">comprou, baixou</span>', 'afcwd2022' ); ?></div>
           </a>
         </li>
-        <li class="menu-mob-li shop">
-          <a href="<?php echo $conta; ?>" class="menu-mob-link shop w-inline-block">
-            <div class="menu-mob-link-ico shop"><i class="fa-light fa-circle-user"></i></div>
-            <div class="menu-mob-link-item shop">
+        <?php */ ?>
+        <li class="menu-mob-li" style="flex:1">
+          <a href="<?php echo $conta; ?>" class="menu-mob-link w-inline-block">
+            <div class="menu-mob-link-ico"><i class="fa-light fa-circle-user"></i></div>
+            <div class="menu-mob-link-item">
               <?php if(is_user_logged_in()): ?>
-                <?php _e( 'Conta <span class="menu-mob-link-subitem shop">painel</span>', 'afcwd2022' ); ?>
+                <?php _e( 'Minha conta <span class="menu-mob-link-subitem">Pedidos, briefing e acervo de plugins.</span>', 'afcwd2022' ); ?>
               <?php else: ?>
-                <?php _e( 'Login <span class="menu-mob-link-subitem shop">entrar</span>', 'afcwd2022' ); ?>
+                <?php _e( 'Login de cliente <span class="menu-mob-link-subitem">Pedidos, briefing e acervo de plugins.</span>', 'afcwd2022' ); ?>
               <?php endif; ?>
             </div>
           </a>
         </li>
+        <?php /* ?>
         <li class="menu-mob-li shop cart">
           <a href="<?php echo $pgCarrinho; ?>" class="menu-mob-link shop w-inline-block">
             <div class="menu-mob-link-ico shop"><i class="fa-light fa-cart-shopping"></i></div>
             <div class="menu-mob-link-item shop"><?php echo $numItens; ?> <span class="menu-mob-link-subitem shop"><?php esc_html_e( 'itens', 'afcwd2022' ); ?></span></div>
           </a>
         </li>
+        <?php */ ?>
       </ul>
 
       <?php endif; ?>

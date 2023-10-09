@@ -38,6 +38,7 @@ $urlTema = get_template_directory_uri();
                 </span>
             </a>
         </li>
+        <?php /* ?>
         <li class="shop-nav-li">
             <a href="<?php echo $pgCarrinho; ?>" class="shop-nav-link w-inline-block"><img
                     src="<?php echo $urlTema; ?>/assets/images/ico-cart.svg"
@@ -47,6 +48,7 @@ $urlTema = get_template_directory_uri();
                 </span>
             </a>
         </li>
+        <?php */ ?>
     </ul>
     <?php endif; ?>
 </div>
