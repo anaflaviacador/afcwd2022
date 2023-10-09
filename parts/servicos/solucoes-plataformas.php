@@ -91,7 +91,7 @@ $img4 = '6448'; // producao
                     </div>
                     <div class="plataforma-item">
                         <em><?php esc_html_e( 'design front-end', 'afcwd2022' ); ?></em>
-                        <img src="<?php echo $urlTema; ?>/assets/images/logo-woocommerce.svg" alt="Logo webflow" height="" class="plataforma-logo">
+                        <img src="<?php echo $urlTema; ?>/assets/images/logo-woocommerce.svg" alt="Logo webflow" style="height:25px;" class="plataforma-logo">
                     </div>
                 </div>
             </div>
