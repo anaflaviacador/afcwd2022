@@ -45,7 +45,7 @@ function custom_override_checkout_fields_ek( $fields ) {
     $fields['billing']['billing_email']['priority'] = 21;
     $fields['billing']['billing_email']['class'] = array( 'afc-form-row-wide clear' );
 
-    $fields['billing']['billing_company']['label'] = 'Razão social da empresa';
+    // $fields['billing']['billing_company']['label'] = 'Razão social da empresa';
     $fields['billing']['billing_phone']['label'] = 'Whatsapp';
 
     $fields['account']['account_username']['label'] = 'Username (acesso ao painel)';
@@ -61,7 +61,7 @@ function custom_override_checkout_fields_ek( $fields ) {
 
     $fields['billing']['billing_persontype']['class'] = array( 'form-row-first' );
     $fields['billing']['billing_cpf']['class'] = array( 'form-row-last' );
-    $fields['billing']['billing_company']['class'] = array( 'form-row-last' );
+    // $fields['billing']['billing_company']['class'] = array( 'afc-form-row-wide clear' );
 
 
     return $fields;
