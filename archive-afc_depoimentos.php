@@ -3,8 +3,8 @@
 
 $args = array(
 	'post_type' => 'afc_depoimentos', 
-	'order' => 'ASC', 
-	'orderby' => 'rand',
+	'order' => 'DESC', 
+	'orderby' => 'date',
 	'posts_per_page' => -1,
 );
 	
