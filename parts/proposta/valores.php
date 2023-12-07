@@ -123,7 +123,7 @@
     <div class="home-servicos-wrap">
         <div class="home-serv-col">
             <h2 class="cor-verde">Design Exclusivo</h2>
-            <p class="tw-balance">Desde 2007 produzindo sites e lojas virtuais com design elegante, <strong>inteligente</strong>, com <strong>personalidade</strong> e <strong>propósito</strong> para pequenas empresas, empreendedoras autônomas e produtoras de conteúdo.</p>
+            <p class="tw-balance">Desde 2007 produzindo sites e lojas virtuais com design elegante, <strong>inteligente</strong>, com <strong>personalidade</strong> e <strong>propósito</strong> para pequenas empresas, empreendedores autônomos e produtores de conteúdo.</p>
         </div>
         <div class="home-serv-col">
             <h2 class="cor-verde">SEO &amp; Otimização</h2>
