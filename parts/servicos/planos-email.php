@@ -91,7 +91,7 @@
           <div><?php _e( '<strong>Optin comentários</strong><em class="texto-menor dblock">captura na área de blog com consentimento</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
