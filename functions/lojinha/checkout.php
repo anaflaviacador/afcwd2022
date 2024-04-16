@@ -107,7 +107,8 @@ function afc_mensagem_acima_pagamentos() {
         $product = $cart_item['data'];
         if ( has_term( array('planos'), 'product_cat', $product->get_id() ) ) {
             echo '<p class="mb-10px texto-menor">';
-                echo 'Não quer usar cartão de crédito? O studio agora trabalha com assinatura via Pix! Todo mês chegará uma fatura por email informando sua renovação com o QRCode do Pix da mensalidade.';
+                // echo 'Não quer usar cartão de crédito? O studio agora trabalha com assinatura via Pix! Todo mês chegará uma fatura por email informando sua renovação com o QRCode do Pix da mensalidade.';
+                echo 'Utilizamos a Stripe para processar nossos pagamentos! Seu faturamento vai ser automático e mensal, todo dia do mesmo mês.';
             echo '</p>';            
         } else {
             echo '<p class="mb-10px texto-menor">';
