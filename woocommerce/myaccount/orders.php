@@ -79,10 +79,10 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
 									}
 								}
 
-								$NFSE = get_field('pedido_nfse', $order_id);
-								if($NFSE) {
-									if($NFSE['arquivo'] && $NFSE['identificador']) echo '&nbsp;[<a class="cor-afirmacao" href="'.esc_url($NFSE['arquivo']).'" download>NFSe</a>]';
-								}
+								// $NFSE = get_field('pedido_nfse', $order_id);
+								// if($NFSE) {
+								// 	if($NFSE['arquivo'] && $NFSE['identificador']) echo '&nbsp;[<a class="cor-afirmacao" href="'.esc_url($NFSE['arquivo']).'" download>NFSe</a>]';
+								// }
 								?>
 
 								

@@ -39,9 +39,9 @@ $order_date   = strtotime($order->get_date_created());
 </p>
 
 <?php 
-if ( $order_date >= $compare_date && empty($NFSE['arquivo'] && $NFSE['identificador']) ) { 
-	echo '<p class="cor-negacao mb-3em"><i class="fal fa-info-circle"></i> <strong>Nota fiscal na fila de emissão.</strong><br><small>Caso tenha urgência na emissão, por favor, entre em contato.</small></p>';
-} 
+// if ( $order_date >= $compare_date && empty($NFSE['arquivo'] && $NFSE['identificador']) ) { 
+// 	echo '<p class="cor-negacao mb-3em"><i class="fal fa-info-circle"></i> <strong>Nota fiscal na fila de emissão.</strong><br><small>Caso tenha urgência na emissão, por favor, entre em contato.</small></p>';
+// } 
 
 
 if($NFSE['arquivo'] && $NFSE['identificador']) {
