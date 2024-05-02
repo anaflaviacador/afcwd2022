@@ -65,6 +65,20 @@
       </div>
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Atualização de gráficos e conteúdos pontuais do site</strong><em class="texto-menor dblock">banners para carroseis e chamadas de ação, troca de imagens, ícones, botões e textos pontuais</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in last">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
           <div><?php _e( '<strong>Cadastro de produtos</strong><em class="texto-menor dblock">adição de novos produtos ou edição de existentes</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
@@ -76,20 +90,6 @@
         <div class="plano-sessao-in last">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
           <div class="texto-menor has-text-align-center"><?php _e( '<em>até 30 produtos por mês</em>', 'afcwd2022' ); ?></div>
-        </div>
-      </div>
-      <div class="plano-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Atualização de gráficos e conteúdos pontuais do site</strong><em class="texto-menor dblock">banners para carroseis e chamadas de ação, troca de imagens, ícones, botões e textos pontuais</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-check"></i></div>
-        </div>
-        <div class="plano-sessao-in last">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
       </div>
 
