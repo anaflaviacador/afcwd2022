@@ -14,7 +14,7 @@
           <div class="plano-nome">Standard</div>
           <div class="plano-head-label">+ popular</div>
           <!-- <div class="plano-preco">R$<span class="plano-preco-maior">255</span>/mês</div> -->
-          <div class="plano-preco">R$<span class="plano-preco-maior">340</span>/mês</div>
+          <div class="plano-preco">R$<span class="plano-preco-maior">420</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
             <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites com poucas atualizações e blogs monetizáveis', 'afcwd2022' ); ?></div>
@@ -23,7 +23,7 @@
         <div class="plano-head last">
           <div class="plano-nome">Premium</div>
           <!-- <div class="plano-preco">R$<span class="plano-preco-maior">467</span>/mês</div> -->
-          <div class="plano-preco">R$<span class="plano-preco-maior">597</span>/mês</div>
+          <div class="plano-preco">R$<span class="plano-preco-maior">690</span>/mês</div>
           <div class="plano-ideal">
             <div class="plano-idela-linha"></div>
             <div><?php _e( '<em class="dblock cor-verde">ideal para</em>sites com maior frequencia de edição e lojas virtuais', 'afcwd2022' ); ?></div>
@@ -56,7 +56,7 @@
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 2 páginas por mês</em>', 'afcwd2022' ); ?></div>
+          <div class="texto-menor has-text-align-center"><?php _e( '<em>até 5 páginas por mês</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in last">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
@@ -86,7 +86,7 @@
           <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
         </div>
         <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-check"></i></div>
         </div>
         <div class="plano-sessao-in last">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
@@ -203,7 +203,7 @@
       
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Atualizações de extensões e plugins integrados</strong><em class="texto-menor dblock">atualização quando aplicável</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<strong>Supervisão de extensões e plugins integrados</strong><em class="texto-menor dblock">realização de atualizações periódicas e avaliação de viabilidade de uso.</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
@@ -262,6 +262,7 @@
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
       </div>
+      
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
           <div><?php _e( '<strong>Supervisão de segurança</strong><em class="texto-menor dblock">monitoramento dos recursos de segurança do site e anti-spam.</em>', 'afcwd2022' ); ?></div>
@@ -278,7 +279,7 @@
       </div>
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Supervisão de emails</strong><em class="texto-menor dblock">monitoramento da entregabilidade de emails automáticos do site, como formulários de contato e atualizações de status de pedidos</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<strong>Supervisão de entrega de emails</strong><em class="texto-menor dblock">monitoramento aplicável apenas se não possuir serviço de entregabilidade contratada por terceiros (ex: Sendgrid, Sendinblue, Amason SES, MailGun etc).</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
@@ -377,13 +378,27 @@
       </div>
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Correções de bugs</strong><em class="texto-menor dblock">supervisão de alertas PHP do Wordpress e do layout, corrigindo quando aplicável</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<strong>Supervisão de logs</strong><em class="texto-menor dblock">monitoramento de alertas, erros de código PHP e análise de viabilidade de aplicação de correções.</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
         </div>
         <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in last">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Correções de bugs</strong><em class="texto-menor dblock">correções encontradas em logs ou pelo usuário.</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-xmark"></i></div>
         </div>
         <div class="plano-sessao-in last">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
@@ -405,7 +420,7 @@
       </div>
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Analise técnica e-commerce</strong><em class="texto-menor dblock">resolução de problemas técnicos, auxílio em diagnóstico de vendas mal-sucedidas, supervisão de status de serviços e integrações</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<strong>Supervisão e-commerce</strong><em class="texto-menor dblock">resolução de problemas técnicos, auxílio em diagnóstico de vendas mal-sucedidas, supervisão de status de serviços e integrações</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
