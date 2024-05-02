@@ -381,7 +381,7 @@
           <div><?php _e( '<strong>Adequações visuais de plugins</strong><em class="texto-menor dblock">personalizações de plugins à identidade visual do site, como formulários e dentre outros recursos visuais</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
