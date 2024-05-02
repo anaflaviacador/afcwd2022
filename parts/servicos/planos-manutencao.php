@@ -398,7 +398,7 @@
           <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
         </div>
         <div class="plano-sessao-in">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-check"></i></div>
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
         <div class="plano-sessao-in last">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
@@ -406,7 +406,7 @@
       </div>
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Correções de bugs</strong><em class="texto-menor dblock">correções encontradas em logs ou pelo usuário.</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<strong>Correções de bugs</strong><em class="texto-menor dblock">correções encontradas em logs ou apontados pelo usuário.</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in">
           <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
