@@ -72,8 +72,8 @@
                 <?php if($moeda) : ?>
                     <i class="fa-regular fa-building-columns cor-verde-medio"></i> Pagamento em depósito bancário ou transferência na sua moeda local.
                 <?php else : ?>
-                    <i class="fa-regular fa-money-check-dollar-pen cor-verde-medio"></i> A primeira parcela no Pix é paga no mesmo dia da assinatura do contrato.<br>
-                    <i class="fa-regular fa-credit-card-front cor-verde-medio"></i> É também possível parcelar no cartão em até 12x (ou até 24x para contas NuBank) de forma integral ou parcial (parte no Pix e parte no cartão). <em class="texto-menor cor-cinza">Solicite uma simulação!</em>
+                    <i class="fa-regular fa-money-check-dollar-pen cor-verde-medio"></i> A primeira parcela no Pix é paga no mesmo dia da assinatura do contrato. As demais parcelas (via Pix) são cobradas mensalmente, com a última coincidindo com a entrega.<br>
+                    <i class="fa-regular fa-credit-card-front cor-verde-medio"></i> É também possível parcelar no cartão em até 12x de forma integral ou parcial, sendo esta 50% de entrada no Pix e o restante no cartão na entrega. <em class="texto-menor cor-cinza">Solicite uma simulação!</em>
                 <?php endif; ?>
             </p>
 
