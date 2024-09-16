@@ -30,8 +30,8 @@
                     </h3>
                 <?php endif; ?>
                 <h2 class="mb-0">
-                    <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor['valor_mensal']); ?></span> ou 
-                    <span class="cor-verde-medio"><?php echo wp_strip_all_tags($valor['valor_vista']); ?></span> <span class="texto-menor cor-verde-medio">à vista</span>
+                    <span class="cor-verde-medio"><?php echo wp_kses_post($valor['valor_mensal']); ?></span> ou 
+                    <span class="cor-verde-medio"><?php echo wp_kses_post($valor['valor_vista']); ?></span> <span class="texto-menor cor-verde-medio">à vista</span>
                 </h2>
                 
 
@@ -39,7 +39,7 @@
                 <p>
                     <?php if($urgencia) : if($urgencia['valor_mensal'] && $urgencia['valor_vista']) : ?>
                     <i class="fa-regular fa-rocket-launch cor-rosa-medio"></i> 
-                    <em>Urgência na entrega? O investimento é de <?php echo wp_strip_all_tags($urgencia['valor_mensal']); ?> ou <?php echo wp_strip_all_tags($urgencia['valor_vista']); ?> à vista</em><br>
+                    <em>Urgência na entrega? O investimento é de <?php echo wp_kses_post($urgencia['valor_mensal']); ?> ou <?php echo wp_kses_post($urgencia['valor_vista']); ?> à vista</em><br>
                     <?php endif; endif; ?>
 
                     <i class="fa-regular fa-clock cor-azul-medio"></i> Prazo de produção: <?php echo esc_attr($valor['prazo']); ?> dias <span class="sublinhado">úteis</span>
