@@ -85,7 +85,7 @@
   <path fill="#ADDEF3" d="M15.2743 5.0813a9.2502 9.2502 0 01-.0636.364c-.8194 4.2086-3.624 5.6636-7.206 5.6636H6.1804c-.4376 0-.807.3187-.8752.751l-1.199 7.6006A.4668.4668 0 004.5671 20H7.802a.7775.7775 0 00.7683-.6568l.032-.1643.609-3.864.0393-.2135a.7784.7784 0 01.7684-.6568h.484c3.1337 0 5.5874-1.2732 6.3043-4.955.2995-1.5385.1449-2.8225-.6473-3.7253-.2397-.273-.5378-.4992-.8857-.683"/>
   <path fill="#E6F4FC" d="M14.4165 4.7394a5.8016 5.8016 0 00-.3869-.0991 7.2268 7.2268 0 00-.4104-.0783c-.492-.079-1.0302-.117-1.6077-.117H7.1391a.7782.7782 0 00-.3358.076.778.778 0 00-.4325.5808l-1.0356 6.5664-.03.1916c.0683-.4322.4377-.7509.8753-.7509h1.8241c3.582 0 6.3867-1.455 7.2061-5.6636a9.2502 9.2502 0 00.0636-.364c-.207-.11-.432-.2044-.6736-.2847a4.9128 4.9128 0 00-.1842-.0572"/>
 </svg>
- Pagamento via Paypal, com acréscimo de 6,5% (por fatura) devido às tarifas internacionais da plataforma. <em>Obs: A fatura é obrigatoriamente na moeda BRL e podem ocorrer outras cobranças referentes à sua prestadora do cartão de crédito devido ao pagamento internacional.</em>
+ Pagamento via Paypal (fatura em moeda BRL). <em>Obs: Podem ocorrer outras cobranças referentes à sua prestadora do seu cartão de crédito devido à transação internacional.</em>
                 <?php else : ?>
                     <i class="fa-regular fa-money-check-dollar-pen cor-verde-medio"></i> A primeira parcela no Pix é paga no ato da assinatura do contrato. As demais parcelas são cobradas em espaço de tempo proporcional ao longo da produção do projeto, com a última coincidindo com a entrega.<br>
                     
