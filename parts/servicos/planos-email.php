@@ -86,6 +86,25 @@
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
       </div>
+
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Zapier <span class="cor-negacao-bg cor-branco pl-10px pr-10px">NOVO!</span></strong><em class="texto-menor dblock">O serviço de automação mais potente do mercado agora para todos os clientes Sendy!</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in last emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
           <div><?php _e( '<strong>Optin comentários</strong><em class="texto-menor dblock">captura na área de blog com consentimento</em>', 'afcwd2022' ); ?></div>
@@ -157,23 +176,7 @@
         </div>
       </div>
 
-      <div class="plano-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Integração Zapier</strong><em class="texto-menor dblock">acesso a API para unir com serviços de automação</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in last emailmkt">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-        </div>
-      </div>
+
       <div class="plano-sessao last">
         <div class="plano-sessao-in first">
           <div><?php _e( '<em class="cor-verde">Cancele quando quiser</em>', 'afcwd2022' ); ?></div>
