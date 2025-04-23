@@ -22,7 +22,7 @@ $anafoto = '6438'; // producao
                 <img src="<?php echo $urlTema; ?>/assets/images/org-bege-3.svg" alt="Grafismo" aria-hidden="true" class="aninha-fundo">
 
                 <h2 class="aninha-titulo">A designer <span class="titulo-cursiva cor-bege">e o studio</span></h2>
-                <p>Seja bem-vinda ao meu estudio! Meu nome é Ana Flávia Cador, mas você pode me chamar de Ana. Tenho 31 anos, sou casada e formada em Design Gráfico pela Universidade Federal de Goiás. Trabalho desde 2007 na área de web, projetando  sites com ênfase no empreendedorismo feminino e público jovem.</p>
+                <p>Seja bem-vinda ao meu estudio! Meu nome é Ana Flávia Cador, mas você pode me chamar de Ana. Tenho 34 anos, sou casada e mãe de uma linda bebezinha. Graduei em Design Gráfico pela Universidade Federal de Goiás e atuo desde 2007 na área de web, projetando sites com ênfase no empreendedorismo feminino e público jovem.</p>
                 <p class="hide-mobile">Descobri minha vocação ainda na adolescência, quando criei o um blog e aprendi a criar meus próprios layouts. E, na faculdade, em 2012, fundei o studio para mostrar meu trabalho ao público, possibilitando realizar sonhos de quem busca ter seu espaço na web.</p>
                 <p class="hide-mobile">Por aqui trabalho com design intimista, tratando pessoalmente todas etapas de projeto diretamente com cada cliente, buscando compreender e transparecer a essência de cada uma e de seu negócio.</p>
                 <p class="hide-mobile">Toda pessoa é <em>única</em>. Todo projeto é <em>único</em>.</p>
