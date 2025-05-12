@@ -21,7 +21,7 @@ $urlTema = get_template_directory_uri();
 <?php endwhile; endif; wp_reset_query(); ?>
 </div>
 
-<?php echo do_shortcode('[ajax_load_more post_type="etheme_portfolio" theme_repeater="projeto.php" container_type="div" posts_per_page="4" offset="2" images_loaded="true" scroll="false" transition_container_classes="lista-projetos" button_label="<span>'.esc_html__( 'Mais projetos', 'afcwd2022' ).'</span>" button_loading_label="<span>'.esc_html__( 'Carregando', 'afcwd2022' ).'</span>" button_done_label="<span>'.esc_html__( 'Isso é tudo!', 'afcwd2022' ).'</span>" ]'); ?>
+<?php //echo do_shortcode('[ajax_load_more post_type="etheme_portfolio" theme_repeater="projeto.php" container_type="div" posts_per_page="4" offset="2" images_loaded="true" scroll="false" transition_container_classes="lista-projetos" button_label="<span>'.esc_html__( 'Mais projetos', 'afcwd2022' ).'</span>" button_loading_label="<span>'.esc_html__( 'Carregando', 'afcwd2022' ).'</span>" button_done_label="<span>'.esc_html__( 'Isso é tudo!', 'afcwd2022' ).'</span>" ]'); ?>
 
 
 
