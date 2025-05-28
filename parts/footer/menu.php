@@ -27,8 +27,7 @@
     <li class="menu-rodape-li">
         <a href="/minha-conta" class="menu-rodape-link"><?php esc_html_e( 'Área do Cliente', 'afcwd2022' ); ?></a>
         <a href="/minha-conta" class="menu-rodape-sublink"><?php esc_html_e( 'Entrar no painel', 'afcwd2022' ); ?></a>
-        <a href="/minha-conta/briefing" class="menu-rodape-sublink"><?php esc_html_e( 'Formulário de Briefing', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
+        <?php /* ?><a href="/minha-conta/briefing" class="menu-rodape-sublink"><?php esc_html_e( 'Formulário de Briefing', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a><?php */ ?>
         <a href="/minha-conta/bonus" class="menu-rodape-sublink"><?php esc_html_e( 'Acervo de plugins', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
-        <a href="/folha-pagamento-assinatura" target="_blank" class="menu-rodape-sublink"><?php _e( 'Folha de pagamento <br>de assinaturas', 'afcwd2022' ); ?> <span class="info-vip">vip</span></a>
     </li>
 </ul>
