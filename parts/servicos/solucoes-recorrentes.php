@@ -14,7 +14,7 @@ $img2 = '6450'; // producao
                 <?php _e( 'Serviços por <span class="titulo-cursiva cor-roxo">assinatura</span><span class="titulo-cursiva cor-verde"></span>', 'afcwd2022' ); ?>
             </h2>
             <div>
-                <?php _e( 'Serviços especiais recorrentes opcionais <strong>para quem já é cliente da casa</strong> e possui um layout exclusivo implementado.', 'afcwd2022' ); ?>
+                <?php _e( 'Serviços especiais recorrentes opcionais <strong>só para clientes da casa</strong> que possui um projeto exclusivo do Studio.', 'afcwd2022' ); ?>
             </div>
         </div>
         <div class="container">

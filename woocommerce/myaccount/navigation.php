@@ -60,7 +60,7 @@ echo '<nav class="afc-cliente-menu"><div class="container'.(array_intersect($cli
 			// echo '</li>';
 			
 			echo '<li class="afc-cliente-menu-li">';
-				echo '<a class="afc-cliente-menu-link" href="'.$urlsite.'/minha-conta/bonus"><span class="afc-menu-cliente-ico '.(is_page('bonus')?' ativo':'').'"><i class="fa-light fa-box-archive"></i></span> <span class="afc-menu-cliente-txt '.(is_page('bonus')?' ativo':'').'">Acervo Plugins Premium</span></a>';
+				echo '<a class="afc-cliente-menu-link" href="'.$urlsite.'/minha-conta/bonus"><span class="afc-menu-cliente-ico '.(is_page('bonus')?' ativo':'').'"><i class="fa-light fa-box-archive"></i></span> <span class="afc-menu-cliente-txt '.(is_page('bonus')?' ativo':'').'">Plugins Premium</span></a>';
 			echo '</li>';
 
 		}
