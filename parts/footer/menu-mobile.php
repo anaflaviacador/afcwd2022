@@ -64,9 +64,9 @@ $politicapg = get_option( 'wp_page_for_privacy_policy' );
             <div class="menu-mob-link-ico"><i class="fa-light fa-circle-user"></i></div>
             <div class="menu-mob-link-item">
               <?php if(is_user_logged_in()): ?>
-                <?php _e( 'Minha conta <span class="menu-mob-link-subitem">Pedidos, briefing e acervo de plugins.</span>', 'afcwd2022' ); ?>
+                <?php _e( 'Minha conta <span class="menu-mob-link-subitem">Pedidos e acervo de plugins.</span>', 'afcwd2022' ); ?>
               <?php else: ?>
-                <?php _e( 'Login de cliente <span class="menu-mob-link-subitem">Pedidos, briefing e acervo de plugins.</span>', 'afcwd2022' ); ?>
+                <?php _e( 'Login de cliente <span class="menu-mob-link-subitem">Pedidos e acervo de plugins.</span>', 'afcwd2022' ); ?>
               <?php endif; ?>
             </div>
           </a>

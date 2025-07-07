@@ -3,7 +3,7 @@ $urlHome = esc_url(home_url('/'));
 $urlTema = get_template_directory_uri();
 ?>
 
-<?php $args = array( 'post_type' => 'etheme_portfolio', 'order' => 'DESC', 'posts_per_page' => -1 );?>
+<?php $args = array( 'post_type' => 'etheme_portfolio', 'posts_per_page' => -1 );?>
 <?php $trabalhos = new WP_Query($args); ?>
 
 <div class="lista-projetos">
