@@ -89,7 +89,7 @@
 
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Zapier <span class="cor-negacao-bg cor-branco pl-10px pr-10px">NOVO!</span></strong><em class="texto-menor dblock">O serviço de automação mais potente do mercado agora para todos os clientes Sendy!</em>', 'afcwd2022' ); ?></div>
+          <div><?php _e( '<strong>Zapier</strong><em class="texto-menor dblock">O serviço de automação mais potente do mercado agora para todos os clientes Sendy!</em>', 'afcwd2022' ); ?></div>
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
@@ -105,23 +105,7 @@
         </div>
       </div>
 
-      <div class="plano-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Optin comentários</strong><em class="texto-menor dblock">captura na área de blog com consentimento</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-        </div>
-        <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-        </div>
-        <div class="plano-sessao-in last emailmkt">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-        </div>
-      </div>
+
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
           <div><?php _e( '<strong>Modelos de email</strong><em class="texto-menor dblock">templates reutilizáveis com sua marca, cores e mídias</em>', 'afcwd2022' ); ?></div>
@@ -131,32 +115,18 @@
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-sessao-in-ico"><span>1</span></div>
+          <div class="texto-menor has-text-align-center"><em>padrão (via integração)</em></div>
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-sessao-in-ico"><span>2</span></div>
+          <div class="texto-menor has-text-align-center"><em>1 padrão + 1 exclusivo</em></div>
         </div>
         <div class="plano-sessao-in last emailmkt">
           <div class="plano-sessao-in-ico"><span>4</span></div>
+          <div class="texto-menor has-text-align-center"><em>1 padrão + 3 exclusivos</em></div>
         </div>
       </div>
-      
-      <div class="plano-sessao">
-        <div class="plano-sessao-in first">
-          <div><?php _e( '<strong>Integração loja virtual</strong><em class="texto-menor dblock">listas personalizadas para vendas woocommerce</em>', 'afcwd2022' ); ?></div>
-        </div>
-        <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
-        </div>
-        <div class="plano-sessao-in emailmkt">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-        </div>
-        <div class="plano-sessao-in last emailmkt">
-          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
-        </div>
-      </div>
+
 
       <div class="plano-sessao">
         <div class="plano-sessao-in first">
@@ -175,6 +145,76 @@
           <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
         </div>
       </div>
+
+      <div class="plano-sessao nome-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong class="fonte-caixa-alta dblock">Integrações <span class="cor-negacao-bg cor-branco pl-10px pr-10px">NOVO!</span></strong><em class="texto-menor">plugins exclusivos do studio</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in vazio">
+          <div class="plano-sessao-in-vazio bg"></div>
+        </div>
+        <div class="plano-sessao-in vazio">
+          <div class="plano-sessao-in-vazio bg"></div>
+        </div>
+        <div class="plano-sessao-in vazio last">
+          <div class="plano-sessao-in-vazio bg last"></div>
+        </div>
+      </div>   
+
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Capturas via WPForms</strong><em class="texto-menor dblock">integre listas a qualquer formulário do plugin WPForms</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in last emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Campanhas via Painel WP</strong><em class="texto-menor dblock">crie suas campanhas dentro do seu próprio site com um template customizável.</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in last emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+
+      <div class="plano-sessao">
+        <div class="plano-sessao-in first">
+          <div><?php _e( '<strong>Capturas de vendas</strong><em class="texto-menor dblock">crie listas para produtos específicos ou assinaturas e muitos mais com Woocomerce</em>', 'afcwd2022' ); ?></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico no"><i class="fa-light fa-xmark"></i></div>
+        </div>
+        <div class="plano-sessao-in emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+        <div class="plano-sessao-in last emailmkt">
+          <div class="plano-sessao-in-ico"><i class="fa-light fa-check"></i></div>
+        </div>
+      </div>
+
 
 
       <div class="plano-sessao last">
