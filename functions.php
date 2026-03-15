@@ -220,3 +220,17 @@ if(defined('WP_ROCKET_FILE')){
 // }
 // add_filter( 'wpforms_process_redirect_url', 'wpf_dev_process_redirect_url', 10, 5 );
 
+// Permite shortcodes nas mensagens de confirmação do WPForms
+add_filter( 'wpforms_process_smart_tags', 'afc_wpforms_enable_shortcodes', 10, 2 );
+function afc_wpforms_enable_shortcodes( $content, $form_data ) {
+    return do_shortcode( $content );
+}
+
+// Permite shortcodes nos campos HTML do WPForms
+add_filter( 'wpforms_frontend_html', 'afc_wpforms_html_shortcodes', 10 );
+function afc_wpforms_html_shortcodes( $html ) {
+    return do_shortcode( $html );
+}
+
+// Permite habilitar renomeacao de campos no back-end
+add_filter( 'wpforms_fields_show_options_setting', '__return_true' );

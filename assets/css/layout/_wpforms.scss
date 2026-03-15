@@ -72,9 +72,24 @@
 
 	.colar-acima {padding-top:0 !important; margin-top: 0 !important}	
 
-	.choices { margin: 5px 0 !important;}
+	.choices { 
+		margin: 5px 0 !important;
+		&[data-type*="select-one"]:after {
+			border-color: $roxo transparent transparent transparent;
+		}
+	}
 
-	.choices__list--dropdown {z-index:1000 !important} 
+	.choices__list--dropdown {
+		z-index:1000 !important;
+		border-color: $roxo-medio !important;
+	} 
+	.choices__inner {
+		border-color: $roxo-medio;
+		border-radius: 4px !important;
+	}
+	.choices__item--selectable.is-highlighted {
+		background-color: $roxo-claro !important;
+	}
 
 	ul {
 		li {
