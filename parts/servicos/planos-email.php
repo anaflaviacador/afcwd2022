@@ -223,22 +223,22 @@
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-botao emailmkt">
-            <a href="/finalizar-compra/?add-to-cart=5827" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="https://buy.stripe.com/14A4gA9XMfz45nM92YaAw03" target="_blank" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
         <div class="plano-sessao-in destaque emailmkt">
           <div class="plano-botao emailmkt">
-            <a href="/finalizar-compra/?add-to-cart=5828" class="botao inverso grafite"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="https://buy.stripe.com/4gMfZi3zo1IeaI6djeaAw04" target="_blank" class="botao inverso grafite"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
         <div class="plano-sessao-in emailmkt">
           <div class="plano-botao emailmkt">
-            <a href="/finalizar-compra/?add-to-cart=5829" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="https://buy.stripe.com/8x23cw5Hw86C17wcfaaAw05" target="_blank" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
         <div class="plano-sessao-in last end emailmkt">
           <div class="plano-botao emailmkt">
-            <a href="/finalizar-compra/?add-to-cart=5830" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
+            <a href="https://buy.stripe.com/28E7sM1rggD8aI67YUaAw06" target="_blank" class="botao inverso verde"><?php get_template_part('parts/servicos/planos','bt'); ?></a>
           </div>
         </div>
       </div>
