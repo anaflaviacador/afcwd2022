@@ -1,0 +1,52 @@
+[30-Aug-2023 12:23:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php on line 1
+[03-Apr-2024 21:43:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php on line 1
+[28-Apr-2024 11:39:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php on line 1
+[15-May-2024 19:34:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php on line 1
+[07-Nov-2024 12:38:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_bloginfo() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/404.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/404.php on line 2
+[08-Nov-2024 13:45:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_bloginfo() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/404.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/404.php on line 2
+[08-Nov-2024 13:45:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_bloginfo() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/404.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/404.php on line 2
+[04-Feb-2025 21:42:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php on line 1
+[05-Feb-2025 18:41:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php on line 1
+[21-Mar-2025 17:59:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php on line 1
+[27-May-2025 11:47:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php on line 1
+[17-Feb-2026 13:26:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_bloginfo() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/404.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/404.php on line 2
+[15-Jun-2026 16:59:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/madlyluv/public_html/afcweb.design/wp-content/themes/afcwd2022/index.php on line 1
